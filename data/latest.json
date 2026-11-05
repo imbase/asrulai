@@ -1,0 +1,29 @@
+{
+  "sample": true,
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T06:05:00+08:00",
+  "market": "美股",
+  "radars": [
+    {
+      "id": "radar-a",
+      "name": "雷达 A · 动量突破",
+      "picks": [
+        { "rank": 1, "code": "NVDA", "name": "英伟达", "score": 94.2, "reason": "放量突破前高，机构评级持续上调", "tags": ["放量突破", "机构增持"] },
+        { "rank": 2, "code": "AVGO", "name": "博通", "score": 91.8, "reason": "周线级别趋势加速，AI 营收超预期", "tags": ["趋势加速", "财报超预期"] },
+        { "rank": 3, "code": "MSFT", "name": "微软", "score": 88.5, "reason": "回踩 50 日均线企稳，云业务增速回暖", "tags": ["回踩企稳"] },
+        { "rank": 4, "code": "AMD", "name": "超威半导体", "score": 86.3, "reason": "底部区域持续吸筹，波动率收敛待突破", "tags": ["底部吸筹", "波动收敛"] },
+        { "rank": 5, "code": "AMZN", "name": "亚马逊", "score": 84.7, "reason": "突破长期平台，广告与 AWS 双引擎", "tags": ["平台突破"] }
+      ]
+    },
+    {
+      "id": "radar-b",
+      "name": "雷达 B · 低位反转",
+      "picks": [
+        { "rank": 1, "code": "TSLA", "name": "特斯拉", "score": 89.6, "reason": "超跌区域放量反转，空头回补明显", "tags": ["超跌反转", "空头回补"] },
+        { "rank": 2, "code": "PLTR", "name": "帕兰提尔", "score": 87.1, "reason": "月线支撑确认，政府合同持续落地", "tags": ["月线支撑", "合同催化"] },
+        { "rank": 3, "code": "GOOGL", "name": "谷歌", "score": 83.9, "reason": "估值处于历史低位，AI 投入进入收获期", "tags": ["低估值"] },
+        { "rank": 4, "code": "META", "name": "Meta", "score": 81.5, "reason": "长期下降通道被打破，右侧初步确认", "tags": ["通道突破"] }
+      ]
+    }
+  ]
+}

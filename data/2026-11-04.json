@@ -1,0 +1,25 @@
+{
+  "sample": true,
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T06:02:00+08:00",
+  "market": "美股",
+  "radars": [
+    {
+      "id": "radar-a",
+      "name": "雷达 A · 动量突破",
+      "picks": [
+        { "rank": 1, "code": "AVGO", "name": "博通", "score": 92.5, "reason": "周线级别趋势加速，AI 营收超预期", "tags": ["趋势加速", "财报超预期"] },
+        { "rank": 2, "code": "NVDA", "name": "英伟达", "score": 90.8, "reason": "回踩 20 日均线后快速收复", "tags": ["回踩企稳"] },
+        { "rank": 3, "code": "MSFT", "name": "微软", "score": 87.4, "reason": "云业务增速回暖，量能温和放大", "tags": ["周线转强"] }
+      ]
+    },
+    {
+      "id": "radar-b",
+      "name": "雷达 B · 低位反转",
+      "picks": [
+        { "rank": 1, "code": "TSLA", "name": "特斯拉", "score": 88.2, "reason": "超跌区域放量反转，空头回补明显", "tags": ["超跌反转"] },
+        { "rank": 2, "code": "GOOGL", "name": "谷歌", "score": 84.9, "reason": "估值处于历史低位，AI 投入进入收获期", "tags": ["低估值"] }
+      ]
+    }
+  ]
+}
