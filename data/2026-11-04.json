@@ -2271,6 +2271,14 @@
         },
         {
           "rank": 7,
+          "code": "NTR",
+          "name": "NTR",
+          "score": null,
+          "reason": "人工精选，持续跟踪",
+          "tags": []
+        },
+        {
+          "rank": 8,
           "code": "PAYP",
           "name": "PAYP",
           "score": null,
@@ -2278,7 +2286,7 @@
           "tags": []
         },
         {
-          "rank": 8,
+          "rank": 9,
           "code": "RCKY",
           "name": "RCKY",
           "score": null,
@@ -2286,9 +2294,17 @@
           "tags": []
         },
         {
-          "rank": 9,
+          "rank": 10,
           "code": "RRX",
           "name": "RRX",
+          "score": null,
+          "reason": "人工精选，持续跟踪",
+          "tags": []
+        },
+        {
+          "rank": 11,
+          "code": "YALA",
+          "name": "YALA",
           "score": null,
           "reason": "人工精选，持续跟踪",
           "tags": []
