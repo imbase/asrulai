@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-05T05:39:15.641Z",
-  "engineVersion": "strategy-engine-1.0.0",
+  "generatedAt": "2026-11-05T16:35:03.220Z",
+  "engineVersion": "strategy-engine-1.1.0",
   "latestMarketDate": "2026-11-04",
   "marketDate": "2026-11-04",
   "reportMarketDate": "2026-11-04",
-  "reportId": "2026-11-05T05:39:15.640Z",
+  "reportId": "2026-11-05T16:35:03.220Z",
   "status": "PASS",
   "strategies": [
     {
@@ -109,275 +109,103 @@
       "latestMarketDate": "2026-11-04",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 234,
-      "count": 234,
+      "picksCount": 29,
+      "count": 29,
       "reason": "",
       "picks": [
-        {
-          "symbol": "PLMR",
-          "name": "PLMR",
-          "change1d": 0.012868293368961226,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CLOV",
-          "name": "CLOV",
-          "change1d": 0.09324009324009341,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
         {
           "symbol": "AFRM",
           "name": "AFRM",
           "change1d": 0.050298735584271226,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
             "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BROS",
-          "name": "BROS",
-          "change1d": 0.009407985314364486,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ACAD",
-          "name": "ACAD",
-          "change1d": 0.043753038405444755,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MWA",
-          "name": "MWA",
-          "change1d": 0.01994060246075513,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BNTX",
-          "name": "BNTX",
-          "change1d": 0.04348826507132997,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UBER",
-          "name": "UBER",
-          "change1d": 0.04909909909909915,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "强势板块＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "MLM",
-          "name": "MLM",
-          "change1d": 0.02352097394118835,
+          "symbol": "APPF",
+          "name": "APPF",
+          "change1d": 0.05859479753285046,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FSLR",
-          "name": "FSLR",
-          "change1d": 0.046315223238300174,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JPM",
-          "name": "JPM",
-          "change1d": 0.041807207527072565,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ISRG",
-          "name": "ISRG",
-          "change1d": 0.09381735677821901,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
             "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LI",
-          "name": "LI",
-          "change1d": 0.03392857142857153,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BABA",
-          "name": "BABA",
-          "change1d": 0.04912315663611011,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "QS",
-          "name": "QS",
-          "change1d": 0.0752427184466018,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
             "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ROK",
-          "name": "ROK",
-          "change1d": -0.005600609346296914,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NEM",
-          "name": "NEM",
-          "change1d": 0.09900437331348289,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "MCK",
-          "name": "MCK",
-          "change1d": 0.0698465416858407,
+          "symbol": "ARDT",
+          "name": "ARDT",
+          "change1d": 0.1093082835183603,
           "tags": [
-            "优先策略：当天量能异常大",
+            "稳健慢牛",
+            "量价健康",
+            "平台突破",
+            "洗盘修复",
+            "当天量能异常大"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ARGX",
+          "name": "ARGX",
+          "change1d": 0.03358043323863624,
+          "tags": [
+            "地量",
+            "当天量能异常大"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "BEKE",
+          "name": "BEKE",
+          "change1d": 0.0551136363636362,
+          "tags": [
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GMED",
-          "name": "GMED",
-          "change1d": 0.09449610454888169,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LPX",
-          "name": "LPX",
-          "change1d": 0.06816641821384994,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
             "上冲下洗（再突破确认）",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "BWIN",
+          "name": "BWIN",
+          "change1d": 0.0046889653016568555,
+          "tags": [
+            "多均线支撑",
+            "地量",
+            "紧密K线",
+            "当天量能异常大"
+          ],
+          "stage": "洗盘/锁仓",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "COCO",
+          "name": "COCO",
+          "change1d": 0.09683364047579168,
+          "tags": [
+            "量价健康",
+            "平台突破",
+            "强势股洗盘·横盘箱体（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -388,14 +216,27 @@
           "name": "CON",
           "change1d": 0.08493150684931505,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "平台突破",
             "强势股洗盘·连续长上影（再突破确认）",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "CPNG",
+          "name": "CPNG",
+          "change1d": 0.11950098489822714,
+          "tags": [
+            "量价健康",
+            "平台突破",
+            "洗盘修复",
+            "当天量能异常大"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
         {
@@ -403,412 +244,84 @@
           "name": "DAL",
           "change1d": 0.0715658021133525,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
             "平台突破",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "BDX",
-          "name": "BDX",
-          "change1d": 0.0556088207094918,
+          "symbol": "ELVN",
+          "name": "ELVN",
+          "change1d": 0.05398170867722518,
           "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PRU",
-          "name": "PRU",
-          "change1d": 0.06581937547344485,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TSN",
-          "name": "TSN",
-          "change1d": 0.053897471910112404,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "Z",
-          "name": "Z",
-          "change1d": 0.09425435765009671,
-          "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
-            "强势股洗盘·长阴加长阳反包（再突破确认）",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
-          "symbol": "SNN",
-          "name": "SNN",
-          "change1d": 0.07590321511435194,
+          "symbol": "JBIO",
+          "name": "JBIO",
+          "change1d": 0.032258064516129004,
           "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（较强）"
+            "量价健康",
+            "当天量能异常大"
           ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
-          "symbol": "TRIP",
-          "name": "TRIP",
-          "change1d": 0.0805084745762712,
+          "symbol": "JXN",
+          "name": "JXN",
+          "change1d": -0.02346249555634561,
           "tags": [
-            "优先策略：当天量能异常大",
+            "量价健康",
+            "当天量能异常大"
+          ],
+          "stage": "建仓观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "LEN",
+          "name": "LEN",
+          "change1d": 0.07085608084562667,
+          "tags": [
+            "地量",
+            "当天量能异常大"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "LEN.B",
+          "name": "LEN.B",
+          "change1d": 0.05956996827634842,
+          "tags": [
+            "地量",
+            "量价健康",
+            "当天量能异常大"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "MMM",
+          "name": "MMM",
+          "change1d": 0.09545326179045444,
+          "tags": [
             "量价健康",
             "平台突破",
-            "洗盘修复",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GOOS",
-          "name": "GOOS",
-          "change1d": 0.07738814993954057,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DIS",
-          "name": "DIS",
-          "change1d": 0.04177614293221232,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "D",
-          "name": "D",
-          "change1d": 0.04447439353099725,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "THC",
-          "name": "THC",
-          "change1d": 0.09584161385878742,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "破位洗盘·假摔破位+快速反包",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SGI",
-          "name": "SGI",
-          "change1d": 0.0682478959449122,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AIZ",
-          "name": "AIZ",
-          "change1d": 0.041839732549893593,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HQY",
-          "name": "HQY",
-          "change1d": 0.06674507497794768,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GLBE",
-          "name": "GLBE",
-          "change1d": 0.08056758056758051,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PPLI",
-          "name": "PPLI",
-          "change1d": 0.09064935064935065,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PACS",
-          "name": "PACS",
-          "change1d": 0.07669237360754066,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "强势股洗盘·缩量挖坑（再突破确认）",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AVA",
-          "name": "AVA",
-          "change1d": 0.05405405405405417,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VIK",
-          "name": "VIK",
-          "change1d": 0.06209226467847162,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WYNN",
-          "name": "WYNN",
-          "change1d": 0.06050463439752818,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BEKE",
-          "name": "BEKE",
-          "change1d": 0.0551136363636362,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "紧密K线",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HASI",
-          "name": "HASI",
-          "change1d": 0.05183641573326403,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DNLI",
-          "name": "DNLI",
-          "change1d": 0.07763496143958881,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ABT",
-          "name": "ABT",
-          "change1d": 0.05585009140767827,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BLK",
-          "name": "BLK",
-          "change1d": 0.05429166810181507,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TTWO",
-          "name": "TTWO",
-          "change1d": 0.07133699164059704,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NVO",
-          "name": "NVO",
-          "change1d": 0.04951480467778069,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BR",
-          "name": "BR",
-          "change1d": 0.030093600348280347,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CG",
-          "name": "CG",
-          "change1d": 0.04523227383863082,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·长上影+长下影（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -819,323 +332,27 @@
           "name": "MTN",
           "change1d": 0.05033907146583205,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "紧密K线",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "SHAK",
-          "name": "SHAK",
-          "change1d": 0.03820929569432563,
+          "symbol": "OMAB",
+          "name": "OMAB",
+          "change1d": 0.024770728940153308,
           "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NXST",
-          "name": "NXST",
-          "change1d": 0.03673835125448033,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
             "平台突破",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SFD",
-          "name": "SFD",
-          "change1d": 0.07407407407407396,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "REYN",
-          "name": "REYN",
-          "change1d": 0.04317144043171428,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CENTA",
-          "name": "CENTA",
-          "change1d": 0.04088286932530738,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "强势股洗盘·高开假阴线（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ASTH",
-          "name": "ASTH",
-          "change1d": 0.08004356112169897,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LSPD",
-          "name": "LSPD",
-          "change1d": 0.052823315118396996,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PAYP",
-          "name": "PAYP",
-          "change1d": 0.08497620666213468,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LKFT",
-          "name": "LKFT",
-          "change1d": 0.06034214618973577,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ROIV",
-          "name": "ROIV",
-          "change1d": 0.060765815760266406,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WMS",
-          "name": "WMS",
-          "change1d": 0.059338235294117636,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NAVN",
-          "name": "NAVN",
-          "change1d": 0.09112903225806446,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SHOO",
-          "name": "SHOO",
-          "change1d": 0.06699977288212566,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PZZA",
-          "name": "PZZA",
-          "change1d": 0.07704741379310343,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HMN",
-          "name": "HMN",
-          "change1d": 0.05751000631978109,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZVRA",
-          "name": "ZVRA",
-          "change1d": 0.08869395711500982,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GIS",
-          "name": "GIS",
-          "change1d": 0.051936619718309984,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OSCR",
-          "name": "OSCR",
-          "change1d": 0.08577599506325218,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "平台突破",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KNSL",
-          "name": "KNSL",
-          "change1d": 0.021327076000521528,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "COCO",
-          "name": "COCO",
-          "change1d": 0.09683364047579168,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CGON",
-          "name": "CGON",
-          "change1d": 0.056977833281298684,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ACHC",
-          "name": "ACHC",
-          "change1d": 0.088791357191087,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
@@ -1143,1297 +360,25 @@
           "name": "PRVA",
           "change1d": 0.043316255239869594,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
             "紧密K线",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "DEI",
-          "name": "DEI",
-          "change1d": 0.07411167512690353,
+          "symbol": "ROL",
+          "name": "ROL",
+          "change1d": 0.02757697456492636,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MBC",
-          "name": "MBC",
-          "change1d": 0.08998548621190139,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（基础确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CNNE",
-          "name": "CNNE",
-          "change1d": 0.035127478753541164,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NVR",
-          "name": "NVR",
-          "change1d": 0.058442550027220985,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（基础确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BB",
-          "name": "BB",
-          "change1d": 0.06959706959706957,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "APPF",
-          "name": "APPF",
-          "change1d": 0.05859479753285046,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RELY",
-          "name": "RELY",
-          "change1d": 0.06698187549251378,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WLTH",
-          "name": "WLTH",
-          "change1d": 0.07046979865771807,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GOLD",
-          "name": "GOLD",
-          "change1d": 0.059049079754601275,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LZ",
-          "name": "LZ",
-          "change1d": 0.03139013452914807,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SNDA",
-          "name": "SNDA",
-          "change1d": 0.08725029377203297,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MQ",
-          "name": "MQ",
-          "change1d": 0.04494382022471921,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "一箭穿三",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KEP",
-          "name": "KEP",
-          "change1d": 0.06704438149197367,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SBGI",
-          "name": "SBGI",
-          "change1d": 0.04677060133630273,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ONC",
-          "name": "ONC",
-          "change1d": 0.06416901408450704,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（基础确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CHYM",
-          "name": "CHYM",
-          "change1d": 0.05921985815602837,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NWS",
-          "name": "NWS",
-          "change1d": 0.04148471615720517,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NTST",
-          "name": "NTST",
-          "change1d": 0.0401785714285714,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TRIN",
-          "name": "TRIN",
-          "change1d": 0.05219941348973611,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SVV",
-          "name": "SVV",
-          "change1d": 0.08172043010752694,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GIC",
-          "name": "GIC",
-          "change1d": 0.07795150691139807,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LDOS",
-          "name": "LDOS",
-          "change1d": 0.0071258907363420665,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SOLV",
-          "name": "SOLV",
-          "change1d": 0.05415290231241143,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LCLN",
-          "name": "LCLN",
-          "change1d": 0.05252993433758202,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CHTR",
-          "name": "CHTR",
-          "change1d": 0.05677124527638622,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（基础确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "B",
-          "name": "B",
-          "change1d": 0.08313090418353597,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ARDX",
-          "name": "ARDX",
-          "change1d": 0.08580858085808596,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KMTS",
-          "name": "KMTS",
-          "change1d": 0.05136159944846597,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSIQ",
-          "name": "CSIQ",
-          "change1d": 0.06732673267326739,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VIR",
-          "name": "VIR",
-          "change1d": 0.04901960784313708,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MNTN",
-          "name": "MNTN",
-          "change1d": 0.06577595066803688,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SII",
-          "name": "SII",
-          "change1d": 0.07218259629101276,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FUBO",
-          "name": "FUBO",
-          "change1d": 0.07722513089005245,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GIL",
-          "name": "GIL",
-          "change1d": 0.06550110810145293,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CRVS",
-          "name": "CRVS",
-          "change1d": 0.07527975584944047,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HMY",
-          "name": "HMY",
-          "change1d": 0.08675496688741724,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DRVN",
-          "name": "DRVN",
-          "change1d": 0.05538325210456363,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "XXI",
-          "name": "XXI",
-          "change1d": 0.05807622504537213,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TROX",
-          "name": "TROX",
-          "change1d": 0.044117647058823595,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TSHA",
-          "name": "TSHA",
-          "change1d": 0.0660146699266504,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ENLT",
-          "name": "ENLT",
-          "change1d": 0.044787644787644965,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SLB",
-          "name": "SLB",
-          "change1d": -0.010934202954153038,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "热点待量价确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "U",
-          "name": "U",
-          "change1d": 0.048913043478260976,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FLR",
-          "name": "FLR",
-          "change1d": -0.007918316315899232,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMGN",
-          "name": "AMGN",
-          "change1d": 0.03733252395612019,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DUK",
-          "name": "DUK",
-          "change1d": 0.024345901509762014,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LYV",
-          "name": "LYV",
-          "change1d": 0.02409571196958682,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TPR",
-          "name": "TPR",
-          "change1d": 0.03544868616757557,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "平台突破",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TD",
-          "name": "TD",
-          "change1d": 0.027737694404361024,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AEE",
-          "name": "AEE",
-          "change1d": 0.024553773670381362,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EVRG",
-          "name": "EVRG",
-          "change1d": 0.008894090111176034,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PNW",
-          "name": "PNW",
-          "change1d": -0.020141080378689447,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ELF",
-          "name": "ELF",
-          "change1d": 0.01910313901345284,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RGA",
-          "name": "RGA",
-          "change1d": 0.007366830374008204,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BKH",
-          "name": "BKH",
-          "change1d": 0.024209245742092378,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SONY",
-          "name": "SONY",
-          "change1d": 0.022055927530523878,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OGE",
-          "name": "OGE",
-          "change1d": 0.030950926491549735,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DEO",
-          "name": "DEO",
-          "change1d": 0.03880914407230196,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UNH",
-          "name": "UNH",
-          "change1d": 0.012214419938680665,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PGR",
-          "name": "PGR",
-          "change1d": 0.02492252629741154,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SO",
-          "name": "SO",
-          "change1d": -0.006719999999999948,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CTSH",
-          "name": "CTSH",
-          "change1d": 0.030549898167006262,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UTHR",
-          "name": "UTHR",
-          "change1d": 0.01192376771103576,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SYF",
-          "name": "SYF",
-          "change1d": -0.001995211492418325,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NSC",
-          "name": "NSC",
-          "change1d": 0.009356210588062686,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PPL",
-          "name": "PPL",
-          "change1d": 0.00028003360403250355,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VRSK",
-          "name": "VRSK",
-          "change1d": 0.00431472081218276,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TECH",
-          "name": "TECH",
-          "change1d": 0.0009633911368016612,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRK.A",
-          "name": "BRK.A",
-          "change1d": 0.03928007806082867,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IRM",
-          "name": "IRM",
-          "change1d": 0.016882337818150628,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NWSA",
-          "name": "NWSA",
-          "change1d": 0.037338764426340765,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AFG",
-          "name": "AFG",
-          "change1d": 0.011568627450980529,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PTON",
-          "name": "PTON",
-          "change1d": 0.02824858757062154,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OUT",
-          "name": "OUT",
-          "change1d": 0.003708281829418958,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PRGO",
-          "name": "PRGO",
-          "change1d": 0.008280254777070173,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "COF",
-          "name": "COF",
-          "change1d": -0.011499209429351787,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HUM",
-          "name": "HUM",
-          "change1d": -0.0010768899418479583,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EQIX",
-          "name": "EQIX",
-          "change1d": 0.039126577287066144,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KHC",
-          "name": "KHC",
-          "change1d": 0.03752039151712894,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VICI",
-          "name": "VICI",
-          "change1d": 0.033988533988533964,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TTE",
-          "name": "TTE",
-          "change1d": -0.024163969795037876,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ENB",
-          "name": "ENB",
-          "change1d": -0.003269309358397976,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TKO",
-          "name": "TKO",
-          "change1d": 0.03354700854700865,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DTE",
-          "name": "DTE",
-          "change1d": 0.02435572769253702,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SWX",
-          "name": "SWX",
-          "change1d": -0.008590142811124246,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GENI",
-          "name": "GENI",
-          "change1d": 0.03088235294117636,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMPL",
-          "name": "AMPL",
-          "change1d": 0.02078384798099764,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SLF",
-          "name": "SLF",
-          "change1d": 0.01851161634985732,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TAC",
-          "name": "TAC",
-          "change1d": 0.009841029523088407,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PRSU",
-          "name": "PRSU",
-          "change1d": 0.007130124777183555,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NOMD",
-          "name": "NOMD",
-          "change1d": 0.02285714285714291,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "平台突破",
-            "紧密K线",
-            "强势股洗盘·高开假阴线（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SAFT",
-          "name": "SAFT",
-          "change1d": 0.0009592326139087337,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SITC",
-          "name": "SITC",
-          "change1d": 0.013623978201634968,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "强势股洗盘·长上影+长下影（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
@@ -2441,880 +386,115 @@
           "name": "RVMD",
           "change1d": 0.02816248777222885,
           "tags": [
-            "优先策略：当天量能异常大",
             "洗盘修复",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
         },
         {
-          "symbol": "NTR",
-          "name": "NTR",
-          "change1d": 0.03967109059434515,
+          "symbol": "SOLS",
+          "name": "SOLS",
+          "change1d": -0.06543569808875926,
           "tags": [
-            "优先策略：当天量能异常大",
-            "一箭穿三",
-            "紧密K线",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
-          "symbol": "RAL",
-          "name": "RAL",
-          "change1d": 0.003786285233487563,
+          "symbol": "TBBB",
+          "name": "TBBB",
+          "change1d": 0.03334921391138623,
           "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CRUS",
-          "name": "CRUS",
-          "change1d": 0.032674501424501345,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LNC",
-          "name": "LNC",
-          "change1d": -0.014918304522850923,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "INGR",
-          "name": "INGR",
-          "change1d": 0.0059929737549080375,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WLK",
-          "name": "WLK",
-          "change1d": -0.00832481378705996,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "POST",
-          "name": "POST",
-          "change1d": 0.020813282001924893,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PBA",
-          "name": "PBA",
-          "change1d": -0.013363028953229494,
-          "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FLOC",
-          "name": "FLOC",
-          "change1d": 0.01038421599169248,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RNW",
-          "name": "RNW",
-          "change1d": 0.005805515239477588,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "地量",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PTGX",
-          "name": "PTGX",
-          "change1d": 0.02231888191671416,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MC",
-          "name": "MC",
-          "change1d": 0.03596757852077004,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TU",
-          "name": "TU",
-          "change1d": 0.035955056179775235,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMLX",
-          "name": "AMLX",
-          "change1d": 0.006849315068493178,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BATRK",
-          "name": "BATRK",
-          "change1d": -0.019331142470520035,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MNSO",
-          "name": "MNSO",
-          "change1d": 0.020568070519098924,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZBIO",
-          "name": "ZBIO",
-          "change1d": 0.0028188865398168783,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EE",
-          "name": "EE",
-          "change1d": -0.023911187019641456,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UHAL",
-          "name": "UHAL",
-          "change1d": 0.028242854726872935,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KBDC",
-          "name": "KBDC",
-          "change1d": 0.007751937984496138,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SWKS",
-          "name": "SWKS",
-          "change1d": -0.029039812646370122,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SRE",
-          "name": "SRE",
-          "change1d": -0.02881911902530454,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMG",
-          "name": "AMG",
-          "change1d": -0.01345206517620301,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GCO",
-          "name": "GCO",
-          "change1d": 0.07582808650424289,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SSNC",
-          "name": "SSNC",
-          "change1d": -0.01619683481701284,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TRP",
-          "name": "TRP",
-          "change1d": -0.012927636764937689,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BWMN",
-          "name": "BWMN",
-          "change1d": -0.0006983240223463749,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "稳健慢牛",
-            "地量",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AA",
-          "name": "AA",
-          "change1d": 0.02760192453785759,
-          "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
             "洗盘修复",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "AMCR",
-          "name": "AMCR",
-          "change1d": 0.032793867120954,
+          "symbol": "TLN",
+          "name": "TLN",
+          "change1d": -0.08536721898790867,
           "tags": [
-            "优先策略：当天量能异常大",
+            "当天量能异常大"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ULS",
+          "name": "ULS",
+          "change1d": -0.008333333333333304,
+          "tags": [
             "稳健慢牛",
             "量价健康",
-            "当天量能异常大（高质量）"
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "CYTK",
-          "name": "CYTK",
-          "change1d": 0.02070293692826186,
+          "symbol": "UNH",
+          "name": "UNH",
+          "change1d": 0.012214419938680665,
           "tags": [
-            "优先策略：当天量能异常大",
+            "稳健慢牛",
             "紧密K线",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
         },
         {
-          "symbol": "NFG",
-          "name": "NFG",
-          "change1d": -0.026580185679765833,
+          "symbol": "VIR",
+          "name": "VIR",
+          "change1d": 0.04901960784313708,
           "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "RARE",
-          "name": "RARE",
-          "change1d": 0.03187011425135311,
+          "symbol": "WCN",
+          "name": "WCN",
+          "change1d": 0.027590271081110007,
           "tags": [
-            "优先策略：当天量能异常大",
-            "稳健慢牛",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ACIW",
-          "name": "ACIW",
-          "change1d": 0.013007016943350935,
-          "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
-            "当天量能异常大（高质量）"
+            "平台突破",
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
+          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "SGHC",
-          "name": "SGHC",
-          "change1d": 0.03125000000000022,
+          "symbol": "WD",
+          "name": "WD",
+          "change1d": 0.09013363662212126,
           "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MWH",
-          "name": "MWH",
-          "change1d": -0.017157776948899528,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GT",
-          "name": "GT",
-          "change1d": 0.024774774774774633,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MMED",
-          "name": "MMED",
-          "change1d": 0.023342175066312976,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NYT",
-          "name": "NYT",
-          "change1d": -0.009237187127532853,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ARX",
-          "name": "ARX",
-          "change1d": 0.00201918223119657,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "地量",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SCSC",
-          "name": "SCSC",
-          "change1d": 0.004229820232640069,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DMRA",
-          "name": "DMRA",
-          "change1d": 0.03894927536231907,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KRUS",
-          "name": "KRUS",
-          "change1d": 0.03818681318681327,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IPI",
-          "name": "IPI",
-          "change1d": 0.017235772357723667,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CRTO",
-          "name": "CRTO",
-          "change1d": 0.030982201713908974,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HLIO",
-          "name": "HLIO",
-          "change1d": -0.021627940961566616,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HROW",
-          "name": "HROW",
-          "change1d": 0.007358093903293561,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SVRA",
-          "name": "SVRA",
-          "change1d": -0.0189473684210526,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ANAB",
-          "name": "ANAB",
-          "change1d": -0.004609260423213857,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AD",
-          "name": "AD",
-          "change1d": -0.0006015037593986028,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RXST",
-          "name": "RXST",
-          "change1d": 0.08714596949891074,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ALB",
-          "name": "ALB",
-          "change1d": 0.05299922386073841,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AIT",
-          "name": "AIT",
-          "change1d": -0.02248074717352111,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GEO",
-          "name": "GEO",
-          "change1d": -0.01923762023512643,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UI",
-          "name": "UI",
-          "change1d": 0.02856514245902253,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KOF",
-          "name": "KOF",
-          "change1d": -0.0001717917883524711,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "紧密K线",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NG",
-          "name": "NG",
-          "change1d": 0.060869565217391175,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TX",
-          "name": "TX",
-          "change1d": -0.004840271055179035,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NUVB",
-          "name": "NUVB",
-          "change1d": 0.008528784648187626,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JOBY",
-          "name": "JOBY",
-          "change1d": 0.04123711340206193,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HESM",
-          "name": "HESM",
-          "change1d": -0.02752293577981657,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NESR",
-          "name": "NESR",
-          "change1d": 0.03866602223296267,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "量价健康",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CMBT",
-          "name": "CMBT",
-          "change1d": -0.018411967779056404,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "地量",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MTW",
-          "name": "MTW",
-          "change1d": -0.025210084033613467,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "多均线支撑",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FTK",
-          "name": "FTK",
-          "change1d": -0.004830917874396157,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BYND",
-          "name": "BYND",
-          "change1d": -0.016506189821182793,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "洗盘修复",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GPRE",
-          "name": "GPRE",
-          "change1d": -0.029140014214641075,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（较强）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         }
       ]
@@ -3334,10 +514,7 @@
           "symbol": "UI",
           "name": "UI",
           "change1d": 0.02856514245902253,
-          "tags": [
-            "优先策略：当天量能异常大",
-            "当天量能异常大（高质量）"
-          ],
+          "tags": [],
           "stage": "出货风险",
           "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
@@ -3557,11 +734,9 @@
           "name": "LPX",
           "change1d": 0.06816641821384994,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "平台突破",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（较强）"
+            "上冲下洗（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3572,11 +747,9 @@
           "name": "SNN",
           "change1d": 0.07590321511435194,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "平台突破",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（较强）"
+            "上冲下洗（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3587,12 +760,10 @@
           "name": "TRIP",
           "change1d": 0.0805084745762712,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
             "平台突破",
             "洗盘修复",
-            "上冲下洗（再突破确认）",
-            "当天量能异常大（高质量）"
+            "上冲下洗（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3603,14 +774,12 @@
           "name": "GLBE",
           "change1d": 0.08056758056758051,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（较强）"
+            "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3621,13 +790,12 @@
           "name": "BEKE",
           "change1d": 0.0551136363636362,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "紧密K线",
             "上冲下洗（再突破确认）",
-            "当天量能异常大（高质量）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3638,71 +806,15 @@
           "name": "LSPD",
           "change1d": 0.052823315118396996,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（高质量）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LOW",
-          "name": "LOW",
-          "change1d": 0.07498359733808235,
-          "tags": [
-            "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SMA",
-          "name": "SMA",
-          "change1d": 0.040654843110504935,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "平台突破",
-            "上冲下洗（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PGNY",
-          "name": "PGNY",
-          "change1d": 0.03578802477632492,
-          "tags": [
-            "多均线支撑",
             "平台突破",
             "上冲下洗（再突破确认）",
             "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PYPL",
-          "name": "PYPL",
-          "change1d": 0.034186565882150965,
-          "tags": [
-            "稳健慢牛",
-            "紧密K线",
-            "上冲下洗（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
+          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
@@ -3715,6 +827,32 @@
             "平台突破",
             "上冲下洗（再突破确认）",
             "强势股洗盘·高开假阴线（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "强势板块＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "LOW",
+          "name": "LOW",
+          "change1d": 0.07498359733808235,
+          "tags": [
+            "量价健康",
+            "平台突破",
+            "上冲下洗（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "强势板块＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "PYPL",
+          "name": "PYPL",
+          "change1d": 0.034186565882150965,
+          "tags": [
+            "稳健慢牛",
+            "紧密K线",
+            "上冲下洗（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "强势板块＋确认形态",
@@ -3985,7 +1123,8 @@
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -4134,6 +1273,20 @@
           "verification": "saved"
         },
         {
+          "symbol": "SMA",
+          "name": "SMA",
+          "change1d": 0.040654843110504935,
+          "tags": [
+            "多均线支撑",
+            "稳健慢牛",
+            "平台突破",
+            "上冲下洗（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "REAL",
           "name": "REAL",
           "change1d": 0.06850393700787416,
@@ -4241,7 +1394,8 @@
             "稳健慢牛",
             "量价健康",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -4311,6 +1465,20 @@
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "PGNY",
+          "name": "PGNY",
+          "change1d": 0.03578802477632492,
+          "tags": [
+            "多均线支撑",
+            "平台突破",
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·横盘箱体（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
         },
         {
@@ -4768,11 +1936,9 @@
           "name": "MQ",
           "change1d": 0.04494382022471921,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "一箭穿三",
-            "洗盘修复",
-            "当天量能异常大（高质量）"
+            "洗盘修复"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -4811,10 +1977,8 @@
           "name": "NTR",
           "change1d": 0.03967109059434515,
           "tags": [
-            "优先策略：当天量能异常大",
             "一箭穿三",
-            "紧密K线",
-            "当天量能异常大（高质量）"
+            "紧密K线"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -5127,11 +2291,10 @@
           "name": "CON",
           "change1d": 0.08493150684931505,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "平台突破",
             "强势股洗盘·连续长上影（再突破确认）",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5142,10 +2305,8 @@
           "name": "Z",
           "change1d": 0.09425435765009671,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
-            "强势股洗盘·长阴加长阳反包（再突破确认）",
-            "当天量能异常大（较强）"
+            "强势股洗盘·长阴加长阳反包（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5156,14 +2317,12 @@
           "name": "GLBE",
           "change1d": 0.08056758056758051,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（较强）"
+            "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5174,12 +2333,10 @@
           "name": "PACS",
           "change1d": 0.07669237360754066,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
             "洗盘修复",
-            "强势股洗盘·缩量挖坑（再突破确认）",
-            "当天量能异常大（较强）"
+            "强势股洗盘·缩量挖坑（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5190,9 +2347,7 @@
           "name": "CG",
           "change1d": 0.04523227383863082,
           "tags": [
-            "优先策略：当天量能异常大",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5203,12 +2358,10 @@
           "name": "SHAK",
           "change1d": 0.03820929569432563,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
             "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5219,12 +2372,10 @@
           "name": "CENTA",
           "change1d": 0.04088286932530738,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
             "平台突破",
-            "强势股洗盘·高开假阴线（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·高开假阴线（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5235,14 +2386,12 @@
           "name": "LSPD",
           "change1d": 0.052823315118396996,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5253,50 +2402,23 @@
           "name": "COCO",
           "change1d": 0.09683364047579168,
           "tags": [
-            "优先策略：当天量能异常大",
             "量价健康",
             "平台突破",
             "强势股洗盘·横盘箱体（再突破确认）",
-            "当天量能异常大（较强）"
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
-          "symbol": "PGNY",
-          "name": "PGNY",
-          "change1d": 0.03578802477632492,
+          "symbol": "NEE",
+          "name": "NEE",
+          "change1d": 0.04885568599549406,
           "tags": [
-            "多均线支撑",
+            "量价健康",
             "平台突破",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·横盘箱体（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ARQT",
-          "name": "ARQT",
-          "change1d": 0.06406249999999991,
-          "tags": [
-            "稳健慢牛",
-            "量价健康",
-            "强势股洗盘·高开假阴线（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FIG",
-          "name": "FIG",
-          "change1d": 0.052306229196386056,
-          "tags": [
-            "量价健康",
-            "强势股洗盘·长阴加长阳反包（再突破确认）"
+            "强势股洗盘·连续长上影（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "主线＋确认形态",
@@ -5318,26 +2440,14 @@
           "verification": "saved"
         },
         {
-          "symbol": "NEE",
-          "name": "NEE",
-          "change1d": 0.04885568599549406,
-          "tags": [
-            "量价健康",
-            "平台突破",
-            "强势股洗盘·连续长上影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "MMM",
           "name": "MMM",
           "change1d": 0.09545326179045444,
           "tags": [
             "量价健康",
             "平台突破",
-            "强势股洗盘·长上影+长下影（再突破确认）"
+            "强势股洗盘·长上影+长下影（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5747,7 +2857,8 @@
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -5989,6 +3100,19 @@
           "verification": "saved"
         },
         {
+          "symbol": "ARQT",
+          "name": "ARQT",
+          "change1d": 0.06406249999999991,
+          "tags": [
+            "稳健慢牛",
+            "量价健康",
+            "强势股洗盘·高开假阴线（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "TBBB",
           "name": "TBBB",
           "change1d": 0.03334921391138623,
@@ -5996,7 +3120,8 @@
             "稳健慢牛",
             "量价健康",
             "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -6401,7 +3526,8 @@
             "稳健慢牛",
             "量价健康",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
+            "强势股洗盘·十字星整理（再突破确认）",
+            "当天量能异常大"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -6533,6 +3659,18 @@
           "verification": "saved"
         },
         {
+          "symbol": "FIG",
+          "name": "FIG",
+          "change1d": 0.052306229196386056,
+          "tags": [
+            "量价健康",
+            "强势股洗盘·长阴加长阳反包（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "PRCH",
           "name": "PRCH",
           "change1d": 0.0018587360594795044,
@@ -6550,14 +3688,12 @@
           "name": "NOMD",
           "change1d": 0.02285714285714291,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
             "平台突破",
             "紧密K线",
-            "强势股洗盘·高开假阴线（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·高开假阴线（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -6568,11 +3704,22 @@
           "name": "SITC",
           "change1d": 0.013623978201634968,
           "tags": [
-            "优先策略：当天量能异常大",
             "稳健慢牛",
             "量价健康",
-            "强势股洗盘·长上影+长下影（再突破确认）",
-            "当天量能异常大（高质量）"
+            "强势股洗盘·长上影+长下影（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "形态确认／暂无当日主线",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ADV",
+          "name": "ADV",
+          "change1d": 0.360891938250429,
+          "tags": [
+            "量价健康",
+            "平台突破",
+            "强势股洗盘·长阴加长阳反包（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -6614,6 +3761,20 @@
           "tags": [
             "稳健慢牛",
             "强势股洗盘·十字星整理（再突破确认）"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "形态确认／暂无当日主线",
+          "verification": "saved"
+        },
+        {
+          "symbol": "PGNY",
+          "name": "PGNY",
+          "change1d": 0.03578802477632492,
+          "tags": [
+            "多均线支撑",
+            "平台突破",
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -6969,19 +4130,6 @@
             "稳健慢牛",
             "量价健康",
             "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ADV",
-          "name": "ADV",
-          "change1d": 0.360891938250429,
-          "tags": [
-            "量价健康",
-            "平台突破",
-            "强势股洗盘·长阴加长阳反包（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -7925,9 +5073,7 @@
           "name": "IRM",
           "change1d": 0.016882337818150628,
           "tags": [
-            "优先策略：当天量能异常大",
-            "紧密K线",
-            "当天量能异常大（高质量）"
+            "紧密K线"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -7938,10 +5084,8 @@
           "name": "KOF",
           "change1d": -0.0001717917883524711,
           "tags": [
-            "优先策略：当天量能异常大",
             "多均线支撑",
-            "紧密K线",
-            "当天量能异常大（高质量）"
+            "紧密K线"
           ],
           "stage": "出货风险",
           "candidateTier": "形态确认／暂无当日主线",
@@ -8002,7 +5146,8 @@
           "name": "JXN",
           "change1d": -0.02346249555634561,
           "tags": [
-            "量价健康"
+            "量价健康",
+            "当天量能异常大"
           ],
           "stage": "建仓观察",
           "candidateTier": "普通观察",
@@ -8151,9 +5296,31 @@
       "reason": "",
       "picks": [
         {
-          "symbol": "CLOV",
-          "name": "CLOV",
-          "change1d": 0.09324009324009341,
+          "symbol": "FSLR",
+          "name": "FSLR",
+          "change1d": 0.046315223238300174,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "QS",
+          "name": "QS",
+          "change1d": 0.0752427184466018,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ENLT",
+          "name": "ENLT",
+          "change1d": 0.044787644787644965,
           "tags": [
             "跳空高开"
           ],
@@ -8165,17 +5332,6 @@
           "symbol": "UBER",
           "name": "UBER",
           "change1d": 0.04909909909909915,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FSLR",
-          "name": "FSLR",
-          "change1d": 0.046315223238300174,
           "tags": [
             "跳空高开"
           ],
@@ -8198,17 +5354,6 @@
           "symbol": "ISRG",
           "name": "ISRG",
           "change1d": 0.09381735677821901,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "QS",
-          "name": "QS",
-          "change1d": 0.0752427184466018,
           "tags": [
             "跳空高开"
           ],
@@ -8492,6 +5637,17 @@
           "verification": "saved"
         },
         {
+          "symbol": "PDM",
+          "name": "PDM",
+          "change1d": 0.05334728033472791,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "LSPD",
           "name": "LSPD",
           "change1d": 0.052823315118396996,
@@ -8668,6 +5824,17 @@
           "verification": "saved"
         },
         {
+          "symbol": "CLOV",
+          "name": "CLOV",
+          "change1d": 0.09324009324009341,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "SNDA",
           "name": "SNDA",
           "change1d": 0.08725029377203297,
@@ -8811,42 +5978,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "ENLT",
-          "name": "ENLT",
-          "change1d": 0.044787644787644965,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LOW",
-          "name": "LOW",
-          "change1d": 0.07498359733808235,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PYPL",
-          "name": "PYPL",
-          "change1d": 0.034186565882150965,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FIG",
-          "name": "FIG",
-          "change1d": 0.052306229196386056,
+          "symbol": "NEE",
+          "name": "NEE",
+          "change1d": 0.04885568599549406,
           "tags": [
             "跳空高开"
           ],
@@ -8866,9 +6000,20 @@
           "verification": "saved"
         },
         {
-          "symbol": "NEE",
-          "name": "NEE",
-          "change1d": 0.04885568599549406,
+          "symbol": "LOW",
+          "name": "LOW",
+          "change1d": 0.07498359733808235,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "强势板块＋确认形态",
+          "verification": "saved"
+        },
+        {
+          "symbol": "PYPL",
+          "name": "PYPL",
+          "change1d": 0.034186565882150965,
           "tags": [
             "跳空高开"
           ],
@@ -9526,6 +6671,17 @@
           "verification": "saved"
         },
         {
+          "symbol": "FIG",
+          "name": "FIG",
+          "change1d": 0.052306229196386056,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "独立量价强势＋确认形态",
+          "verification": "saved"
+        },
+        {
           "symbol": "LYV",
           "name": "LYV",
           "change1d": 0.02409571196958682,
@@ -9691,31 +6847,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "TOST",
-          "name": "TOST",
-          "change1d": 0.05487623024157462,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MFC",
-          "name": "MFC",
-          "change1d": 0.027020991514068893,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ALGT",
-          "name": "ALGT",
-          "change1d": 0.09495030889067957,
+          "symbol": "NXT",
+          "name": "NXT",
+          "change1d": 0.1112268277442201,
           "tags": [
             "跳空高开"
           ],
@@ -9724,24 +6858,46 @@
           "verification": "saved"
         },
         {
-          "symbol": "MCD",
-          "name": "MCD",
-          "change1d": 0.06531326034063256,
+          "symbol": "SHLS",
+          "name": "SHLS",
+          "change1d": 0.0814639905548995,
           "tags": [
             "跳空高开"
           ],
-          "stage": "拉升启动",
+          "stage": "观察",
           "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
         {
-          "symbol": "IPAR",
-          "name": "IPAR",
-          "change1d": 0.05534204458109149,
+          "symbol": "RIVN",
+          "name": "RIVN",
+          "change1d": 0.05793829947328821,
           "tags": [
             "跳空高开"
           ],
-          "stage": "建仓观察",
+          "stage": "观察",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "RUN",
+          "name": "RUN",
+          "change1d": 0.012672811059907696,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "EVGO",
+          "name": "EVGO",
+          "change1d": -0.010928961748633892,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
           "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
@@ -9757,6 +6913,83 @@
           "verification": "saved"
         },
         {
+          "symbol": "MSFT",
+          "name": "MSFT",
+          "change1d": 0.06681510201731311,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "BMY",
+          "name": "BMY",
+          "change1d": 0.04018797601685287,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "REGN",
+          "name": "REGN",
+          "change1d": -0.043858387441439994,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "TOST",
+          "name": "TOST",
+          "change1d": 0.05487623024157462,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "MCD",
+          "name": "MCD",
+          "change1d": 0.06531326034063256,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "RACE",
+          "name": "RACE",
+          "change1d": 0.04262603370542717,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "V",
+          "name": "V",
+          "change1d": 0.038413966985395565,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
           "symbol": "HD",
           "name": "HD",
           "change1d": 0.06527602949109856,
@@ -9768,13 +7001,13 @@
           "verification": "saved"
         },
         {
-          "symbol": "MSFT",
-          "name": "MSFT",
-          "change1d": 0.06681510201731311,
+          "symbol": "DASH",
+          "name": "DASH",
+          "change1d": 0.08329696705214928,
           "tags": [
             "跳空高开"
           ],
-          "stage": "拉升启动",
+          "stage": "观察",
           "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
@@ -9790,9 +7023,20 @@
           "verification": "saved"
         },
         {
-          "symbol": "REGN",
-          "name": "REGN",
-          "change1d": -0.043858387441439994,
+          "symbol": "SNAP",
+          "name": "SNAP",
+          "change1d": 0.05903398926654746,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "SCHW",
+          "name": "SCHW",
+          "change1d": 0.04581093189964158,
           "tags": [
             "跳空高开"
           ],
@@ -9845,94 +7089,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NXT",
-          "name": "NXT",
-          "change1d": 0.1112268277442201,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RIVN",
-          "name": "RIVN",
-          "change1d": 0.05793829947328821,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RACE",
-          "name": "RACE",
-          "change1d": 0.04262603370542717,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RUN",
-          "name": "RUN",
-          "change1d": 0.012672811059907696,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EVGO",
-          "name": "EVGO",
-          "change1d": -0.010928961748633892,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DASH",
-          "name": "DASH",
-          "change1d": 0.08329696705214928,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SNAP",
-          "name": "SNAP",
-          "change1d": 0.05903398926654746,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SCHW",
-          "name": "SCHW",
-          "change1d": 0.04581093189964158,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
           "symbol": "APP",
           "name": "APP",
           "change1d": 0.10687955684086181,
@@ -9941,6 +7097,17 @@
           ],
           "stage": "观察",
           "candidateTier": "主线形态待确认",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ADV",
+          "name": "ADV",
+          "change1d": 0.360891938250429,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
         },
         {
@@ -10021,17 +7188,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ADV",
-          "name": "ADV",
-          "change1d": 0.360891938250429,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "CNDT",
           "name": "CNDT",
           "change1d": 0.10738255033557031,
@@ -10062,6 +7218,17 @@
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
+          "verification": "saved"
+        },
+        {
+          "symbol": "DUOL",
+          "name": "DUOL",
+          "change1d": 0.2599218750000001,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
           "verification": "saved"
         },
         {
@@ -10589,17 +7756,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "V",
-          "name": "V",
-          "change1d": 0.038413966985395565,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -11220,6 +8376,17 @@
           "verification": "saved"
         },
         {
+          "symbol": "MFC",
+          "name": "MFC",
+          "change1d": 0.027020991514068893,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "拉升启动",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
           "symbol": "SKY",
           "name": "SKY",
           "change1d": 0.11346532360773409,
@@ -11300,17 +8467,6 @@
           "symbol": "VNO",
           "name": "VNO",
           "change1d": 0.0714496604664896,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SHLS",
-          "name": "SHLS",
-          "change1d": 0.0814639905548995,
           "tags": [
             "跳空高开"
           ],
@@ -11443,6 +8599,17 @@
           "symbol": "KAI",
           "name": "KAI",
           "change1d": 0.09112769192687153,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "ALGT",
+          "name": "ALGT",
+          "change1d": 0.09495030889067957,
           "tags": [
             "跳空高开"
           ],
@@ -11641,17 +8808,6 @@
           "symbol": "CMCSA",
           "name": "CMCSA",
           "change1d": 0.04985213350232365,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BMY",
-          "name": "BMY",
-          "change1d": 0.04018797601685287,
           "tags": [
             "跳空高开"
           ],
@@ -12672,17 +9828,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "PDM",
-          "name": "PDM",
-          "change1d": 0.05334728033472791,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "AORT",
           "name": "AORT",
           "change1d": 0.11556305356389696,
@@ -13460,6 +10605,17 @@
             "跳空高开"
           ],
           "stage": "观察",
+          "candidateTier": "普通观察",
+          "verification": "saved"
+        },
+        {
+          "symbol": "IPAR",
+          "name": "IPAR",
+          "change1d": 0.05534204458109149,
+          "tags": [
+            "跳空高开"
+          ],
+          "stage": "建仓观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -14248,17 +11404,6 @@
           "symbol": "AU",
           "name": "AU",
           "change1d": 0.07984277115833427,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DUOL",
-          "name": "DUOL",
-          "change1d": 0.2599218750000001,
           "tags": [
             "跳空高开"
           ],
@@ -16264,28 +13409,8 @@
   ],
   "watchlist": [
     {
-      "symbol": "GPOR",
-      "name": "GPOR",
-      "note": null
-    },
-    {
-      "symbol": "ADP",
-      "name": "ADP",
-      "note": null
-    },
-    {
       "symbol": "BMRN",
       "name": "BMRN",
-      "note": null
-    },
-    {
-      "symbol": "CX",
-      "name": "CX",
-      "note": null
-    },
-    {
-      "symbol": "DNLI",
-      "name": "DNLI",
       "note": null
     },
     {
@@ -16314,11 +13439,6 @@
       "note": null
     },
     {
-      "symbol": "RCKY",
-      "name": "RCKY",
-      "note": null
-    },
-    {
       "symbol": "RRX",
       "name": "RRX",
       "note": null
@@ -16335,622 +13455,622 @@
     }
   ],
   "dashboard": {
-    "generatedAt": "2026-11-05T05:40:53.515Z",
+    "generatedAt": "2026-11-05T16:36:04.425Z",
     "quotes": [
       {
         "symbol": "SPY",
         "name": "标普500",
-        "price": 766.73,
-        "change": 0.016371059678146338,
-        "time": "2026-11-04T05:00:00Z"
+        "price": 743.95,
+        "change": -0.029710589125246156,
+        "time": "2026-11-05T05:00:00Z"
       },
       {
         "symbol": "QQQ",
         "name": "纳斯达克100",
-        "price": 691.68,
-        "change": 0.009280336193310923,
-        "time": "2026-11-04T05:00:00Z"
+        "price": 660.02,
+        "change": -0.04577261161230628,
+        "time": "2026-11-05T05:00:00Z"
       },
       {
         "symbol": "DIA",
         "name": "道琼斯",
-        "price": 533.04,
-        "change": 0.030985261692004107,
-        "time": "2026-11-04T05:00:00Z"
+        "price": 521.015,
+        "change": -0.02255928260543294,
+        "time": "2026-11-05T05:00:00Z"
       },
       {
         "symbol": "IWM",
         "name": "罗素2000",
-        "price": 283.94,
-        "change": 0.01468748883250548,
-        "time": "2026-11-04T05:00:00Z"
+        "price": 275.485,
+        "change": -0.029777417764316305,
+        "time": "2026-11-05T05:00:00Z"
       }
     ],
     "heat": {
       "industry": {
         "items": [
           {
-            "name": "白银",
-            "change": 0.10185487978512629
-          },
-          {
-            "name": "黄金",
-            "change": 0.08983779846637621
-          },
-          {
-            "name": "其他贵金属和采矿",
-            "change": 0.08544253093797785
-          },
-          {
-            "name": "抵押贷款金融",
-            "change": 0.08366205156361131
-          },
-          {
             "name": "广告代理",
-            "change": 0.0814062377132144
-          },
-          {
-            "name": "医疗保健设施",
-            "change": 0.07958516499747235
-          },
-          {
-            "name": "航空服务",
-            "change": 0.0759454924083386
-          },
-          {
-            "name": "住宅施工",
-            "change": 0.0735506414133515
-          },
-          {
-            "name": "医疗设备和用品",
-            "change": 0.0711525330166592
-          },
-          {
-            "name": "旅游服务",
-            "change": 0.06910110046316752
-          },
-          {
-            "name": "家居装修零售",
-            "change": 0.06817227520999186
-          },
-          {
-            "name": "医疗设备",
-            "change": 0.06538287605574743
-          },
-          {
-            "name": "食品分销",
-            "change": 0.06513368430732644
-          },
-          {
-            "name": "太阳能",
-            "change": 0.06148952481521311
-          },
-          {
-            "name": "服装零售",
-            "change": 0.05934637168461268
-          },
-          {
-            "name": "电子游戏与多媒体",
-            "change": 0.05931338327384738
-          },
-          {
-            "name": "互联网零售",
-            "change": 0.05905663810462278
-          },
-          {
-            "name": "休闲车",
-            "change": 0.05797529733589776
-          },
-          {
-            "name": "鞋类及配饰",
-            "change": 0.055436636198282284
-          },
-          {
-            "name": "餐厅",
-            "change": 0.05501365930559331
-          },
-          {
-            "name": "医疗分销",
-            "change": 0.05406085040848732
-          },
-          {
-            "name": "汽车和卡车经销",
-            "change": 0.05373846437684648
-          },
-          {
-            "name": "办公室REITs",
-            "change": 0.053365272803824214
-          },
-          {
-            "name": "服装制造",
-            "change": 0.052154628942032225
-          },
-          {
-            "name": "消费电子产品",
-            "change": 0.05211704366262145
-          },
-          {
-            "name": "木材与木制品生产",
-            "change": 0.05121636597907825
-          },
-          {
-            "name": "综合企业",
-            "change": 0.05077169163986401
-          },
-          {
-            "name": "资产管理",
-            "change": 0.05064162219761674
-          },
-          {
-            "name": "家具、灯具与家电",
-            "change": 0.05053309988241139
-          },
-          {
-            "name": "百货公司",
-            "change": 0.050465251393338934
-          },
-          {
-            "name": "专业零售",
-            "change": 0.049753265716653165
-          },
-          {
-            "name": "房地产开发",
-            "change": 0.0465484712336333
-          },
-          {
-            "name": "建筑材料",
-            "change": 0.0465253880185068
-          },
-          {
-            "name": "包装食品",
-            "change": 0.04538452930710429
-          },
-          {
-            "name": "酿酒厂",
-            "change": 0.04398352920657972
-          },
-          {
-            "name": "房地产服务",
-            "change": 0.04320066298201757
+            "change": 0.1727696917237745
           },
           {
             "name": "奢侈品",
-            "change": 0.042771677224614245
-          },
-          {
-            "name": "休闲",
-            "change": 0.04021436390051519
-          },
-          {
-            "name": "度假村与赌场",
-            "change": 0.04021814510237167
-          },
-          {
-            "name": "软件基础设施",
-            "change": 0.03973868723066959
-          },
-          {
-            "name": "多元化房地产",
-            "change": 0.03925520371039061
-          },
-          {
-            "name": "保险经纪",
-            "change": 0.039205909668221926
-          },
-          {
-            "name": "多元化银行",
-            "change": 0.039150658240658574
-          },
-          {
-            "name": "多元化保险",
-            "change": 0.03839612283108218
-          },
-          {
-            "name": "抵押贷款REITs",
-            "change": 0.03707816134641749
-          },
-          {
-            "name": "娱乐",
-            "change": 0.03664185961104452
-          },
-          {
-            "name": "糖果",
-            "change": 0.03646591733567674
-          },
-          {
-            "name": "纸及纸制品",
-            "change": 0.036291870954266364
-          },
-          {
-            "name": "专业REITs",
-            "change": 0.03597778547497305
-          },
-          {
-            "name": "机场和航空服务",
-            "change": 0.03535673790348694
-          },
-          {
-            "name": "杂货店",
-            "change": 0.03504891597332497
-          },
-          {
-            "name": "折扣店",
-            "change": 0.03497139203788327
-          },
-          {
-            "name": "个性化服务",
-            "change": 0.03475041598659834
-          },
-          {
-            "name": "住宅REITs",
-            "change": 0.033735744885037756
-          },
-          {
-            "name": "家庭和个人用品",
-            "change": 0.03359809285757775
-          },
-          {
-            "name": "啤酒",
-            "change": 0.033447243058407045
-          },
-          {
-            "name": "信贷",
-            "change": 0.032885759617033515
+            "change": 0.031003401898235278
           },
           {
             "name": "农业投入品",
-            "change": 0.03134796052814611
-          },
-          {
-            "name": "金融数据与证券交易所",
-            "change": 0.030328321386480186
-          },
-          {
-            "name": "资本市场",
-            "change": 0.030302389420631803
-          },
-          {
-            "name": "包装与容器",
-            "change": 0.030181676532966682
-          },
-          {
-            "name": "地区银行",
-            "change": 0.02999659598328233
-          },
-          {
-            "name": "互联网内容与信息",
-            "change": 0.02898467941931717
-          },
-          {
-            "name": "生物技术",
-            "change": 0.028935196905312495
-          },
-          {
-            "name": "医药零售",
-            "change": 0.028748369315249964
-          },
-          {
-            "name": "健康信息服务",
-            "change": 0.028231299222173437
-          },
-          {
-            "name": "一般药品制造商",
-            "change": 0.027915180555086395
-          },
-          {
-            "name": "零售REITs",
-            "change": 0.02791131820341934
-          },
-          {
-            "name": "医疗设施REITs",
-            "change": 0.027740173942822223
-          },
-          {
-            "name": "受监管自来水",
-            "change": 0.02771935871728761
-          },
-          {
-            "name": "人力资源与就业服务",
-            "change": 0.027612050979242395
-          },
-          {
-            "name": "住宿",
-            "change": 0.027044439725317296
-          },
-          {
-            "name": "农产品",
-            "change": 0.02688102033551152
-          },
-          {
-            "name": "其他工业金属与采矿",
-            "change": 0.026722352139068147
-          },
-          {
-            "name": "广播",
-            "change": 0.026353676022128195
-          },
-          {
-            "name": "专门保险",
-            "change": 0.02612665591133512
-          },
-          {
-            "name": "汽车零件",
-            "change": 0.025981767164418308
-          },
-          {
-            "name": "综合货运与物流",
-            "change": 0.025788486800098626
-          },
-          {
-            "name": "商业设备和用品",
-            "change": 0.025628156311070918
-          },
-          {
-            "name": "应用软件",
-            "change": 0.025565061137856393
-          },
-          {
-            "name": "专业商务服务",
-            "change": 0.024886244322923235
-          },
-          {
-            "name": "工业分销",
-            "change": 0.024727841965911778
-          },
-          {
-            "name": "财产和意外伤害保险",
-            "change": 0.024376363278686804
-          },
-          {
-            "name": "电信服务",
-            "change": 0.023979010654109484
-          },
-          {
-            "name": "特殊化工用品",
-            "change": 0.02336543563311694
-          },
-          {
-            "name": "非酒精饮料",
-            "change": 0.023320872881833002
-          },
-          {
-            "name": "工业REITs",
-            "change": 0.02314435621046492
-          },
-          {
-            "name": "专业与通用药品制造商",
-            "change": 0.022339940814344313
-          },
-          {
-            "name": "多元化REITs",
-            "change": 0.021658359627938294
-          },
-          {
-            "name": "受监管电力",
-            "change": 0.020894809315519708
-          },
-          {
-            "name": "铁路运输",
-            "change": 0.020413880048443606
-          },
-          {
-            "name": "铜",
-            "change": 0.02038560816862153
-          },
-          {
-            "name": "烟草",
-            "change": 0.01929080407679777
-          },
-          {
-            "name": "信息技术服务",
-            "change": 0.018235767650039897
-          },
-          {
-            "name": "教育培训",
-            "change": 0.018034432430188048
-          },
-          {
-            "name": "人寿保险",
-            "change": 0.01720015506190201
-          },
-          {
-            "name": "再保险",
-            "change": 0.017081324359130807
-          },
-          {
-            "name": "可再生能源公用事业",
-            "change": 0.01661275352879119
-          },
-          {
-            "name": "出版",
-            "change": 0.01434483801935706
-          },
-          {
-            "name": "博彩",
-            "change": 0.014235854372657815
-          },
-          {
-            "name": "安全与保护",
-            "change": 0.013200474628227175
-          },
-          {
-            "name": "废物管理",
-            "change": 0.012689300757168367
-          },
-          {
-            "name": "金融集团",
-            "change": 0.01219107446816655
-          },
-          {
-            "name": "酒店与旅馆REITs",
-            "change": 0.011040647210105224
-          },
-          {
-            "name": "诊断与研究",
-            "change": 0.010317059041909655
-          },
-          {
-            "name": "受监管天然气",
-            "change": 0.009210912906853264
-          },
-          {
-            "name": "工具及配件",
-            "change": 0.00870706785026547
+            "change": 0.013920975889253012
           },
           {
             "name": "咨询服务",
-            "change": 0.007847879433224575
+            "change": 0.012868621079206208
           },
           {
-            "name": "货运",
-            "change": 0.0074830721795837675
+            "name": "电子游戏与多媒体",
+            "change": 0.0113380829802382
           },
           {
-            "name": "医疗计划",
-            "change": 0.004202882553585155
+            "name": "黄金",
+            "change": 0.011033148926805523
           },
           {
-            "name": "基础设施运营",
-            "change": 0.004132231404834864
+            "name": "酿酒厂",
+            "change": 0.009308479427790992
           },
           {
-            "name": "铝",
-            "change": 0.0039690664235532734
+            "name": "废物管理",
+            "change": 0.008228450972528462
           },
           {
-            "name": "焦炭",
-            "change": 0.0013545547374044836
+            "name": "医疗分销",
+            "change": 0.006993590563141116
           },
           {
-            "name": "污染控制与治理",
-            "change": 8.834032720119791e-05
+            "name": "财产和意外伤害保险",
+            "change": 0.004070997239543773
           },
           {
-            "name": "金属加工",
-            "change": -0.00042698342046050065
+            "name": "啤酒",
+            "change": 0.003122229006527507
           },
           {
-            "name": "电子与计算机分销",
-            "change": -0.0022304839896073415
+            "name": "受监管自来水",
+            "change": 0.0029086586941544086
           },
           {
-            "name": "空壳公司",
-            "change": -0.0034625373672144133
+            "name": "家庭和个人用品",
+            "change": 0.0012289486063282772
           },
           {
-            "name": "钢",
-            "change": -0.005768897058357175
+            "name": "非酒精饮料",
+            "change": 0.000686351801738221
           },
           {
-            "name": "多元化公用事业",
-            "change": -0.010885481395894358
-          },
-          {
-            "name": "建筑产品与设备",
-            "change": -0.012147375251607428
-          },
-          {
-            "name": "铀",
-            "change": -0.0129756564849542
-          },
-          {
-            "name": "通讯设备",
-            "change": -0.013497472335104309
-          },
-          {
-            "name": "汽车制造",
-            "change": -0.015419756206782822
-          },
-          {
-            "name": "农业和重型机械",
-            "change": -0.016897108311201336
-          },
-          {
-            "name": "租赁服务",
-            "change": -0.016922287054593897
-          },
-          {
-            "name": "纺织制造",
-            "change": -0.023641871548431812
-          },
-          {
-            "name": "化学制品",
-            "change": -0.023767589032641766
-          },
-          {
-            "name": "科技仪器",
-            "change": -0.027388858665865205
-          },
-          {
-            "name": "航空航天与国防",
-            "change": -0.02899717768520377
-          },
-          {
-            "name": "半导体",
-            "change": -0.03036940722288674
-          },
-          {
-            "name": "油气设备与服务",
-            "change": -0.037366712834049944
-          },
-          {
-            "name": "油气中游",
-            "change": -0.03744309999251134
-          },
-          {
-            "name": "专用工业机械",
-            "change": -0.0378757747024081
-          },
-          {
-            "name": "半导体设备与材料",
-            "change": -0.0388083765191151
-          },
-          {
-            "name": "海运",
-            "change": -0.040942482973561074
+            "name": "折扣店",
+            "change": 0.000305351084482562
           },
           {
             "name": "综合油气",
-            "change": -0.04248437835284238
-          },
-          {
-            "name": "计算机硬件",
-            "change": -0.04361757664001981
-          },
-          {
-            "name": "电子元件",
-            "change": -0.05750086696296326
+            "change": -0.000700477908101847
           },
           {
             "name": "油气勘探与开发",
-            "change": -0.05913602555622734
+            "change": -0.001610994392623678
           },
           {
-            "name": "动力煤",
-            "change": -0.05994155931620861
+            "name": "受监管电力",
+            "change": -0.0016216983414200376
+          },
+          {
+            "name": "专门保险",
+            "change": -0.0016404626013097278
+          },
+          {
+            "name": "多元化保险",
+            "change": -0.002123423000531877
+          },
+          {
+            "name": "个性化服务",
+            "change": -0.00258738275192227
+          },
+          {
+            "name": "住宅REITs",
+            "change": -0.0028656499934423046
+          },
+          {
+            "name": "再保险",
+            "change": -0.0031024853324504416
+          },
+          {
+            "name": "空壳公司",
+            "change": -0.004060673547843053
+          },
+          {
+            "name": "受监管天然气",
+            "change": -0.004934088766141785
+          },
+          {
+            "name": "零售REITs",
+            "change": -0.005157461526997125
+          },
+          {
+            "name": "医疗设施REITs",
+            "change": -0.00550826015957502
+          },
+          {
+            "name": "糖果",
+            "change": -0.005650445118671682
+          },
+          {
+            "name": "其他工业金属与采矿",
+            "change": -0.005832666249288432
+          },
+          {
+            "name": "保险经纪",
+            "change": -0.006043577122122909
+          },
+          {
+            "name": "杂货店",
+            "change": -0.00610190848689394
+          },
+          {
+            "name": "农产品",
+            "change": -0.00669642035685541
+          },
+          {
+            "name": "专业商务服务",
+            "change": -0.008472644552752262
+          },
+          {
+            "name": "电信服务",
+            "change": -0.009013567733409009
+          },
+          {
+            "name": "多元化REITs",
+            "change": -0.009277942483459537
+          },
+          {
+            "name": "油气中游",
+            "change": -0.009652044821709818
+          },
+          {
+            "name": "博彩",
+            "change": -0.010669048783865194
+          },
+          {
+            "name": "医疗计划",
+            "change": -0.010818241310436216
+          },
+          {
+            "name": "消费电子产品",
+            "change": -0.010974156381130688
+          },
+          {
+            "name": "医疗保健设施",
+            "change": -0.011178914087252603
+          },
+          {
+            "name": "化学制品",
+            "change": -0.01222942844484276
+          },
+          {
+            "name": "信息技术服务",
+            "change": -0.012316745190718728
+          },
+          {
+            "name": "娱乐",
+            "change": -0.012577134565514386
+          },
+          {
+            "name": "出版",
+            "change": -0.01264326638025714
+          },
+          {
+            "name": "多元化房地产",
+            "change": -0.012812093613372289
+          },
+          {
+            "name": "工业REITs",
+            "change": -0.012941833349286674
+          },
+          {
+            "name": "家居装修零售",
+            "change": -0.014686238371214052
           },
           {
             "name": "油气炼制与销售",
-            "change": -0.060934473392869865
+            "change": -0.01505342288441653
+          },
+          {
+            "name": "互联网内容与信息",
+            "change": -0.015312754593792046
+          },
+          {
+            "name": "住宅施工",
+            "change": -0.0155561951223969
+          },
+          {
+            "name": "地区银行",
+            "change": -0.015836971264542397
+          },
+          {
+            "name": "烟草",
+            "change": -0.01643941627436924
+          },
+          {
+            "name": "一般药品制造商",
+            "change": -0.016452403529106457
+          },
+          {
+            "name": "基础设施运营",
+            "change": -0.016460905350120576
+          },
+          {
+            "name": "其他贵金属和采矿",
+            "change": -0.01656718855925526
+          },
+          {
+            "name": "住宿",
+            "change": -0.017166140662428823
+          },
+          {
+            "name": "纸及纸制品",
+            "change": -0.01728003045254829
+          },
+          {
+            "name": "人寿保险",
+            "change": -0.017546703663674796
+          },
+          {
+            "name": "包装食品",
+            "change": -0.018144880580552837
+          },
+          {
+            "name": "信贷",
+            "change": -0.01862508344532968
+          },
+          {
+            "name": "海运",
+            "change": -0.018927739491282996
+          },
+          {
+            "name": "食品分销",
+            "change": -0.018955449443974978
+          },
+          {
+            "name": "互联网零售",
+            "change": -0.01914812047169769
+          },
+          {
+            "name": "污染控制与治理",
+            "change": -0.019997630391950637
+          },
+          {
+            "name": "工具及配件",
+            "change": -0.0200853840870086
+          },
+          {
+            "name": "特殊化工用品",
+            "change": -0.020516235184943103
+          },
+          {
+            "name": "广播",
+            "change": -0.020851529370800058
+          },
+          {
+            "name": "专业与通用药品制造商",
+            "change": -0.020984906802519666
+          },
+          {
+            "name": "休闲",
+            "change": -0.02102035415924451
+          },
+          {
+            "name": "金融数据与证券交易所",
+            "change": -0.021126844085478814
+          },
+          {
+            "name": "抵押贷款金融",
+            "change": -0.021243705235804714
+          },
+          {
+            "name": "铁路运输",
+            "change": -0.02135218558273939
+          },
+          {
+            "name": "机场和航空服务",
+            "change": -0.021647048504760232
+          },
+          {
+            "name": "人力资源与就业服务",
+            "change": -0.022049730758485722
+          },
+          {
+            "name": "专业零售",
+            "change": -0.022164696092334905
+          },
+          {
+            "name": "抵押贷款REITs",
+            "change": -0.022315297305630876
+          },
+          {
+            "name": "医疗设备",
+            "change": -0.022512178782172886
+          },
+          {
+            "name": "家具、灯具与家电",
+            "change": -0.022980084983717616
+          },
+          {
+            "name": "多元化公用事业",
+            "change": -0.023031379299018325
+          },
+          {
+            "name": "餐厅",
+            "change": -0.023156454207232405
+          },
+          {
+            "name": "度假村与赌场",
+            "change": -0.02331728122795412
+          },
+          {
+            "name": "综合货运与物流",
+            "change": -0.023832055602759722
+          },
+          {
+            "name": "应用软件",
+            "change": -0.024018082333327476
+          },
+          {
+            "name": "房地产开发",
+            "change": -0.02424361185104977
+          },
+          {
+            "name": "医疗设备和用品",
+            "change": -0.024661176023608674
+          },
+          {
+            "name": "多元化银行",
+            "change": -0.024904072401872854
+          },
+          {
+            "name": "油气设备与服务",
+            "change": -0.02510621426014882
+          },
+          {
+            "name": "工业分销",
+            "change": -0.026880040362688814
+          },
+          {
+            "name": "安全与保护",
+            "change": -0.027345602854785173
           },
           {
             "name": "油气钻探",
-            "change": -0.07226924265078409
+            "change": -0.027574605653844994
           },
           {
-            "name": "建筑工程",
-            "change": -0.07756645839665668
+            "name": "办公室REITs",
+            "change": -0.02758425401426418
           },
           {
-            "name": "电气设备及零件",
-            "change": -0.0861329646373834
+            "name": "房地产服务",
+            "change": -0.0277054591035954
+          },
+          {
+            "name": "健康信息服务",
+            "change": -0.028218934672444195
+          },
+          {
+            "name": "汽车零件",
+            "change": -0.02824656653449647
+          },
+          {
+            "name": "专业REITs",
+            "change": -0.028332352014278493
+          },
+          {
+            "name": "综合企业",
+            "change": -0.028640487176589607
+          },
+          {
+            "name": "木材与木制品生产",
+            "change": -0.03045152973871818
+          },
+          {
+            "name": "农业和重型机械",
+            "change": -0.03078493868268933
+          },
+          {
+            "name": "货运",
+            "change": -0.031097378293977282
+          },
+          {
+            "name": "焦炭",
+            "change": -0.03257203563720705
+          },
+          {
+            "name": "诊断与研究",
+            "change": -0.032988210758664344
+          },
+          {
+            "name": "鞋类及配饰",
+            "change": -0.03310447360059534
+          },
+          {
+            "name": "金融集团",
+            "change": -0.03320157079901975
+          },
+          {
+            "name": "百货公司",
+            "change": -0.03430576093527627
+          },
+          {
+            "name": "服装零售",
+            "change": -0.03545072409178847
+          },
+          {
+            "name": "建筑产品与设备",
+            "change": -0.03778198885394779
+          },
+          {
+            "name": "白银",
+            "change": -0.038175220626041284
+          },
+          {
+            "name": "酒店与旅馆REITs",
+            "change": -0.0395525240578081
+          },
+          {
+            "name": "资产管理",
+            "change": -0.03975091790624033
+          },
+          {
+            "name": "专用工业机械",
+            "change": -0.04015984400991773
+          },
+          {
+            "name": "生物技术",
+            "change": -0.040806000892648006
+          },
+          {
+            "name": "动力煤",
+            "change": -0.04099741228244189
+          },
+          {
+            "name": "软件基础设施",
+            "change": -0.04154346246879803
+          },
+          {
+            "name": "包装与容器",
+            "change": -0.04172199285920959
           },
           {
             "name": "独立电力生产商",
-            "change": -0.09059140349453716
+            "change": -0.043007282250373535
+          },
+          {
+            "name": "旅游服务",
+            "change": -0.043769922914486885
+          },
+          {
+            "name": "汽车和卡车经销",
+            "change": -0.043936309746520935
+          },
+          {
+            "name": "可再生能源公用事业",
+            "change": -0.0441626806885647
+          },
+          {
+            "name": "建筑材料",
+            "change": -0.04485961379196063
+          },
+          {
+            "name": "租赁服务",
+            "change": -0.04539900269785986
+          },
+          {
+            "name": "金属加工",
+            "change": -0.0457226733379533
+          },
+          {
+            "name": "休闲车",
+            "change": -0.04593218667230258
+          },
+          {
+            "name": "航空服务",
+            "change": -0.048491690122606144
+          },
+          {
+            "name": "钢",
+            "change": -0.04947819896130248
+          },
+          {
+            "name": "铝",
+            "change": -0.05061911091122762
+          },
+          {
+            "name": "教育培训",
+            "change": -0.05236130658927389
+          },
+          {
+            "name": "太阳能",
+            "change": -0.05573698202241869
+          },
+          {
+            "name": "资本市场",
+            "change": -0.056783051432120694
+          },
+          {
+            "name": "科技仪器",
+            "change": -0.05804935797944464
+          },
+          {
+            "name": "航空航天与国防",
+            "change": -0.060235137980426415
+          },
+          {
+            "name": "铜",
+            "change": -0.06059911431128699
+          },
+          {
+            "name": "铀",
+            "change": -0.062336102194641266
+          },
+          {
+            "name": "医药零售",
+            "change": -0.0626563054032838
+          },
+          {
+            "name": "电子与计算机分销",
+            "change": -0.06411932682540757
+          },
+          {
+            "name": "纺织制造",
+            "change": -0.06849702672386719
+          },
+          {
+            "name": "通讯设备",
+            "change": -0.06934677424929377
+          },
+          {
+            "name": "服装制造",
+            "change": -0.07261543244352842
+          },
+          {
+            "name": "汽车制造",
+            "change": -0.07466029592201683
+          },
+          {
+            "name": "建筑工程",
+            "change": -0.08066049612415069
+          },
+          {
+            "name": "半导体",
+            "change": -0.09074175904234409
+          },
+          {
+            "name": "商业设备和用品",
+            "change": -0.09308664777580647
+          },
+          {
+            "name": "电子元件",
+            "change": -0.09563792355792067
+          },
+          {
+            "name": "半导体设备与材料",
+            "change": -0.09798598580507284
+          },
+          {
+            "name": "电气设备及零件",
+            "change": -0.12398586014269722
+          },
+          {
+            "name": "计算机硬件",
+            "change": -0.1291308607487724
           }
         ],
-        "caption": "145 个板块 · 同步 1793864356.575644"
+        "caption": "145 个板块 · 同步 1793899384.7289338"
       },
       "concept": {
         "items": [
@@ -17396,34 +14516,34 @@
     },
     "news": [
       {
-        "headline": "‘You Are Either With Us or Against Us’: Scott Bessent Echoes Bush-Era Rhetoric as Treasury Sanctions Indian Nationals Amid Iran Crackdown",
-        "summary": "The U.S. has sanctioned alleged Iran-linked oil networks in India and Turkey, escalating Trump's economic pressure campaign against Tehran.",
-        "time": "2026-11-05T05:24:39Z"
+        "headline": "ASA International Group plc Announces Director/PDMR Share Transactions",
+        "summary": "ASA International Group plc has issued a regulatory notification regarding share transactions by its Directors or Persons Discharging Managerial Responsibilities (PDMRs).",
+        "time": "2026-11-05T16:32:44Z"
       },
       {
-        "headline": "'America Is Not Turning Back:' Trump's Biggest Political Setback Could Be Wall Street's Gain — Strategist Sees a Major Shift Coming for Oil, Inflation and Interest Rates",
-        "summary": "James E. Thorne says Democrats’ midterm win may push Trump toward lower rates, cheaper energy and stability, though Iran remains a key risk.",
-        "time": "2026-11-05T05:06:15Z"
+        "headline": "SAF-HOLLAND Announces Voting Rights Disclosure Regarding Own Shares",
+        "summary": "SAF-HOLLAND published a regulatory announcement regarding the acquisition or disposal of own shares, noting a threshold crossing as of September 10, 2026.",
+        "time": "2026-11-05T16:32:17Z"
       },
       {
-        "headline": "Pentagon Tech Chief Warns 535 Lawmakers Writing AI Rules ‘Could Kill the Industry’",
-        "summary": "Pentagon tech chief Emil Michael said Wednesday AI laws and regulations will be laid out in coming weeks, before a Democratic Congress acts.",
-        "time": "2026-11-05T04:58:04Z"
+        "headline": "CRH public limited company Files Form FWP",
+        "summary": "CRH public limited company filed a Free Writing Prospectus (Form FWP) with regulatory authorities on November 5, 2026.",
+        "time": "2026-11-05T16:32:09Z"
       },
       {
-        "headline": "Ted Cruz Blames Midterm Defeat on K-Shaped Economy, ‘Yawning Divide’ Between Elon Musk and Millions of Struggling Families",
-        "summary": "Ted Cruz says high prices cost Republicans Congress, and warns the economy could tip into recession if Democrats halt planned projects.",
-        "time": "2026-11-05T02:44:15Z"
+        "headline": "JPMorgan Chase & Co. Discloses Change in Voting Rights in HelloFresh SE",
+        "summary": "JPMorgan Chase & Co. has notified HelloFresh SE of a change in its voting rights, crossing a regulatory threshold as of October 29, 2026.",
+        "time": "2026-11-05T16:32:05Z"
       },
       {
-        "headline": "Cathie Wood Buys $47.4 Million of SpaceX as Democratic Congress Looms Over Elon Musk’s Businesses After Midterms",
-        "summary": "Ark added 348,406 SpaceX shares across three funds and trimmed Alphabet for a second straight session.",
-        "time": "2026-11-05T02:27:27Z"
+        "headline": "DEUTZ AG Publishes Updated Total Voting Rights",
+        "summary": "DEUTZ AG released a regulatory announcement regarding the total number of voting rights as of November 4, 2026.",
+        "time": "2026-11-05T16:31:51Z"
       },
       {
-        "headline": "Trump Spends 20 Minutes Praising ‘Miracle’ White House Ballroom After GOP Midterm Rout — Ted Lieu Asks if the President Even Got the Message",
-        "summary": "Trump promoted his White House ballroom after GOP midterm losses, prompting Ted Lieu to question whether he understood voters’ message.",
-        "time": "2026-11-05T02:10:15Z"
+        "headline": "Solar Stocks Had Their Best Rally Against Oil in 4 Years: Is the Clean Energy Trade Back?",
+        "summary": "Solar ETF TAN beat oil explorers fund XOP by nearly 13% Wednesday, its best day since 2022, as Democrats won Congress and crude sank on Iran bets.",
+        "time": "2026-11-05T15:56:13Z"
       }
     ],
     "stats": [
@@ -17433,21 +14553,21 @@
       },
       {
         "label": "上榜股票（去重）",
-        "value": 1091
+        "value": 961
       },
       {
         "label": "自选快照",
-        "value": 14
+        "value": 9
       }
     ],
     "metals": {
-      "gold": 4134.33,
-      "silver": 53.139,
-      "ratio": 77.80217919042511,
-      "time": "2026-11-05T03:13:07.063Z",
+      "gold": 4088.945,
+      "silver": 51.746,
+      "ratio": 79.01953774204769,
+      "time": "2026-11-05T16:02:05.839Z",
       "stale": false
     },
-    "summary": "市场温度69/100（指数与个股共振偏强）；上涨8879只、下跌3128只，54.7%站上20日均线；领涨方向：可选消费+4.23%、金融+3.48%、通信服务+3.45%。"
+    "summary": "市场温度69/100（偏强 / Risk-on）；上涨8879只、下跌3128只，54.7%站上20日均线；领涨方向：能源+0.41%、必选消费+0.02%、通信服务-0.57%。"
   },
   "stages": [
     "出货风险",
