@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASRUL AI · 美股量化雷达每日榜单</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0d0b;
+    --surface: #121614;
+    --surface-hover: #171c19;
+    --border: rgba(249, 241, 228, 0.09);
+    --text: #f2efe9;
+    --text-dim: rgba(242, 239, 233, 0.55);
+    --text-faint: rgba(242, 239, 233, 0.32);
+    --mint: #00d9a3;
+    --mint-dim: rgba(0, 217, 163, 0.12);
+    --acid: #d2fd78;
+    --red: #ff6b5e;
+    --amber: #e8b34b;
+    --font-display: "Space Grotesk", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --font-body: "Inter", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { min-height: 100dvh; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 细颗粒质感层 */
+  body::after {
+    content: "";
+    position: fixed; inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+  ::selection { background: var(--acid); color: #0a0d0b; }
+  a { color: var(--mint); }
+  button { font-family: inherit; }
+  button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--mint); outline-offset: 3px; border-radius: 4px;
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+
+  /* ============ 顶部品牌区 ============ */
+  .masthead {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 26px 0 22px; gap: 16px; flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { flex: none; }
+  .brand-name {
+    font-family: var(--font-display);
+    font-size: 21px; font-weight: 700; letter-spacing: 2.5px;
+  }
+  .brand-sub {
+    font-size: 11px; letter-spacing: 3px; color: var(--text-dim);
+    text-transform: uppercase; margin-top: 1px;
+  }
+  .live-dot {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12px; letter-spacing: 1.5px; color: var(--mint);
+    text-transform: uppercase;
+  }
+  .live-dot::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--mint); box-shadow: 0 0 10px rgba(0, 217, 163, 0.6);
+  }
+
+  /* ============ 标题与日期 ============ */
+  .headline { padding: 30px 0 26px; }
+  .headline h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4.6vw, 44px);
+    font-weight: 600; letter-spacing: -0.5px; line-height: 1.2;
+  }
+  .headline h1 em { font-style: normal; color: var(--mint); }
+  .headline p { color: var(--text-dim); margin-top: 10px; font-size: 15px; max-width: 65ch; }
+
+  .datebar {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .date-label { font-size: 11px; letter-spacing: 2px; color: var(--text-faint); text-transform: uppercase; }
+  #currentDate {
+    font-family: var(--font-display); font-size: 22px; font-weight: 600;
+    font-variant-numeric: tabular-nums; letter-spacing: 0.5px;
+  }
+  .date-nav { display: flex; gap: 8px; margin-left: auto; }
+  .date-nav button {
+    background: transparent; color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 8px;
+    min-width: 44px; min-height: 40px; padding: 8px 14px;
+    cursor: pointer; font-size: 15px;
+    transition: color .18s ease-out, border-color .18s ease-out, background .18s ease-out;
+  }
+  .date-nav button:hover:not(:disabled) { color: var(--mint); border-color: var(--mint); }
+  .date-nav button:disabled { opacity: 0.3; cursor: default; }
+  #latestBtn { font-size: 13px; }
+
+  .meta { color: var(--text-faint); font-size: 12.5px; padding: 12px 0 0; font-variant-numeric: tabular-nums; }
+
+  /* ============ 统计条 ============ */
+  .stats { display: flex; gap: 40px; padding: 22px 0 6px; flex-wrap: wrap; }
+  .stat-num {
+    font-family: var(--font-display); font-size: 30px; font-weight: 600;
+    font-variant-numeric: tabular-nums; line-height: 1.1;
+  }
+  .stat-num.mint { color: var(--mint); }
+  .stat-num.acid { color: var(--acid); }
+  .stat-label { font-size: 12px; color: var(--text-dim); letter-spacing: 1px; margin-top: 4px; }
+
+  .sample-banner {
+    margin-top: 20px; background: rgba(232, 179, 75, 0.08);
+    border: 1px solid rgba(232, 179, 75, 0.4); color: var(--amber);
+    border-radius: 8px; padding: 12px 16px; font-size: 13.5px;
+  }
+
+  /* ============ 策略页签 ============ */
+  .tabs {
+    display: flex; gap: 4px; margin-top: 26px;
+    overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+    border-bottom: 1px solid var(--border); padding-bottom: 0;
+  }
+  .tab {
+    background: none; border: none; border-bottom: 2px solid transparent;
+    color: var(--text-dim); cursor: pointer; white-space: nowrap;
+    padding: 12px 14px; font-size: 14px;
+    transition: color .18s ease-out, border-color .18s ease-out;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--mint); border-bottom-color: var(--mint); font-weight: 600; }
+  .tab.watchlist.active { color: var(--acid); border-bottom-color: var(--acid); }
+  .tab .count {
+    font-family: var(--font-display); font-size: 12px; margin-left: 6px;
+    color: var(--text-faint); font-variant-numeric: tabular-nums;
+  }
+  .tab.active .count { color: inherit; }
+
+  /* ============ 榜单 ============ */
+  .board { padding: 8px 0 12px; min-height: 200px; }
+  .row {
+    display: grid;
+    grid-template-columns: 44px minmax(120px, 1.1fr) 110px 1.4fr;
+    gap: 16px; align-items: center;
+    padding: 16px 8px; border-bottom: 1px solid var(--border);
+    transition: background .15s ease-out;
+  }
+  .row:hover { background: var(--surface-hover); }
+  .row.head {
+    padding: 14px 8px 10px;
+    font-size: 11px; letter-spacing: 2px; color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .row.head:hover { background: none; }
+  .rank {
+    font-family: var(--font-display); font-size: 18px; font-weight: 500;
+    color: var(--text-faint); font-variant-numeric: tabular-nums;
+  }
+  .rank.top { color: var(--mint); }
+  .stock-code {
+    font-family: var(--font-display); font-size: 19px; font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .stock-name { font-size: 12.5px; color: var(--text-dim); margin-top: 2px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 240px; }
+  .chg { font-family: var(--font-display); font-size: 18px; font-weight: 600;
+    font-variant-numeric: tabular-nums; text-align: right; }
+  .chg.up { color: var(--mint); }
+  .chg.down { color: var(--red); }
+  .chg.flat { color: var(--text-dim); }
+  .chg-label { font-size: 11px; color: var(--text-faint); text-align: right; letter-spacing: 1px; }
+  .cell-info { min-width: 0; }
+  .reason { font-size: 13px; color: var(--text-dim); margin-bottom: 7px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag {
+    font-size: 11.5px; color: var(--text-dim);
+    border: 1px solid var(--border); border-radius: 4px;
+    padding: 1px 8px; white-space: nowrap;
+  }
+  .empty, .loading { padding: 70px 20px; text-align: center; color: var(--text-dim); font-size: 15px; }
+
+  /* ============ 页脚 ============ */
+  footer { margin-top: 40px; padding: 26px 0 40px; border-top: 1px solid var(--border); }
+  .disclaimer { color: var(--text-faint); font-size: 12.5px; line-height: 1.8; max-width: 75ch; }
+  .foot-brand {
+    margin-top: 14px; font-family: var(--font-display);
+    font-size: 12px; letter-spacing: 2.5px; color: var(--text-faint);
+  }
+
+  @media (max-width: 760px) {
+    .row { grid-template-columns: 32px 1fr 84px; gap: 10px; }
+    .row .cell-info { grid-column: 2 / 4; padding-top: 2px; }
+    .row.head { display: none; }
+    .stock-name { max-width: 100%; white-space: normal; }
+    .stats { gap: 26px; }
+    .stat-num { font-size: 24px; }
+    .wrap { padding: 0 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <circle cx="17" cy="17" r="15" stroke="#00d9a3" stroke-opacity="0.35" stroke-width="1.5"/>
+        <circle cx="17" cy="17" r="9.5" stroke="#00d9a3" stroke-opacity="0.6" stroke-width="1.5"/>
+        <circle cx="17" cy="17" r="3.5" fill="#00d9a3"/>
+        <line x1="17" y1="17" x2="28" y2="7" stroke="#00d9a3" stroke-width="1.5"/>
+      </svg>
+      <div>
+        <div class="brand-name">ASRUL AI</div>
+        <div class="brand-sub">US Equity Radar</div>
+      </div>
+    </div>
+    <span class="live-dot">Daily Board</span>
+  </div>
+
+  <div class="headline">
+    <h1>每日雷达榜单<em>。</em><br>机器初筛，人工精选。</h1>
+    <p>12 套量化策略每个交易日收盘后自动扫描美股，上榜个股与人工二次精选的自选池同步公开。数据透明，逻辑闭环。</p>
+  </div>
+
+  <div class="datebar">
+    <div>
+      <div class="date-label">数据截至</div>
+      <div id="currentDate">加载中…</div>
+    </div>
+    <div class="date-nav">
+      <button id="prevBtn" title="前一天" aria-label="前一天">‹</button>
+      <button id="nextBtn" title="后一天" aria-label="后一天">›</button>
+      <button id="latestBtn">回到最新</button>
+    </div>
+  </div>
+  <div class="meta" id="meta"></div>
+
+  <div class="stats" id="stats" style="display:none">
+    <div><div class="stat-num" id="statStrategies">—</div><div class="stat-label">当日上榜策略</div></div>
+    <div><div class="stat-num mint" id="statPicks">—</div><div class="stat-label">策略入选个股</div></div>
+    <div><div class="stat-num acid" id="statWatch">—</div><div class="stat-label">自选池 · 人工精选</div></div>
+  </div>
+
+  <div id="sampleBanner" class="sample-banner" style="display:none">
+    当前展示的是示例数据，用于演示页面样式。接入真实雷达后，此提示会自动消失。
+  </div>
+
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="board" id="board"><div class="loading">正在加载榜单…</div></div>
+
+  <footer>
+    <div class="disclaimer">
+      本榜单由 ASRUL AI 量化雷达程序自动生成，仅为数据筛选结果展示，不构成任何投资建议。
+      公开版每个策略展示前 20 名；历史榜单可通过日期切换查阅。股市有风险，投资需谨慎。
+    </div>
+    <div class="foot-brand">ASRUL AI · asrulai.com</div>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var state = { data: null, radarIndex: 0, latestDate: null, latestData: null };
+
+  function fmtDate(d) {
+    var y = d.getFullYear(), m = ('0' + (d.getMonth() + 1)).slice(-2), dd = ('0' + d.getDate()).slice(-2);
+    return y + '-' + m + '-' + dd;
+  }
+
+  function load(dateStr) {
+    if (state.latestData && dateStr === state.latestDate) {
+      state.data = state.latestData;
+      state.radarIndex = 0;
+      render();
+      return;
+    }
+    document.getElementById('board').innerHTML = '<div class="loading">正在加载榜单…</div>';
+    fetch('data/' + dateStr + '.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('404');
+        return r.json();
+      })
+      .then(function (data) {
+        state.data = data;
+        state.radarIndex = 0;
+        render();
+      })
+      .catch(function () {
+        document.getElementById('currentDate').textContent = dateStr;
+        document.getElementById('meta').textContent = '';
+        document.getElementById('stats').style.display = 'none';
+        document.getElementById('sampleBanner').style.display = 'none';
+        document.getElementById('tabs').innerHTML = '';
+        document.getElementById('board').innerHTML = '<div class="empty">该日期暂无榜单数据（美股休市日无更新）。</div>';
+        updateNav(dateStr);
+      });
+  }
+
+  function render() {
+    var d = state.data;
+    document.getElementById('currentDate').textContent = d.date;
+    var gen = (d.generated_at || '').replace('T', ' ').replace(/\.\d+Z$/, ' UTC');
+    document.getElementById('meta').textContent = '生成时间 ' + (gen || '—') + (d.market ? ' · ' + d.market : '');
+    document.getElementById('sampleBanner').style.display = d.sample ? 'block' : 'none';
+    updateNav(d.date);
+
+    var radars = d.radars || [];
+    var nPicks = 0, nWatch = 0;
+    radars.forEach(function (r) {
+      if (r.id === 'watchlist') nWatch = (r.picks || []).length;
+      else nPicks += (r.picks || []).length;
+    });
+    document.getElementById('stats').style.display = 'flex';
+    document.getElementById('statStrategies').textContent = radars.filter(function (r) { return r.id !== 'watchlist'; }).length;
+    document.getElementById('statPicks').textContent = nPicks;
+    document.getElementById('statWatch').textContent = nWatch;
+
+    var tabsEl = document.getElementById('tabs');
+    tabsEl.innerHTML = '';
+    radars.forEach(function (radar, i) {
+      var btn = document.createElement('button');
+      btn.className = 'tab' + (radar.id === 'watchlist' ? ' watchlist' : '') + (i === state.radarIndex ? ' active' : '');
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-selected', i === state.radarIndex ? 'true' : 'false');
+      btn.innerHTML = escapeHtml(radar.name) + '<span class="count">' + (radar.picks || []).length + '</span>';
+      btn.onclick = function () { state.radarIndex = i; render(); };
+      tabsEl.appendChild(btn);
+    });
+
+    var radar = radars[state.radarIndex];
+    var board = document.getElementById('board');
+    if (!radar || !radar.picks || radar.picks.length === 0) {
+      board.innerHTML = '<div class="empty">今日该策略暂无入选个股。</div>';
+      return;
+    }
+    var isWatch = radar.id === 'watchlist';
+    var rows = radar.picks.map(function (p) {
+      var tags = (p.tags || []).slice(0, 5).map(function (t) { return '<span class="tag">' + escapeHtml(t) + '</span>'; }).join('');
+      var chgHtml;
+      if (p.score == null) {
+        chgHtml = '<div class="chg flat">—</div><div class="chg-label">' + (isWatch ? '持续跟踪' : '') + '</div>';
+      } else {
+        var cls = p.score > 0 ? 'up' : (p.score < 0 ? 'down' : 'flat');
+        var sign = p.score > 0 ? '+' : '';
+        chgHtml = '<div class="chg ' + cls + '">' + sign + Number(p.score).toFixed(2) + '%</div><div class="chg-label">当日涨跌</div>';
+      }
+      return '<div class="row">' +
+        '<div class="rank' + (p.rank <= 3 ? ' top' : '') + '">' + (p.rank || '—') + '</div>' +
+        '<div><div class="stock-code">' + escapeHtml(p.code || '') + '</div>' +
+        '<div class="stock-name">' + escapeHtml(p.name || '') + '</div></div>' +
+        '<div>' + chgHtml + '</div>' +
+        '<div class="cell-info"><div class="reason">' + escapeHtml(p.reason || '') + '</div>' +
+        '<div class="tags">' + tags + '</div></div>' +
+        '</div>';
+    }).join('');
+    board.innerHTML =
+      '<div class="row head"><div>#</div><div>股票</div><div style="text-align:right">涨跌</div><div>入选理由 / 标签</div></div>' + rows;
+  }
+
+  function updateNav(dateStr) {
+    var prev = new Date(dateStr + 'T00:00:00');
+    prev.setDate(prev.getDate() - 1);
+    document.getElementById('prevBtn').onclick = function () { load(fmtDate(prev)); };
+    var isLatest = dateStr === state.latestDate;
+    var next = new Date(dateStr + 'T00:00:00');
+    next.setDate(next.getDate() + 1);
+    var nextBtn = document.getElementById('nextBtn');
+    nextBtn.disabled = isLatest;
+    nextBtn.onclick = function () { load(fmtDate(next)); };
+    document.getElementById('latestBtn').disabled = isLatest;
+    document.getElementById('latestBtn').onclick = function () { load(state.latestDate); };
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  fetch('data/latest.json')
+    .then(function (r) { return r.json(); })
+    .then(function (latest) {
+      state.latestDate = latest.date;
+      state.latestData = latest;
+      load(latest.date);
+    })
+    .catch(function () {
+      document.getElementById('board').innerHTML = '<div class="empty">暂未发布任何榜单。</div>';
+      document.getElementById('currentDate').textContent = '—';
+    });
+})();
+</script>
+</body>
+</html>
