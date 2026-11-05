@@ -101,7 +101,7 @@
 
 <script>
 (function () {
-  var state = { data: null, radarIndex: 0, latestDate: null };
+  var state = { data: null, radarIndex: 0, latestDate: null, latestData: null };
 
   function fmtDate(d) {
     var y = d.getFullYear(), m = ('0' + (d.getMonth() + 1)).slice(-2), dd = ('0' + d.getDate()).slice(-2);
@@ -109,6 +109,13 @@
   }
 
   function load(dateStr) {
+    // 看最新一天时直接用 latest.json 的内容，不必再找单独的日期文件
+    if (state.latestData && dateStr === state.latestDate) {
+      state.data = state.latestData;
+      state.radarIndex = 0;
+      render();
+      return;
+    }
     document.getElementById('board').innerHTML = '<div class="loading">正在加载榜单…</div>';
     fetch('data/' + dateStr + '.json')
       .then(function (r) {
@@ -192,6 +199,7 @@
     .then(function (r) { return r.json(); })
     .then(function (latest) {
       state.latestDate = latest.date;
+      state.latestData = latest;
       load(latest.date);
     })
     .catch(function () {
