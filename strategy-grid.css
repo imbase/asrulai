@@ -1,0 +1,16 @@
+#view-results .quad-host>.table-scroll,#view-results .quad-host>.pagination,#view-results .quad-host>.radar-review-layout{display:none}
+#view-results .quad-host #personalPatternFilter{display:none}
+#strategyQuad{display:grid;grid-template-columns:minmax(145px,15fr) minmax(0,85fr);gap:10px;color:#181b20}
+.quad-menu{border-right:1px solid #dce3eb;max-height:calc(100vh - 225px);overflow:auto;padding:8px}
+.quad-menu h3{font-size:14px;margin:0 0 10px}.quad-menu button{display:block;width:100%;text-align:left;background:white;border:0;border-bottom:1px solid #eef1f5;padding:12px 9px;font-size:13px;line-height:1.4;color:#344054;cursor:pointer}.quad-menu button.active{background:#e5f2ff;color:#086bc1;font-weight:700;border-left:3px solid #086bc1}
+.quad-main{min-width:0}.quad-toolbar{display:flex;align-items:center;gap:12px;min-height:38px;font-size:13px}.quad-toolbar strong{font-size:15px}.quad-pager{margin-left:auto;display:flex;align-items:center;gap:12px;white-space:nowrap}
+#strategyQuad button{border-radius:3px}.quad-pager button,.quad-stock-head button{background:#fff;border:1px solid #cbd5e1;padding:5px 9px;color:#265a87;cursor:pointer}#strategyQuad button:disabled{opacity:.45;cursor:default}
+#quadStatus{font-size:12px;color:#667085;margin:2px 0}#quadStatus:empty{display:none}
+#quadCharts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#quadCharts .c1-stock-card{min-width:0;padding:8px;border:1px solid #d6dee8;border-radius:0;box-shadow:none;background:#fff;overflow:hidden}
+.quad-stock-head{display:flex;align-items:center;gap:8px;min-height:26px;font-size:12px}.quad-stock-head strong{font-size:14px;color:#135b9c}.quad-stock-head>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:30%}.quad-stock-head button{margin-left:auto;font-size:11px;white-space:nowrap}.quad-stock-head .quad-symbol-link{margin:0;padding:0;border:0;background:transparent;color:#135b9c;font-size:14px;font-weight:700;cursor:pointer}.quad-stock-head .quad-symbol-link:hover{text-decoration:underline}.quad-stock-head .quad-symbol-link:focus-visible{outline:2px solid #265a87;outline-offset:3px}
+#quadCharts .c1-strategy{font-size:10px;line-height:15px;margin:2px 0;max-height:30px;overflow:auto;border:0;padding:0;color:#667085}
+#quadCharts .c1-observation-chart{margin:0;border:0;border-radius:0}#quadCharts .c1-observation-canvas{width:100%;height:clamp(450px,calc(100vh - 300px),550px);display:block;touch-action:none}
+#quadCharts .c1-observation-chart header{font-size:10px;display:flex;gap:4px;align-items:center}#quadCharts .c1-observation-chart button{font-size:10px;padding:2px 5px}#quadCharts .c1-local-date{font-size:10px;display:block;color:#667085}#quadCharts .c1-sector{font-size:10px;line-height:14px;max-height:28px;overflow:auto;margin:3px 0 0}
+.quad-empty{padding:30px;color:#667085;grid-column:1/-1}
+@media(max-width:900px){#strategyQuad{grid-template-columns:145px minmax(0,1fr)}#quadCharts{grid-template-columns:1fr}.quad-toolbar{flex-wrap:wrap}.quad-menu{max-height:80vh}}

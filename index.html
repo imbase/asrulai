@@ -1,24 +1,217 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>点灯人 · 市场观察</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="top"><a class="brand" href="#overview"><b>asrulai</b><small>点灯人</small></a><nav><button data-view="overview" class="active">最新行情</button><button data-view="bottom">大跌抄底</button><button data-view="leaders">龙头扫描</button><button data-view="results">策略选股</button><button data-view="watchlist">自选池</button><button data-view="datacenter">数据中心</button><button data-view="patterns">形态规则</button></nav><span class="snapshot">● 只读快照 <time id="stamp"></time></span></header>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>asrulai 点灯人 · 美股强庄雷达</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="strategy-grid.css">
+  <link rel="stylesheet" href="home-glass.css">
+  <link rel="stylesheet" href="mac-ui-v1.css?v=flow1">
+  <link rel="stylesheet" href="public-readonly.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SR</div>
+        <div><strong>美股强庄雷达</strong><small>Strong Stock Radar · v1.18.29 · 近1年放大日线</small></div>
+      </div>
+      <nav>
+        <button class="nav-item active" data-view="intel"><span>◉</span> 最新行情</button>
+        <button class="nav-item" data-view="leaders"><span>♢</span> 龙头扫描</button>
+        <button class="nav-item" data-view="data"><span>⌁</span> 数据中心</button>
+        <button class="nav-item" data-view="results"><span>◎</span> 策略选股</button>
+        <button class="nav-item" data-view="rules"><span>◇</span> 形态规则</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> 设置</button>
+      </nav>
+      <div class="sidebar-status">
+        <span class="status-dot" id="serverDot"></span>
+        <div><small>公开快照</small><strong id="serverStatus">读取中</strong></div>
+      </div>
+      <p class="sidebar-note">只做筛选和文字观察计划<br>不会连接券商下单</p>
+    </aside>
 
-<main id="overview" hidden><section class="hero"><img class="scene" src="assets/hero_cine.jpg" alt="金色云海"><div class="grade"></div><div class="hero-copy"><h1>是否有补充资金进场？<br>形态是否合你意？风险多大？</h1><p>机会多的是，没必要为一时之快，离开赌桌出去吃饭也挺好。</p></div><a class="down" href="#dashboard">⌄</a></section><div class="overview-content" id="dashboard"><div class="section-title"><h2>最新行情</h2><time id="dashboard-time"></time></div><div class="market-grid">
-<article class="glass"><h3>市场概况</h3><p class="card-sub">主要指数与防御资产</p><div id="quotes"></div><small class="card-foot">Yahoo · 常规时段 · 各标的时间见报价</small></article>
-<article class="glass heat-card"><header><h3>富途板块热力图</h3><div class="seg"><button data-heat="industry" class="active">行业</button><button data-heat="concept">概念</button><button id="heat-refresh">刷新</button></div></header><p class="card-sub" id="heat-sub"></p><div id="heat"></div><small class="card-foot">等面积 · 按涨跌幅排列 · 绿涨红跌 · 滚动查看全部</small><small class="card-foot" id="heat-time"></small></article>
-<article class="glass metals-card"><header><h3>金银比摆钟</h3><span class="xau">XAU ÷ XAG <button id="metals-refresh" aria-label="刷新">⟳</button></span></header><p class="card-sub">每日快照 · 常规区间 · 仅作相对估值观察，不产生交易指令</p><div class="dial-wrap"><span class="dial-side left">白银相对偏贵</span><canvas id="metals-dial" aria-label="金银比仪表"></canvas><span class="dial-side right">白银相对偏便宜</span></div><div id="metals"></div><p class="card-sub">&lt;40 过热 · ≥85 相对低估 · ≥100 极端高位</p><small class="card-foot" id="metals-foot"></small></article>
-</div><article class="glass macro"><p class="kicker">POLICY &amp; MACRO</p><h3>政策与宏观</h3><div id="news"></div></article><article class="glass"><h3>市场观察</h3><p id="market-summary"></p><div id="stats" class="stats"></div></article></div></main>
+    <main class="main">
+      <header class="topbar">
+        <div><h1 id="pageTitle">最新行情</h1><p id="pageSubtitle">市场概况、政策与宏观、策略机会观察</p></div>
+        <div class="top-actions">
+          <span class="asof" id="asOf">尚未扫描</span>
+          <button class="btn primary" id="quickScanBtn">公开只读快照</button>
+        </div>
+      </header>
 
-<main id="bottom" hidden><div class="page-title"><h1>大跌抄底</h1><time id="bottom-time"></time></div><p class="status">固定观察池 · 日K线 · 7只标的</p><div class="bottom-wrap"><aside id="pool-list" aria-label="观察池名单"></aside><section class="glass pool-detail"><header class="pool-head"><h2 id="pool-symbol">—</h2><div class="pool-price"><b id="pool-change" class="chg-badge"></b><strong id="pool-last"></strong></div></header><p class="card-sub" id="pool-quote"></p><p class="ma-line" id="pool-ma"></p><div class="plot big"><header class="plot-head"><span class="legend" id="pool-legend">日K · MA5 · MA10 · MA20 · MA30 · 缺口标注</span><div class="seg"><button data-range="250" class="active">近250日</button><button data-range="all">全部</button></div></header><canvas class="chart big" tabindex="0" aria-label="观察池日K图"></canvas><div class="chart-note" id="pool-note"></div></div></section></div></main>
+      <section class="view" id="view-home" hidden aria-hidden="true">
+        <span id="mUniverse"></span><span id="mWithData"></span><span id="mBars"></span><span id="mReady"></span><span id="mQualified"></span>
+        <span id="cUniverse"></span><span id="cReady"></span><span id="cLatest"></span><span id="coveragePct"></span>
+        <div id="coverageRing"></div><span id="coverageTip"></span><div id="setupNotice"></div><div id="homeCandidates"></div>
+      </section>
 
-<main id="leaders" hidden><div class="page-title"><h1>龙头扫描</h1><time id="leaders-time"></time></div><p id="leaders-note" class="status"></p><div class="section-title"><h2>主线观察</h2></div><div id="mainlines" class="mainlines"></div><div class="section-title"><h2>龙头名单</h2></div><div class="table-wrap"><table id="leader-table"><thead><tr><th>#</th><th>代码</th><th>主线</th><th>价格</th><th>当日</th><th>5日</th><th>20日</th><th>量比</th><th>20日突破</th></tr></thead><tbody></tbody></table></div></main>
+      <section class="view active c1-market-page" id="view-intel">
+        <header class="home-nav" aria-label="首页导航">
+          <div class="home-brand"><strong>◉ 美股概览</strong><small>MARKET INTELLIGENCE / PUBLIC SNAPSHOT</small></div>
+          <nav><button type="button" data-home-go="intel" aria-current="page">市场总览</button><button type="button" data-home-go="results">强庄雷达</button><button type="button" data-home-go="leaders">龙头扫描</button><button type="button" data-home-go="data">数据中心</button></nav>
+          <div class="home-account"><time id="homeClock"></time><button type="button" data-home-go="settings">系统设置</button></div>
+        </header>
+        <section class="home-hero"><div><h1>是否有补充资金进场？形态是否合你意？风险多大？</h1><p>机会多的是，没必要为一时之快，离开赌桌出去吃饭也挺好。</p></div><div class="home-preview-note"><span>● 市场观察 / 独立判断</span><small>股票与贵金属均来自本机发布的每日快照</small></div></section>
+        <div class="c1-page-head"><div><p class="c1-kicker">MARKET BRIEFING</p><h2>最新行情</h2><p class="home-original-subtitle">以现有扫描结果为核心的市场观察</p></div><div class="c1-actions"><span id="intelAsOf">尚未获取情报</span><button class="btn" id="refreshIntelBtn">刷新情报</button></div></div>
+        <section class="c1-section c1-overview" aria-labelledby="c1OverviewTitle">
+          <div class="c1-section-title"><h3 id="c1OverviewTitle">市场概况</h3><span id="intelMarketDate">各标的行情时间见下方</span></div>
+          <div id="c1MarketBoard"></div>
+        </section>
 
-<main id="results" hidden><div class="page-title"><h1 id="title">策略选股</h1><time id="report-time"></time></div><div class="glass command"><label>☰ 选择策略 <select id="strategy" aria-label="选择策略"></select></label><span class="divider"></span><strong id="strategy-name"></strong><small id="count"></small></div><div class="tools"><input id="search" placeholder="搜索股票代码或名称" aria-label="搜索股票代码或名称"><label>阶段 <select id="stage" aria-label="阶段"><option value="">全部阶段</option></select></label></div><p id="status" class="status"></p><div id="charts-region"><div id="charts" class="charts"></div></div><div class="pager"><button id="prev">上页</button><span id="page"></span><button id="next">下页</button></div></main>
+        <footer class="home-footer"><span>RADAR / 清晰观察，独立判断</span><span>市场观察 · 不连接交易</span><details><summary>其他原有入口与行情说明</summary><button type="button" data-home-go="rules">形态规则</button><button type="button" id="homeQuickScan">公开只读快照</button><div id="homeSourceNotes"></div></details></footer>
+        <section class="c1-section" aria-labelledby="c1PolicyTitle"><div class="c1-section-title"><div><p class="c1-kicker">POLICY & MACRO</p><h3 id="c1PolicyTitle">政策与宏观</h3></div><button type="button" id="intelPolicyMore" class="c1-link">查看更多</button></div><div class="c1-policy-grid" id="intelPolicy"><p class="c1-empty">暂无最新资讯</p></div></section>
+        <section class="c1-section c1-bottom-watch" aria-labelledby="c1StrategiesTitle"><div class="c1-section-title"><div><h3 id="c1StrategiesTitle">大跌抄底</h3><span id="c1ScanAsOf">固定观察池 · 日 K 线 · 7只标的</span></div></div><div class="c1-stock-grid" id="intelStrategyStocks"><p class="c1-empty">正在读取固定观察池…</p></div></section>
+      </section>
 
-<main id="watchlist" hidden><div class="page-title"><h1>自选池</h1><time id="watch-time"></time></div><p class="status">自选名单为发布时快照</p><div class="tools"><input id="watch-search" placeholder="搜索股票代码或名称" aria-label="搜索自选池"></div><p id="watch-status" class="status"></p><div id="watch-charts" class="charts"></div></main>
+      <section class="view" id="view-leaders">
+        <article class="intel-hero leader-hero">
+          <div><span class="eyebrow">LEADER & MAINLINE SCANNER</span><h2>龙头股与主线行情</h2><p>把“先启动、带动同题材、分歧后仍强、最后转弱”转成可审计的美股量价与新闻规则。</p></div>
+          <div class="intel-actions"><strong id="leaderAsOf">尚未获取</strong><button class="btn primary" id="refreshLeaderBtn">刷新龙头扫描</button></div>
+        </article>
+        <div class="intel-limitations hidden" id="leaderLimitations"></div>
+        <article class="panel mainline-panel"><div class="panel-head"><div><h2>第一阶段：当天热点与强势板块</h2><p>先核验新闻催化、上涨宽度、相对大盘强度和量能，再进入个股形态筛选</p></div></div><div class="mainline-list" id="mainlineList"><div class="empty-state">请先刷新今日情报</div></div></article>
+        <article class="panel leader-panel"><div class="panel-head"><div><h2>龙头股候选</h2><p>不是单纯涨幅第一；优先观察最先启动、量价最强、收盘靠近高位且带动题材的股票</p></div></div><div class="leader-list" id="leaderList"><div class="empty-state">请先刷新今日情报</div></div><p class="audit-tip">美股没有A股涨停板制度：系统把“一字板”代理为强缺口/强收盘启动，把“换手板”代理为高成交额、高量比、实体强和收盘靠近高位。候选只是观察线索，不构成投资建议。</p></article>
+      </section>
 
-<main id="datacenter" hidden><div class="page-title"><h1>数据中心</h1><time id="dc-time"></time></div><p id="dc-note" class="status"></p><div class="section-title"><h2>覆盖统计</h2></div><div id="dc-coverage" class="stats tiles"></div><div class="section-title"><h2>同步状态</h2></div><div class="table-wrap"><table id="dc-sync"><thead><tr><th>市场</th><th>类型</th><th>状态</th><th>最近成功交易日</th><th>收到/写入/更新</th><th>错误码</th><th>最近尝试</th></tr></thead><tbody></tbody></table></div><div class="section-title"><h2>每日任务</h2></div><div id="dc-schedule" class="stats tiles"></div><div class="section-title"><h2>扫描报告</h2></div><div id="dc-scan" class="stats tiles"></div><div id="dc-notes" class="notes"></div></main>
+      <section class="view" id="view-data">
+        <div class="grid-2 data-grid">
+          <article class="panel massive-sync-panel">
+            <div class="panel-head"><div><h2>公开数据快照</h2><p>这里展示本机雷达最近一次发布的只读结果；公开网页不连接行情供应商，也不触发同步或扫描。</p></div><span class="badge recommended">只读镜像</span></div>
+            <div class="massive-status-grid">
+              <div><span>数据状态</span><strong id="msProvider">公开快照</strong></div>
+              <div><span>本地最新交易日</span><strong id="msLocalDate">—</strong></div>
+              <div><span>当前应更新到</span><strong id="msTargetDate">与本机快照一致</strong></div>
+              <div><span>缺失交易日</span><strong id="msMissing">仅在本机处理</strong></div>
+              <div><span>正在同步日期</span><strong id="msCurrentDate">公开站不同步</strong></div>
+              <div><span>本日返回股票</span><strong id="msReturned">—</strong></div>
+              <div><span>插入 / 更新 / 跳过</span><strong id="msWriteCounts">公开站不写入</strong></div>
+              <div><span>请求等待</span><strong id="msWait">无</strong></div>
+              <div><span>总进度</span><strong id="msProgress">100%</strong></div>
+              <div><span>最近成功日期</span><strong id="msLastSuccess">—</strong></div>
+              <div><span>更新结果</span><strong id="msResult">等待读取</strong></div>
+              <div><span>错误信息</span><strong id="msError">—</strong></div>
+              <div><span>日K来源审计</span><strong id="msSourceAudit">内部参数</strong></div>
+              <div><span>数据口径</span><strong id="msConflictDates">只读结果</strong></div>
+            </div>
+            <p class="privacy-note">选股策略、筛选阈值、行情钥匙和本机设置只留在你的电脑。这里仅发布上榜结果、既有标签与分数、K线数字和行情快照。</p>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><div><h2>数据源健康状态</h2><p>公开网页只读取静态快照，不执行连接测试。</p></div><span class="badge">只读</span></div>
+            <div id="sourceHealthList" class="source-health-list"><div class="empty-state">快照文件可正常读取；供应商连通状态仅在本机雷达查看。</div></div>
+            <div class="button-row"><button class="btn" id="testAllSourcesBtn">重新读取快照</button><button class="btn" id="exportDiagnosticsBtn">导出公开状态</button></div>
+          </article>
+        </div>
+        <article class="panel progress-panel" id="progressPanel">
+          <div class="panel-head"><div><h2>发布状态</h2><p id="progressText">只读快照已就绪</p></div><button class="text-btn danger" id="stopTaskBtn" disabled>公开站无任务</button></div>
+          <div class="progress-track"><div id="progressBar" style="width:100%"></div></div>
+          <div class="task-log" id="taskLog">本页面不会修改雷达数据库。</div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><div><h2>数据库覆盖明细</h2><p>沿用本机雷达发布时的正式审计口径</p></div><button class="btn" id="refreshCoverageBtn">刷新</button></div>
+          <div class="audit-table">
+            <div><span>候选池股票数</span><strong id="aUniverse">0</strong></div>
+            <div><span>已有历史数据</span><strong id="aWithData">0</strong></div>
+            <div><span>正式可扫描</span><strong id="aReady">0</strong></div>
+            <div><span>累计日K条数</span><strong id="aBars">0</strong></div>
+            <div><span>数据最新交易日</span><strong id="aLatest">—</strong></div>
+          </div>
+        </article>
+      </section>
 
-<main id="patterns" hidden><div class="page-title"><h1>形态规则</h1><time id="patterns-time"></time></div><p class="status">公开版仅展示规则结构与说明，数值阈值为内部参数，不在公开快照中提供。</p><div id="pattern-list" class="patterns"></div></main>
+      <section class="view" id="view-results">
+        <article class="panel result-controls">
+          <div>
+            <h2>全市场扫描</h2>
+            <p>扫描沿用原有数据与策略。选择左侧股票查看本地一年日K，滚轮缩放、拖动平移。</p>
+          </div>
+          <div class="scan-settings"><span class="badge">公开快照 · 筛选参数：内部参数</span><button class="btn primary" id="runScanBtn">重新读取快照</button></div>
+        </article>
 
-<footer>点灯人 asrulai · 清晰观察，独立判断 · 只读数据快照</footer>
-<script type="application/json" id="full-snapshot"></script><script type="application/json" id="klines-snapshot"></script>
-<script src="viewer.js"></script></body></html>
+        <div class="result-summary" id="resultSummary">
+          <span>尚未扫描</span>
+        </div>
+
+        <article class="panel table-panel">
+          <div class="table-toolbar">
+            <div class="filter-tabs">
+              <button class="active" data-filter="qualified">正式候选</button>
+              <button data-filter="personal">主线中的确认形态</button>
+              <button data-filter="watch">主线待形态／形态待主线</button>
+              <button data-filter="all">全部评分</button>
+              <button data-filter="risk">出货风险</button>
+            </div>
+            <input id="resultSearch" placeholder="搜索股票代码或名称">
+            <select id="stageFilter"><option value="">全部阶段</option><option>拉升启动</option><option>洗盘/锁仓</option><option>建仓观察</option><option>稳健上升</option><option>出货风险</option></select>
+            <select id="personalPatternFilter">
+              <option value="">全部个人形态</option>
+              <option value="strong_launch">强势经典启动</option>
+              <option value="extreme_quiet">极静思动</option>
+
+              <option value="abnormal_volume_small_gain">当天量能异常大</option>
+              <option value="needle_bottom">金针探底</option>
+              <option value="pulse_wash">上冲下洗</option>
+              <option value="return_spear">杀回马枪</option>
+              <option value="arrow_cross_three">一箭穿三</option>
+
+              <option value="strong_wash">强势股洗盘</option>
+              <option value="breakdown_wash">破位洗盘</option>
+
+              <option value="ma5_support">5日均线支撑</option>
+              <option value="gap_up_start_v1">跳空高开</option>
+              <option value="ma30_support_v1">30日均线</option>
+            </select>
+            <button class="btn" data-result-sort="pre_desc">盘前涨幅↓</button>
+            <button class="btn" data-result-sort="pre_asc">盘前涨幅↑</button>
+            <button class="btn" data-result-sort="catalyst">黑马优先：盘前＋利好/热点</button>
+            <button class="btn" id="exportCsvBtn">导出 CSV</button>
+            <button class="btn" id="exportHtmlBtn">导出中文报告</button>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>排名</th><th>股票</th><th>所属行业</th><th>盘前涨幅</th><th>形态标签</th><th>收盘/日涨跌</th><th>核心理由（利好/热点优先）</th><th>观察触发价</th></tr></thead>
+              <tbody id="resultBody"><tr><td colspan="8" class="empty-cell">完成扫描后显示结果</td></tr></tbody>
+            </table>
+          </div>
+          <div class="pagination" id="pagination"></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-rules">
+        <article class="rule-hero"><span>核心原则</span><h2>“强庄”只是量价结构的俗称，公开页面只展示扫描结果与高层规则名称。</h2><p>具体筛选、打分和确认参数均为「内部参数」，仅在本机雷达保存与执行。</p></article>
+        <div class="rule-grid" id="publicCoreRules"></div>
+        <article class="panel personal-library-panel"><div class="panel-head"><div><h2>你的个人形态库</h2><p>公开说明不包含检测算法与数值阈值</p></div><span class="badge recommended">内部参数</span></div><div class="rule-grid personal-rule-grid" id="publicPersonalRules"></div></article>
+        <article class="panel source-panel"><h2>规则依据与美股适配</h2><p>形态标签用于整理观察线索，不证明真实庄家存在，也不构成投资建议。</p></article>
+      </section>
+
+      <section class="view" id="view-settings">
+        <div class="grid-2">
+          <article class="panel"><h2>阅读偏好</h2><label>结果每页数量<select id="pageSize"><option>25</option><option selected>50</option><option>100</option></select></label><label class="check"><input type="checkbox" id="showManualPlan" checked> 显示已发布的观察价位</label><button class="btn" id="saveSettingsBtn">保存阅读偏好</button><p class="privacy-note">阅读偏好只保存在当前浏览器，不会同步回本机雷达。</p></article>
+          <article class="panel"><h2>公开数据管理</h2><p>公开站没有清空本机数据库的权限。需要更新内容时，在本机雷达运行发布脚本即可。</p><button class="btn" id="clearDataBtn">清除本页阅读偏好</button></article>
+        </div>
+        <article class="panel about-panel"><h2>版本信息</h2><div><span>界面版本</span><strong>1.18.29 · 原雷达 UI 只读镜像</strong></div><div><span>策略与门槛</span><strong>内部参数</strong></div><div><span>自动交易</span><strong>永久关闭；仅生成人工观察计划</strong></div><div><span>公开数据位置</span><strong>静态只读快照</strong></div></article>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-label="股票专业K线与既有评分" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="关闭股票详情">×</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+  <script src="public-db.js"></script>
+  <script src="inline-chart-viewport.js"></script>
+  <script src="plate-members.js"></script>
+  <script src="c1-display.js"></script>
+  <script src="public-strategy-grid.js"></script>
+  <script src="public-chart-change-rate.js"></script>
+  <script src="public-app.js"></script>
+  <script src="public-metals-ratio.js"></script>
+  <script src="home-glass.js"></script>
+  <script src="mac-ui-v1.js?v=flow1"></script>
+</body>
+</html>

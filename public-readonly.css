@@ -1,0 +1,56 @@
+/* 公开只读镜像的品牌与状态微调；布局沿用原雷达。 */
+.preview-wordmark>span:last-child{display:flex;align-items:baseline;gap:14px}
+.preview-wordmark small{margin:0;color:#b39755;font-size:11px;letter-spacing:5px;white-space:nowrap}
+.ui-preview .sidebar-status{white-space:nowrap}
+.scan-settings .badge{line-height:1.6;white-space:normal}
+.rule-card>p+strong,.rule-card>p>strong{font-weight:500}
+@media(max-width:1000px){.preview-wordmark>span:last-child{gap:8px}.preview-wordmark small{letter-spacing:2px}}
+
+/* 与本机当前 Mac 壳一致：首页也使用 asrulai 顶栏，不重复显示旧首页页头。 */
+body.c1-market-view .preview-global{display:flex!important}
+body.c1-market-view .main{padding:0 40px 24px}
+#view-intel .home-nav,#view-intel .home-hero,#view-intel .c1-page-head,#view-intel .home-footer{display:none!important}
+body.c1-market-view #previewNavigation{gap:8px}
+body.c1-market-view #previewNavigation .nav-item{position:relative;padding:8px 14px;border-radius:0;background:transparent;color:#57687b}
+body.c1-market-view #previewNavigation .nav-item.active{background:transparent;color:#1c2b3f;font-weight:600;box-shadow:none}
+body.c1-market-view #previewNavigation .nav-item.active:after{content:'';position:absolute;left:14px;right:14px;bottom:-9px;height:2px;background:#b39755}
+body.c1-market-view .preview-account-slot .sidebar-status{display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid rgba(255,255,255,.85);border-radius:12px;background:rgba(255,255,255,.55);color:#57687b}
+body.c1-market-view .preview-account-slot .sidebar-status small{font-size:11px}
+body.c1-market-view .preview-account-slot .sidebar-status strong{font-size:11px;font-weight:400}
+body.c1-market-view .c1-overview{margin-top:0!important}
+
+/* 策略命令行及其导出浮层必须位于K线卡片之上，按钮才可实际点击。 */
+.ui-preview #view-results .preview-command{z-index:40}
+.ui-preview #view-results .result-more[open]{z-index:61}
+
+/* 固定观察池：左侧七只标的，右侧当前标的大图。 */
+.c1-bottom-watch #intelStrategyStocks{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:start}
+.public-watch-list{display:flex;flex-direction:column;gap:8px}
+.public-watch-list button{width:100%;min-height:46px;padding:10px 12px;border:1px solid #dce2e7;border-radius:12px;background:rgba(255,255,255,.3);color:#57687b;text-align:left;font:400 13px/1.45 Inter,'Noto Sans SC',sans-serif;cursor:pointer;white-space:nowrap}
+.public-watch-list button.active{border-color:#1c2b3f;background:#1c2b3f;color:#fff}
+.public-watch-detail,.public-watch-detail .c1-stock-card{min-width:0}
+.c1-bottom-watch .public-watch-detail .c1-stock-card{padding:0;border:0;background:transparent;overflow:visible}
+.c1-bottom-watch .public-watch-detail .c1-stock-head{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:34px}
+.c1-bottom-watch .public-watch-detail .c1-stock-head>strong{font-size:25px;line-height:1.2;color:#1c2b3f}
+.c1-bottom-watch .public-watch-detail .c1-watch-time{margin:4px 0 10px}
+.c1-bottom-watch .public-watch-detail .c1-observation-chart{margin:0}
+.c1-bottom-watch .public-watch-detail .c1-observation-chart>header{background:#f3f7f9;padding:8px 10px!important;border-bottom:1px solid #dce5ea}
+.c1-bottom-watch .public-watch-detail .c1-observation-canvas{height:480px;background:linear-gradient(180deg,#fff 0%,#fff 80%,#f7f5ef 100%)}
+@media(min-width:1200px){
+  body.c1-market-view .preview-global{padding-left:60px;padding-right:60px}
+  body.c1-market-view .main{padding-left:60px;padding-right:60px}
+  #view-intel .c1-market-layout{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr) minmax(0,1fr)}
+  #view-intel .home-market-card,#view-intel .c1-heat-panel,#view-intel .home-metals-card{height:526px;min-height:526px}
+  #view-intel .home-market-time{top:484px}
+  #view-intel .c1-heat-note{top:463px}
+  #view-intel #c1HeatStatus{top:495px}
+}
+@media(max-width:700px){
+  body.c1-market-view .main{padding:0 14px 20px}
+  body.c1-market-view #previewNavigation .nav-item.active:after{bottom:-12px}
+  .c1-bottom-watch #intelStrategyStocks{grid-template-columns:1fr}
+  .public-watch-list{flex-direction:row;overflow-x:auto;padding-bottom:4px}
+  .public-watch-list button{width:auto;flex:none}
+  .c1-bottom-watch .public-watch-detail .c1-stock-head{align-items:flex-start;flex-direction:column}
+  .c1-bottom-watch .public-watch-detail .c1-watch-quote{justify-content:flex-start}
+}
