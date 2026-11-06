@@ -271,7 +271,7 @@
     <div><div class="stat-num acid" id="statWatch">—</div><div class="stat-label">自选池 · 人工精选</div></div>
   </div>
 
-  <a href="../" class="cockpit-link">
+  <a href="radar/" class="cockpit-link">
     <span class="cockpit-title">进入完整雷达驾驶舱</span>
     <span class="cockpit-sub">市场总览 · 板块热力 · 个股日K（大屏体验更佳）</span>
     <span class="cockpit-arrow">→</span>
@@ -310,7 +310,7 @@
       return;
     }
     document.getElementById('board').innerHTML = '<div class="loading">正在加载榜单…</div>';
-    fetch('../data/' + dateStr + '.json')
+    fetch('data/' + dateStr + '.json')
       .then(function (r) {
         if (!r.ok) throw new Error('404');
         return r.json();
@@ -412,7 +412,7 @@
     });
   }
 
-  fetch('../data/latest.json')
+  fetch('data/latest.json')
     .then(function (r) { return r.json(); })
     .then(function (latest) {
       state.latestDate = latest.date;
