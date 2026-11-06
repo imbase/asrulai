@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "generated_at": "2026-11-05T16:35:03.220Z",
   "market": "美股",
   "radars": [
@@ -184,19 +184,6 @@
         },
         {
           "rank": 9,
-          "code": "CPNG",
-          "name": "CPNG",
-          "score": 11.95,
-          "reason": "拉升启动 · 主线形态待确认",
-          "tags": [
-            "量价健康",
-            "平台突破",
-            "洗盘修复",
-            "当天量能异常大"
-          ]
-        },
-        {
-          "rank": 10,
           "code": "DAL",
           "name": "DAL",
           "score": 7.16,
@@ -208,7 +195,7 @@
           ]
         },
         {
-          "rank": 11,
+          "rank": 10,
           "code": "ELVN",
           "name": "ELVN",
           "score": 5.4,
@@ -219,29 +206,7 @@
           ]
         },
         {
-          "rank": 12,
-          "code": "JBIO",
-          "name": "JBIO",
-          "score": 3.23,
-          "reason": "观察 · 普通观察",
-          "tags": [
-            "量价健康",
-            "当天量能异常大"
-          ]
-        },
-        {
-          "rank": 13,
-          "code": "JXN",
-          "name": "JXN",
-          "score": -2.35,
-          "reason": "建仓观察 · 普通观察",
-          "tags": [
-            "量价健康",
-            "当天量能异常大"
-          ]
-        },
-        {
-          "rank": 14,
+          "rank": 11,
           "code": "LEN",
           "name": "LEN",
           "score": 7.09,
@@ -252,7 +217,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 12,
           "code": "LEN.B",
           "name": "LEN.B",
           "score": 5.96,
@@ -264,7 +229,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 13,
           "code": "MMM",
           "name": "MMM",
           "score": 9.55,
@@ -277,7 +242,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 14,
           "code": "MTN",
           "name": "MTN",
           "score": 5.03,
@@ -292,7 +257,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 15,
           "code": "OMAB",
           "name": "OMAB",
           "score": 2.48,
@@ -303,7 +268,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 16,
           "code": "PRVA",
           "name": "PRVA",
           "score": 4.33,
@@ -316,13 +281,51 @@
           ]
         },
         {
-          "rank": 20,
-          "code": "ROL",
-          "name": "ROL",
-          "score": 2.76,
-          "reason": "观察 · 普通观察",
+          "rank": 17,
+          "code": "RVMD",
+          "name": "RVMD",
+          "score": 2.82,
+          "reason": "拉升启动 · 形态确认／暂无当日主线",
           "tags": [
+            "洗盘修复",
+            "当天量能异常大"
+          ]
+        },
+        {
+          "rank": 18,
+          "code": "UNH",
+          "name": "UNH",
+          "score": 1.22,
+          "reason": "拉升启动 · 形态确认／暂无当日主线",
+          "tags": [
+            "稳健慢牛",
+            "紧密K线",
+            "当天量能异常大"
+          ]
+        },
+        {
+          "rank": 19,
+          "code": "VIR",
+          "name": "VIR",
+          "score": 4.9,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
+          "tags": [
+            "当天量能异常大"
+          ]
+        },
+        {
+          "rank": 20,
+          "code": "WCN",
+          "name": "WCN",
+          "score": 2.76,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
+          "tags": [
+            "多均线支撑",
+            "稳健慢牛",
             "量价健康",
+            "平台突破",
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·十字星整理（再突破确认）",
             "当天量能异常大"
           ]
         }
@@ -342,16 +345,6 @@
         },
         {
           "rank": 2,
-          "code": "ENPH",
-          "name": "ENPH",
-          "score": 3.71,
-          "reason": "观察 · 主线形态待确认",
-          "tags": [
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 3,
           "code": "DGII",
           "name": "DGII",
           "score": 0.76,
@@ -359,7 +352,7 @@
           "tags": []
         },
         {
-          "rank": 4,
+          "rank": 3,
           "code": "XMTR",
           "name": "XMTR",
           "score": 2.0,
@@ -369,7 +362,7 @@
           ]
         },
         {
-          "rank": 5,
+          "rank": 4,
           "code": "WIX",
           "name": "WIX",
           "score": 7.79,
@@ -379,7 +372,7 @@
           ]
         },
         {
-          "rank": 6,
+          "rank": 5,
           "code": "TVTX",
           "name": "TVTX",
           "score": 6.09,
@@ -389,7 +382,7 @@
           ]
         },
         {
-          "rank": 7,
+          "rank": 6,
           "code": "LMND",
           "name": "LMND",
           "score": 11.03,
@@ -397,17 +390,7 @@
           "tags": []
         },
         {
-          "rank": 8,
-          "code": "LPLA",
-          "name": "LPLA",
-          "score": 4.64,
-          "reason": "观察 · 普通观察",
-          "tags": [
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 9,
+          "rank": 7,
           "code": "SIBN",
           "name": "SIBN",
           "score": 4.96,
@@ -418,7 +401,7 @@
           ]
         },
         {
-          "rank": 10,
+          "rank": 8,
           "code": "GLUE",
           "name": "GLUE",
           "score": 3.94,
@@ -428,7 +411,7 @@
           ]
         },
         {
-          "rank": 11,
+          "rank": 9,
           "code": "TWST",
           "name": "TWST",
           "score": 1.63,
@@ -436,7 +419,7 @@
           "tags": []
         },
         {
-          "rank": 12,
+          "rank": 10,
           "code": "TXG",
           "name": "TXG",
           "score": 3.42,
@@ -444,7 +427,7 @@
           "tags": []
         },
         {
-          "rank": 13,
+          "rank": 11,
           "code": "HXL",
           "name": "HXL",
           "score": 1.91,
@@ -452,7 +435,7 @@
           "tags": []
         },
         {
-          "rank": 14,
+          "rank": 12,
           "code": "WOLF",
           "name": "WOLF",
           "score": 1.65,
@@ -460,15 +443,7 @@
           "tags": []
         },
         {
-          "rank": 15,
-          "code": "SYM",
-          "name": "SYM",
-          "score": -0.03,
-          "reason": "出货风险 · 普通观察",
-          "tags": []
-        },
-        {
-          "rank": 16,
+          "rank": 13,
           "code": "HCC",
           "name": "HCC",
           "score": 0.32,
@@ -476,7 +451,7 @@
           "tags": []
         },
         {
-          "rank": 17,
+          "rank": 14,
           "code": "ATEC",
           "name": "ATEC",
           "score": 10.84,
@@ -484,7 +459,7 @@
           "tags": []
         },
         {
-          "rank": 18,
+          "rank": 15,
           "code": "AMR",
           "name": "AMR",
           "score": 0.77,
@@ -492,7 +467,7 @@
           "tags": []
         },
         {
-          "rank": 19,
+          "rank": 16,
           "code": "KN",
           "name": "KN",
           "score": -0.88,
@@ -500,12 +475,22 @@
           "tags": []
         },
         {
-          "rank": 20,
+          "rank": 17,
           "code": "AEVA",
           "name": "AEVA",
           "score": 6.15,
           "reason": "出货风险 · 普通观察",
           "tags": []
+        },
+        {
+          "rank": 18,
+          "code": "METC",
+          "name": "METC",
+          "score": 3.56,
+          "reason": "出货风险 · 普通观察",
+          "tags": [
+            "量价健康"
+          ]
         }
       ]
     },
@@ -649,19 +634,6 @@
         },
         {
           "rank": 11,
-          "code": "TENB",
-          "name": "TENB",
-          "score": 0.66,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ]
-        },
-        {
-          "rank": 12,
           "code": "ASO",
           "name": "ASO",
           "score": 11.22,
@@ -674,7 +646,7 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 12,
           "code": "KD",
           "name": "KD",
           "score": 30.14,
@@ -686,7 +658,7 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "code": "HELE",
           "name": "HELE",
           "score": 25.39,
@@ -699,7 +671,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 14,
           "code": "ARHS",
           "name": "ARHS",
           "score": 9.04,
@@ -713,7 +685,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "code": "BMI",
           "name": "BMI",
           "score": 7.32,
@@ -727,7 +699,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 16,
           "code": "WWW",
           "name": "WWW",
           "score": 8.65,
@@ -739,7 +711,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "code": "EVTC",
           "name": "EVTC",
           "score": 11.1,
@@ -753,7 +725,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "code": "OMH",
           "name": "OMH",
           "score": 432.53,
@@ -767,7 +739,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "code": "HLF",
           "name": "HLF",
           "score": 6.47,
@@ -777,6 +749,20 @@
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）"
+          ]
+        },
+        {
+          "rank": 20,
+          "code": "ROP",
+          "name": "ROP",
+          "score": 3.94,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
+          "tags": [
+            "稳健慢牛",
+            "量价健康",
+            "平台突破",
+            "上冲下洗（再突破确认）",
+            "强势股洗盘·十字星整理（再突破确认）"
           ]
         }
       ]
@@ -911,19 +897,6 @@
         },
         {
           "rank": 11,
-          "code": "NCPL",
-          "name": "NCPL",
-          "score": -9.62,
-          "reason": "拉升启动 · 形态确认／暂无当日主线",
-          "tags": [
-            "地量",
-            "量价健康",
-            "洗盘修复",
-            "杀回马枪（缩量回洗·突破确认）"
-          ]
-        },
-        {
-          "rank": 12,
           "code": "OVID",
           "name": "OVID",
           "score": 14.17,
@@ -935,7 +908,7 @@
           ]
         },
         {
-          "rank": 13,
+          "rank": 12,
           "code": "BRCB",
           "name": "BRCB",
           "score": 11.23,
@@ -948,7 +921,7 @@
           ]
         },
         {
-          "rank": 14,
+          "rank": 13,
           "code": "IBEX",
           "name": "IBEX",
           "score": 0.65,
@@ -959,7 +932,7 @@
           ]
         },
         {
-          "rank": 15,
+          "rank": 14,
           "code": "OABI",
           "name": "OABI",
           "score": 0.58,
@@ -971,7 +944,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 15,
           "code": "CHCI",
           "name": "CHCI",
           "score": 3.69,
@@ -980,272 +953,6 @@
             "地量",
             "量价健康",
             "杀回马枪（缩量回洗·突破确认）"
-          ]
-        },
-        {
-          "rank": 17,
-          "code": "AOUT",
-          "name": "AOUT",
-          "score": -0.78,
-          "reason": "拉升启动 · 形态确认／暂无当日主线",
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "杀回马枪（缩量回洗·突破确认）"
-          ]
-        },
-        {
-          "rank": 18,
-          "code": "BRCC",
-          "name": "BRCC",
-          "score": -0.2,
-          "reason": "拉升启动 · 形态确认／暂无当日主线",
-          "tags": [
-            "杀回马枪（缩量回洗·突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "arrow_cross_three",
-      "name": "一箭穿三",
-      "picks": [
-        {
-          "rank": 1,
-          "code": "MQ",
-          "name": "MQ",
-          "score": 4.49,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 2,
-          "code": "WAY",
-          "name": "WAY",
-          "score": 7.36,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）"
-          ]
-        },
-        {
-          "rank": 3,
-          "code": "STLN",
-          "name": "STLN",
-          "score": 9.46,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "一箭穿三",
-            "洗盘修复",
-            "强势股洗盘·缩量挖坑（再突破确认）"
-          ]
-        },
-        {
-          "rank": 4,
-          "code": "NTR",
-          "name": "NTR",
-          "score": 3.97,
-          "reason": "拉升启动 · 形态确认／暂无当日主线",
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 5,
-          "code": "BALL",
-          "name": "BALL",
-          "score": 6.6,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 6,
-          "code": "HSIC",
-          "name": "HSIC",
-          "score": 6.96,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 7,
-          "code": "GRMN",
-          "name": "GRMN",
-          "score": 6.52,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 8,
-          "code": "GAP",
-          "name": "GAP",
-          "score": 8.0,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 9,
-          "code": "NSIT",
-          "name": "NSIT",
-          "score": 4.94,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三"
-          ]
-        },
-        {
-          "rank": 10,
-          "code": "MIRM",
-          "name": "MIRM",
-          "score": 11.42,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三"
-          ]
-        },
-        {
-          "rank": 11,
-          "code": "BXSL",
-          "name": "BXSL",
-          "score": 3.01,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 12,
-          "code": "LIF",
-          "name": "LIF",
-          "score": 6.61,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "平台突破"
-          ]
-        },
-        {
-          "rank": 13,
-          "code": "PS",
-          "name": "PS",
-          "score": 13.2,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三"
-          ]
-        },
-        {
-          "rank": 14,
-          "code": "UMH",
-          "name": "UMH",
-          "score": 4.81,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 15,
-          "code": "MGA",
-          "name": "MGA",
-          "score": 4.22,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 16,
-          "code": "WTM",
-          "name": "WTM",
-          "score": 3.93,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "一箭穿三",
-            "紧密K线"
-          ]
-        },
-        {
-          "rank": 17,
-          "code": "PPC",
-          "name": "PPC",
-          "score": 6.34,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 18,
-          "code": "DLX",
-          "name": "DLX",
-          "score": 6.5,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 19,
-          "code": "CSV",
-          "name": "CSV",
-          "score": 5.02,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复"
-          ]
-        },
-        {
-          "rank": 20,
-          "code": "YALA",
-          "name": "YALA",
-          "score": 1.81,
-          "reason": "拉升启动 · 普通观察",
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
           ]
         }
       ]
@@ -1448,19 +1155,6 @@
         },
         {
           "rank": 16,
-          "code": "TENB",
-          "name": "TENB",
-          "score": 0.66,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ]
-        },
-        {
-          "rank": 17,
           "code": "HELE",
           "name": "HELE",
           "score": 25.39,
@@ -1473,7 +1167,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 17,
           "code": "ARHS",
           "name": "ARHS",
           "score": 9.04,
@@ -1487,7 +1181,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 18,
           "code": "BLDR",
           "name": "BLDR",
           "score": 9.26,
@@ -1499,7 +1193,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 19,
           "code": "STE",
           "name": "STE",
           "score": 7.16,
@@ -1509,211 +1203,16 @@
             "平台突破",
             "强势股洗盘·十字星整理（再突破确认）"
           ]
-        }
-      ]
-    },
-    {
-      "id": "breakdown_wash",
-      "name": "破位洗盘",
-      "picks": [
-        {
-          "rank": 1,
-          "code": "ALLY",
-          "name": "Ally Financial Inc.",
-          "score": 3.8,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 2,
-          "code": "ALOY",
-          "name": "REalloys Inc. Common Stock",
-          "score": 10.08,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 3,
-          "code": "AMN",
-          "name": "AMN Healthcare Services",
-          "score": 5.39,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 4,
-          "code": "ARGX",
-          "name": "argenx SE American Depositary Shares",
-          "score": 3.36,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 5,
-          "code": "ARQT",
-          "name": "Arcutis Biotherapeutics, Inc. Common Stock",
-          "score": 6.41,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 6,
-          "code": "AVLN",
-          "name": "Avalyn Pharma Inc. Common Stock",
-          "score": 2.46,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 7,
-          "code": "AVR",
-          "name": "Anteris Technologies Global Corp. Common Stock",
-          "score": 9.29,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 8,
-          "code": "BRCB",
-          "name": "Black Rock Coffee Bar, Inc. Class A Common Stock",
-          "score": 11.23,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 9,
-          "code": "BRSP",
-          "name": "BrightSpire Capital, Inc.",
-          "score": 5.46,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 10,
-          "code": "CAKE",
-          "name": "Cheesecake Factory (The)",
-          "score": 4.69,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 11,
-          "code": "CHRW",
-          "name": "C.H. Robinson Worldwide, Inc.",
-          "score": 0.25,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 12,
-          "code": "CLNE",
-          "name": "Clean Energy Fuels Corp.",
-          "score": 0.64,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 13,
-          "code": "CNC",
-          "name": "Centene Corporation",
-          "score": 12.64,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 14,
-          "code": "CRNC",
-          "name": "Cerence Inc. Common Stock",
-          "score": 5.99,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 15,
-          "code": "DBI",
-          "name": "Designer Brands Inc.",
-          "score": 13.81,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 16,
-          "code": "DLO",
-          "name": "DLocal Limited Class A Common Shares",
-          "score": 5.46,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 17,
-          "code": "DMC",
-          "name": "Del Monte Corporation",
-          "score": 5.71,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 18,
-          "code": "DRD",
-          "name": "DRDGOLD Ltd.",
-          "score": 8.16,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
-        },
-        {
-          "rank": 19,
-          "code": "DSGX",
-          "name": "Descartes Systems Group Inc",
-          "score": 3.92,
-          "reason": "拉升启动",
-          "tags": [
-            "破位洗盘"
-          ]
         },
         {
           "rank": 20,
-          "code": "EBAY",
-          "name": "eBay Inc",
-          "score": 5.5,
-          "reason": "拉升启动",
+          "code": "VSXY",
+          "name": "VSXY",
+          "score": 8.38,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "破位洗盘"
+            "稳健慢牛",
+            "强势股洗盘·高开假阴线（再突破确认）"
           ]
         }
       ]
@@ -1796,8 +1295,7 @@
           "score": -2.35,
           "reason": "建仓观察 · 普通观察",
           "tags": [
-            "量价健康",
-            "当天量能异常大"
+            "量价健康"
           ]
         },
         {
@@ -1936,26 +1434,6 @@
         },
         {
           "rank": 2,
-          "code": "QS",
-          "name": "QS",
-          "score": 7.52,
-          "reason": "拉升启动 · 主线＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 3,
-          "code": "ENLT",
-          "name": "ENLT",
-          "score": 4.48,
-          "reason": "拉升启动 · 主线＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 4,
           "code": "UBER",
           "name": "UBER",
           "score": 4.91,
@@ -1965,17 +1443,7 @@
           ]
         },
         {
-          "rank": 5,
-          "code": "JPM",
-          "name": "JPM",
-          "score": 4.18,
-          "reason": "拉升启动 · 强势板块＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 6,
+          "rank": 3,
           "code": "ISRG",
           "name": "ISRG",
           "score": 9.38,
@@ -1985,7 +1453,7 @@
           ]
         },
         {
-          "rank": 7,
+          "rank": 4,
           "code": "NEM",
           "name": "NEM",
           "score": 9.9,
@@ -1995,17 +1463,7 @@
           ]
         },
         {
-          "rank": 8,
-          "code": "GMED",
-          "name": "GMED",
-          "score": 9.45,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 9,
+          "rank": 5,
           "code": "CON",
           "name": "CON",
           "score": 8.49,
@@ -2015,7 +1473,7 @@
           ]
         },
         {
-          "rank": 10,
+          "rank": 6,
           "code": "DAL",
           "name": "DAL",
           "score": 7.16,
@@ -2025,7 +1483,7 @@
           ]
         },
         {
-          "rank": 11,
+          "rank": 7,
           "code": "BDX",
           "name": "BDX",
           "score": 5.56,
@@ -2035,7 +1493,7 @@
           ]
         },
         {
-          "rank": 12,
+          "rank": 8,
           "code": "PRU",
           "name": "PRU",
           "score": 6.58,
@@ -2045,27 +1503,7 @@
           ]
         },
         {
-          "rank": 13,
-          "code": "Z",
-          "name": "Z",
-          "score": 9.43,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 14,
-          "code": "TRIP",
-          "name": "TRIP",
-          "score": 8.05,
-          "reason": "拉升启动 · 独立量价强势＋确认形态",
-          "tags": [
-            "跳空高开"
-          ]
-        },
-        {
-          "rank": 15,
+          "rank": 9,
           "code": "GOOS",
           "name": "GOOS",
           "score": 7.74,
@@ -2075,7 +1513,7 @@
           ]
         },
         {
-          "rank": 16,
+          "rank": 10,
           "code": "DIS",
           "name": "DIS",
           "score": 4.18,
@@ -2085,7 +1523,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 11,
           "code": "D",
           "name": "D",
           "score": 4.45,
@@ -2095,7 +1533,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 12,
           "code": "THC",
           "name": "THC",
           "score": 9.58,
@@ -2105,7 +1543,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 13,
           "code": "SGI",
           "name": "SGI",
           "score": 6.82,
@@ -2115,7 +1553,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 14,
           "code": "AIZ",
           "name": "AIZ",
           "score": 4.18,
@@ -2123,61 +1561,65 @@
           "tags": [
             "跳空高开"
           ]
-        }
-      ]
-    },
-    {
-      "id": "ma30_support_v1",
-      "name": "30日均线",
-      "picks": [
+        },
         {
-          "rank": 1,
-          "code": "A",
-          "name": "Agilent Technologies Inc.",
-          "score": 0.97,
-          "reason": "洗盘/锁仓 · 普通观察",
+          "rank": 15,
+          "code": "GLBE",
+          "name": "GLBE",
+          "score": 8.06,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "30日均线"
+            "跳空高开"
           ]
         },
         {
-          "rank": 2,
-          "code": "HUM",
-          "name": "Humana Inc.",
-          "score": -0.11,
-          "reason": "拉升启动 · 形态确认／暂无当日主线",
+          "rank": 16,
+          "code": "WYNN",
+          "name": "WYNN",
+          "score": 6.05,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "30日均线"
+            "跳空高开"
           ]
         },
         {
-          "rank": 3,
-          "code": "UGI",
-          "name": "UGI Corporation",
-          "score": -0.13,
-          "reason": "洗盘/锁仓 · 普通观察",
+          "rank": 17,
+          "code": "HASI",
+          "name": "HASI",
+          "score": 5.18,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "30日均线"
+            "跳空高开"
           ]
         },
         {
-          "rank": 4,
-          "code": "XERS",
-          "name": "Xeris Biopharma Holdings, Inc. Common Stock",
-          "score": 1.06,
-          "reason": "稳健上升 · 普通观察",
+          "rank": 18,
+          "code": "DNLI",
+          "name": "DNLI",
+          "score": 7.76,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "30日均线"
+            "跳空高开"
           ]
         },
         {
-          "rank": 5,
-          "code": "ZS",
-          "name": "Zscaler, Inc. Common Stock",
-          "score": -0.29,
-          "reason": "稳健上升 · 普通观察",
+          "rank": 19,
+          "code": "ABT",
+          "name": "ABT",
+          "score": 5.59,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
           "tags": [
-            "30日均线"
+            "跳空高开"
+          ]
+        },
+        {
+          "rank": 20,
+          "code": "TTWO",
+          "name": "TTWO",
+          "score": 7.13,
+          "reason": "拉升启动 · 独立量价强势＋确认形态",
+          "tags": [
+            "跳空高开"
           ]
         }
       ]
