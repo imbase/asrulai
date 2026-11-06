@@ -1,29 +1,29 @@
 {
   "generatedAt": "2026-11-05T16:35:03.220Z",
   "engineVersion": "strategy-engine-1.1.0",
-  "latestMarketDate": "2026-11-04",
-  "marketDate": "2026-11-04",
+  "latestMarketDate": "2026-11-05",
+  "marketDate": "2026-11-05",
   "reportMarketDate": "2026-11-04",
   "reportId": "2026-11-05T16:35:03.220Z",
-  "status": "PASS",
+  "status": "STALE_REPORT",
   "strategies": [
     {
       "id": "strong_launch",
       "name": "强势经典启动",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
-      "status": "VALID_EMPTY",
+      "status": "STALE_REPORT",
       "picksCount": 0,
       "count": 0,
-      "reason": "数据截至2026-11-04，本次已保存扫描没有符合原条件的信号",
+      "reason": "K线数据截至2026-11-05，报告截至2026-11-04；信号已过期或报告待更新",
       "picks": []
     },
     {
       "id": "extreme_quiet",
       "name": "极静思动",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
       "picksCount": 5,
@@ -106,11 +106,11 @@
       "id": "abnormal_volume_small_gain",
       "name": "当天量能异常大",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 29,
-      "count": 29,
+      "picksCount": 21,
+      "count": 21,
       "reason": "",
       "picks": [
         {
@@ -226,20 +226,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CPNG",
-          "name": "CPNG",
-          "change1d": 0.11950098489822714,
-          "tags": [
-            "量价健康",
-            "平台突破",
-            "洗盘修复",
-            "当天量能异常大"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
           "symbol": "DAL",
           "name": "DAL",
           "change1d": 0.0715658021133525,
@@ -261,30 +247,6 @@
             "当天量能异常大"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JBIO",
-          "name": "JBIO",
-          "change1d": 0.032258064516129004,
-          "tags": [
-            "量价健康",
-            "当天量能异常大"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JXN",
-          "name": "JXN",
-          "change1d": -0.02346249555634561,
-          "tags": [
-            "量价健康",
-            "当天量能异常大"
-          ],
-          "stage": "建仓观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -370,18 +332,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ROL",
-          "name": "ROL",
-          "change1d": 0.02757697456492636,
-          "tags": [
-            "量价健康",
-            "当天量能异常大"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "RVMD",
           "name": "RVMD",
           "change1d": 0.02816248777222885,
@@ -391,58 +341,6 @@
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SOLS",
-          "name": "SOLS",
-          "change1d": -0.06543569808875926,
-          "tags": [
-            "当天量能异常大"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TBBB",
-          "name": "TBBB",
-          "change1d": 0.03334921391138623,
-          "tags": [
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TLN",
-          "name": "TLN",
-          "change1d": -0.08536721898790867,
-          "tags": [
-            "当天量能异常大"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ULS",
-          "name": "ULS",
-          "change1d": -0.008333333333333304,
-          "tags": [
-            "稳健慢牛",
-            "量价健康",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
           "verification": "saved"
         },
         {
@@ -503,11 +401,11 @@
       "id": "needle_bottom",
       "name": "金针探底",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 21,
-      "count": 21,
+      "picksCount": 18,
+      "count": 18,
       "reason": "",
       "picks": [
         {
@@ -517,17 +415,6 @@
           "tags": [],
           "stage": "出货风险",
           "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ENPH",
-          "name": "ENPH",
-          "change1d": 0.037146614069691,
-          "tags": [
-            "洗盘修复"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
         {
@@ -577,17 +464,6 @@
           "name": "LMND",
           "change1d": 0.11030478955007239,
           "tags": [],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LPLA",
-          "name": "LPLA",
-          "change1d": 0.046428811395551994,
-          "tags": [
-            "洗盘修复"
-          ],
           "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
@@ -646,15 +522,6 @@
           "symbol": "WOLF",
           "name": "WOLF",
           "change1d": 0.016503122212310428,
-          "tags": [],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SYM",
-          "name": "SYM",
-          "change1d": -0.00026652452025599516,
           "tags": [],
           "stage": "出货风险",
           "candidateTier": "普通观察",
@@ -722,11 +589,11 @@
       "id": "pulse_wash",
       "name": "上冲下洗",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 66,
-      "count": 66,
+      "picksCount": 63,
+      "count": 63,
       "reason": "",
       "picks": [
         {
@@ -868,20 +735,6 @@
             "平台突破",
             "上冲下洗（再突破确认）",
             "强势股洗盘·长上影+长下影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TENB",
-          "name": "TENB",
-          "change1d": 0.006591537316606555,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -1074,19 +927,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NRDS",
-          "name": "NRDS",
-          "change1d": 0.0894833948339484,
-          "tags": [
-            "稳健慢牛",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·长上影+长下影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "SPOT",
           "name": "SPOT",
           "change1d": 0.045943108533719856,
@@ -1248,7 +1088,6 @@
           "change1d": 0.07358524679081535,
           "tags": [
             "稳健慢牛",
-            "一箭穿三",
             "量价健康",
             "平台突破",
             "上冲下洗（再突破确认）"
@@ -1343,21 +1182,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ULTA",
-          "name": "ULTA",
-          "change1d": 0.04065271149332972,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "DFIN",
           "name": "DFIN",
           "change1d": 0.02142647490460803,
@@ -1394,8 +1218,7 @@
             "稳健慢牛",
             "量价健康",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大"
+            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -1672,11 +1495,11 @@
       "id": "return_spear",
       "name": "杀回马枪",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 18,
-      "count": 18,
+      "picksCount": 15,
+      "count": 15,
       "reason": "",
       "picks": [
         {
@@ -1814,20 +1637,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NCPL",
-          "name": "NCPL",
-          "change1d": -0.09615384615384626,
-          "tags": [
-            "地量",
-            "量价健康",
-            "洗盘修复",
-            "杀回马枪（缩量回洗·突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "OVID",
           "name": "OVID",
           "change1d": 0.14166666666666683,
@@ -1891,32 +1700,6 @@
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
           "verification": "saved"
-        },
-        {
-          "symbol": "AOUT",
-          "name": "AOUT",
-          "change1d": -0.007751937984495916,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "杀回马枪（缩量回洗·突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRCC",
-          "name": "BRCC",
-          "change1d": -0.0020470829068577334,
-          "tags": [
-            "杀回马枪（缩量回洗·突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
         }
       ]
     },
@@ -1924,366 +1707,23 @@
       "id": "arrow_cross_three",
       "name": "一箭穿三",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
-      "status": "PASS",
-      "picksCount": 27,
-      "count": 27,
-      "reason": "",
-      "picks": [
-        {
-          "symbol": "MQ",
-          "name": "MQ",
-          "change1d": 0.04494382022471921,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WAY",
-          "name": "WAY",
-          "change1d": 0.07358524679081535,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "量价健康",
-            "平台突破",
-            "上冲下洗（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "STLN",
-          "name": "STLN",
-          "change1d": 0.09463722397476348,
-          "tags": [
-            "一箭穿三",
-            "洗盘修复",
-            "强势股洗盘·缩量挖坑（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NTR",
-          "name": "NTR",
-          "change1d": 0.03967109059434515,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BALL",
-          "name": "BALL",
-          "change1d": 0.065970574276222,
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HSIC",
-          "name": "HSIC",
-          "change1d": 0.06957575757575762,
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GRMN",
-          "name": "GRMN",
-          "change1d": 0.06524462127910402,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GAP",
-          "name": "GAP",
-          "change1d": 0.0800363801728059,
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NSIT",
-          "name": "NSIT",
-          "change1d": 0.0494173887063043,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MIRM",
-          "name": "MIRM",
-          "change1d": 0.11421348960128697,
-          "tags": [
-            "一箭穿三"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BXSL",
-          "name": "BXSL",
-          "change1d": 0.030146425495262807,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LIF",
-          "name": "LIF",
-          "change1d": 0.0661193698690925,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "平台突破"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PS",
-          "name": "PS",
-          "change1d": 0.1320188598371197,
-          "tags": [
-            "一箭穿三"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UMH",
-          "name": "UMH",
-          "change1d": 0.04813559322033911,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MGA",
-          "name": "MGA",
-          "change1d": 0.04224233762108942,
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WTM",
-          "name": "WTM",
-          "change1d": 0.039260363957612565,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PPC",
-          "name": "PPC",
-          "change1d": 0.06341642228739008,
-          "tags": [
-            "一箭穿三",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DLX",
-          "name": "DLX",
-          "change1d": 0.06502955889040485,
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSV",
-          "name": "CSV",
-          "change1d": 0.050204319906596684,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "量价健康",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "YALA",
-          "name": "YALA",
-          "change1d": 0.018050541516245522,
-          "tags": [
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DDI",
-          "name": "DDI",
-          "change1d": 0.03458646616541339,
-          "tags": [
-            "稳健慢牛",
-            "一箭穿三",
-            "量价健康",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ELV",
-          "name": "ELV",
-          "change1d": 0.049377643504531665,
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSW",
-          "name": "CSW",
-          "change1d": 0.056708407871198574,
-          "tags": [
-            "一箭穿三",
-            "紧密K线",
-            "洗盘修复"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NEXN",
-          "name": "NEXN",
-          "change1d": 0.04587155963302725,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BCC",
-          "name": "BCC",
-          "change1d": 0.04237401416922881,
-          "tags": [
-            "一箭穿三",
-            "紧密K线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SAH",
-          "name": "SAH",
-          "change1d": 0.05553724456163467,
-          "tags": [
-            "一箭穿三"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ALX",
-          "name": "ALX",
-          "change1d": 0.04093615958022734,
-          "tags": [
-            "一箭穿三"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        }
-      ]
+      "status": "STALE_REPORT",
+      "picksCount": 0,
+      "count": 0,
+      "reason": "K线数据截至2026-11-05，报告截至2026-11-04；信号已过期或报告待更新",
+      "picks": []
     },
     {
       "id": "strong_wash",
       "name": "强势股洗盘",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 161,
-      "count": 161,
+      "picksCount": 141,
+      "count": 141,
       "reason": "",
       "picks": [
         {
@@ -2488,20 +1928,6 @@
             "平台突破",
             "上冲下洗（再突破确认）",
             "强势股洗盘·长上影+长下影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TENB",
-          "name": "TENB",
-          "change1d": 0.006591537316606555,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -2943,19 +2369,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "W",
-          "name": "W",
-          "change1d": 0.10995328781890046,
-          "tags": [
-            "稳健慢牛",
-            "平台突破",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "FDS",
           "name": "FDS",
           "change1d": 0.02886436753961341,
@@ -3050,7 +2463,6 @@
           "name": "STLN",
           "change1d": 0.09463722397476348,
           "tags": [
-            "一箭穿三",
             "洗盘修复",
             "强势股洗盘·缩量挖坑（再突破确认）"
           ],
@@ -3086,20 +2498,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "DVA",
-          "name": "DVA",
-          "change1d": 0.05758357578086404,
-          "tags": [
-            "多均线支撑",
-            "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "破位洗盘·快速收回支撑"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "ARQT",
           "name": "ARQT",
           "change1d": 0.06406249999999991,
@@ -3120,8 +2518,7 @@
             "稳健慢牛",
             "量价健康",
             "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大"
+            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3252,18 +2649,6 @@
             "量价健康",
             "紧密K线",
             "强势股洗盘·连续长上影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MHK",
-          "name": "MHK",
-          "change1d": 0.055035773252614106,
-          "tags": [
-            "量价健康",
-            "强势股洗盘·横盘箱体（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3403,21 +2788,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ULTA",
-          "name": "ULTA",
-          "change1d": 0.04065271149332972,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "紧密K线",
-            "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "CURB",
           "name": "CURB",
           "change1d": 0.04395984769816552,
@@ -3526,8 +2896,7 @@
             "稳健慢牛",
             "量价健康",
             "上冲下洗（再突破确认）",
-            "强势股洗盘·十字星整理（再突破确认）",
-            "当天量能异常大"
+            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3541,19 +2910,6 @@
             "多均线支撑",
             "稳健慢牛",
             "量价健康",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ALLE",
-          "name": "ALLE",
-          "change1d": 0.01763929231581729,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
             "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
@@ -3576,36 +2932,11 @@
           "verification": "saved"
         },
         {
-          "symbol": "CRI",
-          "name": "CRI",
-          "change1d": 0.0737783455764931,
-          "tags": [
-            "量价健康",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "HUN",
           "name": "HUN",
           "change1d": 0.041884816753926524,
           "tags": [
             "量价健康",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MAX",
-          "name": "MAX",
-          "change1d": -0.0066006600660065695,
-          "tags": [
-            "量价健康",
-            "上冲下洗（再突破确认）",
             "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
@@ -3648,36 +2979,12 @@
           "verification": "saved"
         },
         {
-          "symbol": "BV",
-          "name": "BV",
-          "change1d": 0.01697792869269965,
-          "tags": [
-            "强势股洗盘·高开假阴线（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "FIG",
           "name": "FIG",
           "change1d": 0.052306229196386056,
           "tags": [
             "量价健康",
             "强势股洗盘·长阴加长阳反包（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PRCH",
-          "name": "PRCH",
-          "change1d": 0.0018587360594795044,
-          "tags": [
-            "稳健慢牛",
-            "强势股洗盘·长阴加长阳反包（再突破确认）",
-            "破位洗盘·快速收回支撑"
           ],
           "stage": "拉升启动",
           "candidateTier": "独立量价强势＋确认形态",
@@ -3694,19 +3001,6 @@
             "平台突破",
             "紧密K线",
             "强势股洗盘·高开假阴线（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SITC",
-          "name": "SITC",
-          "change1d": 0.013623978201634968,
-          "tags": [
-            "稳健慢牛",
-            "量价健康",
-            "强势股洗盘·长上影+长下影（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -3775,19 +3069,6 @@
             "平台突破",
             "上冲下洗（再突破确认）",
             "强势股洗盘·横盘箱体（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AWK",
-          "name": "AWK",
-          "change1d": 0.021923234530801805,
-          "tags": [
-            "平台突破",
-            "紧密K线",
-            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -3937,39 +3218,11 @@
           "verification": "saved"
         },
         {
-          "symbol": "LION",
-          "name": "LION",
-          "change1d": 0.02168674698795181,
-          "tags": [
-            "多均线支撑",
-            "量价健康",
-            "强势股洗盘·长上影+长下影（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "ZYME",
           "name": "ZYME",
           "change1d": 0.026883504812479364,
           "tags": [
             "强势股洗盘·横盘箱体（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WPP",
-          "name": "WPP",
-          "change1d": 0.03423160961398386,
-          "tags": [
-            "多均线支撑",
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
           "candidateTier": "形态确认／暂无当日主线",
@@ -4174,36 +3427,10 @@
           "verification": "saved"
         },
         {
-          "symbol": "RRGB",
-          "name": "RRGB",
-          "change1d": 0.01986754966887405,
-          "tags": [
-            "稳健慢牛",
-            "量价健康",
-            "洗盘修复",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "DGNX",
           "name": "DGNX",
           "change1d": -0.10738255033557043,
           "tags": [
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JRSH",
-          "name": "JRSH",
-          "change1d": -0.010221465076661107,
-          "tags": [
-            "量价健康",
             "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
@@ -4283,37 +3510,11 @@
           "verification": "saved"
         },
         {
-          "symbol": "TTEC",
-          "name": "TTEC",
-          "change1d": 0,
-          "tags": [
-            "稳健慢牛",
-            "地量",
-            "量价健康",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "BLIV",
           "name": "BLIV",
           "change1d": 0.052863436123347984,
           "tags": [
             "地量",
-            "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRCC",
-          "name": "BRCC",
-          "change1d": -0.0020470829068577334,
-          "tags": [
-            "杀回马枪（缩量回洗·突破确认）",
             "强势股洗盘·十字星整理（再突破确认）"
           ],
           "stage": "拉升启动",
@@ -4357,18 +3558,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "GTN.A",
-          "name": "GTN.A",
-          "change1d": -0.09787234042553183,
-          "tags": [
-            "洗盘修复",
-            "强势股洗盘·长阴加长阳反包（再突破确认）"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "PSIX",
           "name": "PSIX",
           "change1d": -0.1974509407242565,
@@ -4386,17 +3575,6 @@
           "change1d": -0.13127413127413123,
           "tags": [
             "强势股洗盘·十字星整理（再突破确认）"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMWL",
-          "name": "AMWL",
-          "change1d": -0.030612244897959218,
-          "tags": [
-            "强势股洗盘·高开假阴线（再突破确认）"
           ],
           "stage": "出货风险",
           "candidateTier": "形态确认／暂无当日主线",
@@ -4421,647 +3599,19 @@
       "id": "breakdown_wash",
       "name": "破位洗盘",
       "savedPicksCount": 57,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
-      "status": "PASS",
-      "picksCount": 57,
-      "count": 57,
-      "reason": "",
-      "picks": [
-        {
-          "symbol": "ALLY",
-          "name": "Ally Financial Inc.",
-          "change1d": 0.03797468354430378,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ALOY",
-          "name": "REalloys Inc. Common Stock",
-          "change1d": 0.1008264462809918,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "AMN",
-          "name": "AMN Healthcare Services",
-          "change1d": 0.05386313465783665,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ARGX",
-          "name": "argenx SE American Depositary Shares",
-          "change1d": 0.03358043323863624,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ARQT",
-          "name": "Arcutis Biotherapeutics, Inc. Common Stock",
-          "change1d": 0.06406249999999991,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "AVLN",
-          "name": "Avalyn Pharma Inc. Common Stock",
-          "change1d": 0.02461767997016029,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "AVR",
-          "name": "Anteris Technologies Global Corp. Common Stock",
-          "change1d": 0.09285714285714297,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRCB",
-          "name": "Black Rock Coffee Bar, Inc. Class A Common Stock",
-          "change1d": 0.11234817813765186,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRSP",
-          "name": "BrightSpire Capital, Inc.",
-          "change1d": 0.05459770114942519,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "CAKE",
-          "name": "Cheesecake Factory (The)",
-          "change1d": 0.04690618762475052,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "CHRW",
-          "name": "C.H. Robinson Worldwide, Inc.",
-          "change1d": 0.0024717249644221617,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "CLNE",
-          "name": "Clean Energy Fuels Corp.",
-          "change1d": 0.0064102564102563875,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "CNC",
-          "name": "Centene Corporation",
-          "change1d": 0.12640782454060462,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "CRNC",
-          "name": "Cerence Inc. Common Stock",
-          "change1d": 0.0598548972188635,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "DBI",
-          "name": "Designer Brands Inc.",
-          "change1d": 0.1381475667189953,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "DLO",
-          "name": "DLocal Limited Class A Common Shares",
-          "change1d": 0.054628224582701,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "DMC",
-          "name": "Del Monte Corporation",
-          "change1d": 0.057090239410681365,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "DRD",
-          "name": "DRDGOLD Ltd.",
-          "change1d": 0.08156028368794321,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "DSGX",
-          "name": "Descartes Systems Group Inc",
-          "change1d": 0.03915761763738068,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "EBAY",
-          "name": "eBay Inc",
-          "change1d": 0.055049738661271386,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "GENI",
-          "name": "Genius Sports Limited",
-          "change1d": 0.03088235294117636,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "GSK",
-          "name": "GSK plc American Depositary Shares (Each representing two Ordinary Shares)",
-          "change1d": 0.0503080082135523,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "HLT",
-          "name": "Hilton Worldwide Holdings Inc.",
-          "change1d": 0.03490641233543146,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "HMC",
-          "name": "Honda Motor Co., Ltd. American Depositary Share, each representing three (3) shares of Common Stock",
-          "change1d": 0.03618711385701667,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ICL",
-          "name": "ICL Group Ltd.",
-          "change1d": 0.050458715596330306,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "INNV",
-          "name": "InnovAge Holding Corp. Common Stock",
-          "change1d": 0.10621468926553668,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ISRG",
-          "name": "Intuitive Surgical Inc.",
-          "change1d": 0.09381735677821901,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "JBS",
-          "name": "JBS N.V.",
-          "change1d": 0.06229508196721323,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "KDP",
-          "name": "Keurig Dr Pepper Inc.",
-          "change1d": 0.05900978698906156,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "KGC",
-          "name": "Kinross Gold Corporation",
-          "change1d": 0.07476166583040644,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "KSS",
-          "name": "Kohls Corporation",
-          "change1d": 0.07366638441998297,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "LCID",
-          "name": "Lucid Group, Inc. Common Stock",
-          "change1d": 0.11589403973509937,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "LION",
-          "name": "Lionsgate Studios Corp.",
-          "change1d": 0.02168674698795181,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "MICC",
-          "name": "The Magnum Ice Cream Company N.V.",
-          "change1d": 0.038679731820526086,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "NHP",
-          "name": "National Healthcare Properties, Inc. Common Stock",
-          "change1d": 0.020012911555842505,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "NSIT",
-          "name": "Insight Enterprises Inc",
-          "change1d": 0.0494173887063043,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "OGC",
-          "name": "OceanaGold Corporation",
-          "change1d": 0.09191020753917845,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "OGG",
-          "name": "Osisko Gold Group Inc.",
-          "change1d": 0.07272727272727253,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "OMC",
-          "name": "Omnicom Group Inc.",
-          "change1d": 0.05218227726343638,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "PACS",
-          "name": "PACS Group, Inc.",
-          "change1d": 0.07669237360754066,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "PCVX",
-          "name": "Vaxcyte, Inc. Common Stock",
-          "change1d": 0.08008551225127447,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "PEPG",
-          "name": "PepGen Inc. Common Stock",
-          "change1d": -0.004065040650406471,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "RCEL",
-          "name": "Avita Medical, Inc. Common Stock",
-          "change1d": 0.06457925636007822,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "RGR",
-          "name": "Sturm, Ruger & Company, Inc.",
-          "change1d": 0.10616134751773054,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "ROKU",
-          "name": "Roku, Inc. Class A Common Stock",
-          "change1d": 0.015028685457720181,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "RYAM",
-          "name": "Rayonier Advanced Materials Inc.",
-          "change1d": 0.0347322720694645,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "SCHW",
-          "name": "The Charles Schwab Corporation",
-          "change1d": 0.04581093189964158,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "SHOE",
-          "name": "Shoe Station Group, Inc. Common Stock",
-          "change1d": 0.1181434599156117,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "STLN",
-          "name": "Starling Oncology, Inc. Common Stock",
-          "change1d": 0.09463722397476348,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "STT",
-          "name": "State Street Corporation",
-          "change1d": 0.02180189735431015,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "TBCH",
-          "name": "Turtle Beach Corporation Common Stock",
-          "change1d": 0.07206068268015176,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "TNDM",
-          "name": "Tandem Diabetes Care, Inc.",
-          "change1d": 0.07932011331444766,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "TRV",
-          "name": "The Travelers Companies, Inc.",
-          "change1d": 0.0350016438633316,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "TSHA",
-          "name": "Taysha Gene Therapies, Inc. Common Stock",
-          "change1d": 0.0660146699266504,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "WEST",
-          "name": "Westrock Coffee Company Common Stock",
-          "change1d": 0.09398099260823645,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "WM",
-          "name": "Waste Management, Inc.",
-          "change1d": 0.016278177866791754,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        },
-        {
-          "symbol": "Z",
-          "name": "Zillow Group, Inc. Class C Capital Stock",
-          "change1d": 0.09425435765009671,
-          "tags": [
-            "破位洗盘"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": null,
-          "verification": "saved"
-        }
-      ]
+      "status": "STALE_REPORT",
+      "picksCount": 0,
+      "count": 0,
+      "reason": "K线数据截至2026-11-05，报告截至2026-11-04；信号已过期或报告待更新",
+      "picks": []
     },
     {
       "id": "ma5_support",
       "name": "5日均线支撑",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
       "picksCount": 18,
@@ -5146,8 +3696,7 @@
           "name": "JXN",
           "change1d": -0.02346249555634561,
           "tags": [
-            "量价健康",
-            "当天量能异常大"
+            "量价健康"
           ],
           "stage": "建仓观察",
           "candidateTier": "普通观察",
@@ -5288,11 +3837,11 @@
       "id": "gap_up_start_v1",
       "name": "跳空高开",
       "savedPicksCount": null,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
       "status": "PASS",
-      "picksCount": 731,
-      "count": 731,
+      "picksCount": 448,
+      "count": 448,
       "reason": "",
       "picks": [
         {
@@ -5307,42 +3856,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "QS",
-          "name": "QS",
-          "change1d": 0.0752427184466018,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ENLT",
-          "name": "ENLT",
-          "change1d": 0.044787644787644965,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "UBER",
           "name": "UBER",
           "change1d": 0.04909909909909915,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JPM",
-          "name": "JPM",
-          "change1d": 0.041807207527072565,
           "tags": [
             "跳空高开"
           ],
@@ -5365,17 +3881,6 @@
           "symbol": "NEM",
           "name": "NEM",
           "change1d": 0.09900437331348289,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GMED",
-          "name": "GMED",
-          "change1d": 0.09449610454888169,
           "tags": [
             "跳空高开"
           ],
@@ -5420,28 +3925,6 @@
           "symbol": "PRU",
           "name": "PRU",
           "change1d": 0.06581937547344485,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "Z",
-          "name": "Z",
-          "change1d": 0.09425435765009671,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TRIP",
-          "name": "TRIP",
-          "change1d": 0.0805084745762712,
           "tags": [
             "跳空高开"
           ],
@@ -5516,17 +3999,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "HQY",
-          "name": "HQY",
-          "change1d": 0.06674507497794768,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "GLBE",
           "name": "GLBE",
           "change1d": 0.08056758056758051,
@@ -5582,17 +4054,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "BLK",
-          "name": "BLK",
-          "change1d": 0.05429166810181507,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "TTWO",
           "name": "TTWO",
           "change1d": 0.07133699164059704,
@@ -5640,28 +4101,6 @@
           "symbol": "PDM",
           "name": "PDM",
           "change1d": 0.05334728033472791,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LSPD",
-          "name": "LSPD",
-          "change1d": 0.052823315118396996,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SHOO",
-          "name": "SHOO",
-          "change1d": 0.06699977288212566,
           "tags": [
             "跳空高开"
           ],
@@ -5758,17 +4197,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CNNE",
-          "name": "CNNE",
-          "change1d": 0.035127478753541164,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "NVR",
           "name": "NVR",
           "change1d": 0.058442550027220985,
@@ -5791,53 +4219,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "RELY",
-          "name": "RELY",
-          "change1d": 0.06698187549251378,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "WLTH",
-          "name": "WLTH",
-          "change1d": 0.07046979865771807,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GOLD",
-          "name": "GOLD",
-          "change1d": 0.059049079754601275,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "CLOV",
           "name": "CLOV",
           "change1d": 0.09324009324009341,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SNDA",
-          "name": "SNDA",
-          "change1d": 0.08725029377203297,
           "tags": [
             "跳空高开"
           ],
@@ -5868,17 +4252,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NWS",
-          "name": "NWS",
-          "change1d": 0.04148471615720517,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "TRIN",
           "name": "TRIN",
           "change1d": 0.05219941348973611,
@@ -5890,31 +4263,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "SVV",
-          "name": "SVV",
-          "change1d": 0.08172043010752694,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "SOLV",
           "name": "SOLV",
           "change1d": 0.05415290231241143,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LCLN",
-          "name": "LCLN",
-          "change1d": 0.05252993433758202,
           "tags": [
             "跳空高开"
           ],
@@ -5945,39 +4296,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "MNTN",
-          "name": "MNTN",
-          "change1d": 0.06577595066803688,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FUBO",
-          "name": "FUBO",
-          "change1d": 0.07722513089005245,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GIL",
-          "name": "GIL",
-          "change1d": 0.06550110810145293,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "NEE",
           "name": "NEE",
           "change1d": 0.04885568599549406,
@@ -5989,31 +4307,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "VMC",
-          "name": "VMC",
-          "change1d": 0.04599437807449047,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "LOW",
           "name": "LOW",
           "change1d": 0.07498359733808235,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "强势板块＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PYPL",
-          "name": "PYPL",
-          "change1d": 0.034186565882150965,
           "tags": [
             "跳空高开"
           ],
@@ -6132,28 +4428,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "WWW",
-          "name": "WWW",
-          "change1d": 0.08645399907535833,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "STUB",
-          "name": "STUB",
-          "change1d": 0.08745874587458746,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "YELP",
           "name": "YELP",
           "change1d": 0.1119515885022695,
@@ -6253,50 +4527,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NCLH",
-          "name": "NCLH",
-          "change1d": 0.0677382319173363,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BBIO",
-          "name": "BBIO",
-          "change1d": 0.052141023909225925,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RL",
-          "name": "RL",
-          "change1d": 0.04477687626774851,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PVH",
-          "name": "PVH",
-          "change1d": 0.06805708013172351,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "PRG",
           "name": "PRG",
           "change1d": 0.09197919518204212,
@@ -6308,42 +4538,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "ZGN",
-          "name": "ZGN",
-          "change1d": 0.06973400431344356,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "LUV",
           "name": "LUV",
           "change1d": 0.06835443037974676,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "W",
-          "name": "W",
-          "change1d": 0.10995328781890046,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FDS",
-          "name": "FDS",
-          "change1d": 0.02886436753961341,
           "tags": [
             "跳空高开"
           ],
@@ -6429,53 +4626,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "CPRI",
-          "name": "CPRI",
-          "change1d": 0.05832502492522451,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FTDR",
-          "name": "FTDR",
-          "change1d": 0.047962983861866704,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "GSHD",
           "name": "GSHD",
           "change1d": 0.07888186865785962,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BBW",
-          "name": "BBW",
-          "change1d": 0.07388491658154583,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CAL",
-          "name": "CAL",
-          "change1d": 0.11693242217160216,
           "tags": [
             "跳空高开"
           ],
@@ -6561,50 +4714,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "AGNT",
-          "name": "AGNT",
-          "change1d": 0.08928571428571419,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CBOE",
-          "name": "CBOE",
-          "change1d": 0.002701289647961014,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CDNA",
-          "name": "CDNA",
-          "change1d": -0.029501525940996975,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EXPO",
-          "name": "EXPO",
-          "change1d": 0.016982668372688137,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
           "symbol": "CRI",
           "name": "CRI",
           "change1d": 0.0737783455764931,
@@ -6619,61 +4728,6 @@
           "symbol": "PHIN",
           "name": "PHIN",
           "change1d": 0.040771909460243894,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MITK",
-          "name": "MITK",
-          "change1d": 0.05353200883002196,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ACCO",
-          "name": "ACCO",
-          "change1d": 0.061657032755298546,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SMPL",
-          "name": "SMPL",
-          "change1d": 0.06575781876503606,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AIN",
-          "name": "AIN",
-          "change1d": -0.02239717659834406,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "独立量价强势＋确认形态",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FIG",
-          "name": "FIG",
-          "change1d": 0.052306229196386056,
           "tags": [
             "跳空高开"
           ],
@@ -6704,50 +4758,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "TD",
-          "name": "TD",
-          "change1d": 0.027737694404361024,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VRSK",
-          "name": "VRSK",
-          "change1d": 0.00431472081218276,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NWSA",
-          "name": "NWSA",
-          "change1d": 0.037338764426340765,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PTON",
-          "name": "PTON",
-          "change1d": 0.02824858757062154,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "KHC",
           "name": "KHC",
           "change1d": 0.03752039151712894,
@@ -6762,61 +4772,6 @@
           "symbol": "VICI",
           "name": "VICI",
           "change1d": 0.033988533988533964,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TKO",
-          "name": "TKO",
-          "change1d": 0.03354700854700865,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RAL",
-          "name": "RAL",
-          "change1d": 0.003786285233487563,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MC",
-          "name": "MC",
-          "change1d": 0.03596757852077004,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GCO",
-          "name": "GCO",
-          "change1d": 0.07582808650424289,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MWH",
-          "name": "MWH",
-          "change1d": -0.017157776948899528,
           "tags": [
             "跳空高开"
           ],
@@ -6902,17 +4857,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "AMZN",
-          "name": "AMZN",
-          "change1d": 0.06119111252941867,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
           "symbol": "MSFT",
           "name": "MSFT",
           "change1d": 0.06681510201731311,
@@ -6920,28 +4864,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BMY",
-          "name": "BMY",
-          "change1d": 0.04018797601685287,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "REGN",
-          "name": "REGN",
-          "change1d": -0.043858387441439994,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
@@ -6979,17 +4901,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "V",
-          "name": "V",
-          "change1d": 0.038413966985395565,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
           "symbol": "HD",
           "name": "HD",
           "change1d": 0.06527602949109856,
@@ -6997,39 +4908,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DASH",
-          "name": "DASH",
-          "change1d": 0.08329696705214928,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TGT",
-          "name": "TGT",
-          "change1d": 0.056347150259067336,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SNAP",
-          "name": "SNAP",
-          "change1d": 0.05903398926654746,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "主线形态待确认",
           "verification": "saved"
         },
@@ -7078,17 +4956,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "MELI",
-          "name": "MELI",
-          "change1d": 0.04675843480772013,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "主线形态待确认",
-          "verification": "saved"
-        },
-        {
           "symbol": "APP",
           "name": "APP",
           "change1d": 0.10687955684086181,
@@ -7122,42 +4989,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "ADP",
-          "name": "ADP",
-          "change1d": 0.02543832978615601,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
           "symbol": "FOSL",
           "name": "FOSL",
           "change1d": 0.13901345291479816,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DBI",
-          "name": "DBI",
-          "change1d": 0.1381475667189953,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZYME",
-          "name": "ZYME",
-          "change1d": 0.026883504812479364,
           "tags": [
             "跳空高开"
           ],
@@ -7191,28 +5025,6 @@
           "symbol": "CNDT",
           "name": "CNDT",
           "change1d": 0.10738255033557031,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ULH",
-          "name": "ULH",
-          "change1d": 0.022499999999999964,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OFIX",
-          "name": "OFIX",
-          "change1d": 0.1095890410958904,
           "tags": [
             "跳空高开"
           ],
@@ -7305,28 +5117,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ORLY",
-          "name": "ORLY",
-          "change1d": 0.026114012668074338,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EXPE",
-          "name": "EXPE",
-          "change1d": 0.10536445393148353,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -7474,28 +5264,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "DKS",
-          "name": "DKS",
-          "change1d": 0.07710825795156118,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZTS",
-          "name": "ZTS",
-          "change1d": 0.07482829256536938,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PSA",
           "name": "PSA",
           "change1d": 0.02810522211224087,
@@ -7514,17 +5282,6 @@
             "跳空高开"
           ],
           "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DLTR",
-          "name": "DLTR",
-          "change1d": 0.09644215708212123,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -7569,17 +5326,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SW",
-          "name": "SW",
-          "change1d": 0.04076462459695973,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -7639,17 +5385,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "TECK",
-          "name": "TECK",
-          "change1d": 0.04287332146901779,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PFGC",
           "name": "PFGC",
           "change1d": 0.1353227644803645,
@@ -7694,17 +5429,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "HSIC",
-          "name": "HSIC",
-          "change1d": 0.06957575757575762,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "TAP",
           "name": "TAP",
           "change1d": 0.030331979937903153,
@@ -7727,17 +5451,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "HLI",
-          "name": "HLI",
-          "change1d": 0.049884148834673514,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ELAN",
           "name": "ELAN",
           "change1d": 0.03011803011803016,
@@ -7745,17 +5458,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DAVE",
-          "name": "DAVE",
-          "change1d": 0.06831469242501265,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -7782,28 +5484,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "GILD",
-          "name": "GILD",
-          "change1d": 0.0418582432674508,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SPGI",
-          "name": "SPGI",
-          "change1d": 0.0336029869321719,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "RCL",
           "name": "RCL",
           "change1d": 0.06379921448414594,
@@ -7811,17 +5491,6 @@
             "跳空高开"
           ],
           "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AZN",
-          "name": "AZN",
-          "change1d": 0.027898629541005082,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -7888,17 +5557,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MNST",
-          "name": "MNST",
-          "change1d": 0.033276812208562934,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -8002,17 +5660,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "WWD",
-          "name": "WWD",
-          "change1d": -0.01899666356067209,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CCEP",
           "name": "CCEP",
           "change1d": 0.03836500537827181,
@@ -8049,17 +5696,6 @@
           "symbol": "AMRZ",
           "name": "AMRZ",
           "change1d": 0.051941863235644536,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BTSG",
-          "name": "BTSG",
-          "change1d": -0.000572737686139857,
           "tags": [
             "跳空高开"
           ],
@@ -8134,39 +5770,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "TPG",
-          "name": "TPG",
-          "change1d": 0.03657780533168009,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SAIA",
-          "name": "SAIA",
-          "change1d": 0.02418030466051313,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "COMP",
-          "name": "COMP",
-          "change1d": 0.07725321888411996,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CINF",
           "name": "CINF",
           "change1d": 0.03330801779320813,
@@ -8174,17 +5777,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BEN",
-          "name": "BEN",
-          "change1d": 0.04666254635352285,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -8277,28 +5869,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "NVST",
-          "name": "NVST",
-          "change1d": 0.09769882922890605,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IBP",
-          "name": "IBP",
-          "change1d": 0.10806740092252642,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CNM",
           "name": "CNM",
           "change1d": 0.08379763761979064,
@@ -8306,17 +5876,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FOUR",
-          "name": "FOUR",
-          "change1d": 0.08026030368763548,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -8335,17 +5894,6 @@
           "symbol": "BILL",
           "name": "BILL",
           "change1d": 0.04114813327980715,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NSIT",
-          "name": "NSIT",
-          "change1d": 0.0494173887063043,
           "tags": [
             "跳空高开"
           ],
@@ -8376,17 +5924,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "MFC",
-          "name": "MFC",
-          "change1d": 0.027020991514068893,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "SKY",
           "name": "SKY",
           "change1d": 0.11346532360773409,
@@ -8394,17 +5931,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KTB",
-          "name": "KTB",
-          "change1d": 0.06552262090483607,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -8427,28 +5953,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ROAD",
-          "name": "ROAD",
-          "change1d": 0.030636618548135708,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HLNE",
-          "name": "HLNE",
-          "change1d": 0.07175899808191355,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -8486,17 +5990,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CUZ",
-          "name": "CUZ",
-          "change1d": 0.03727770177838585,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CARG",
           "name": "CARG",
           "change1d": 0.08143322475570036,
@@ -8522,17 +6015,6 @@
           "symbol": "BKU",
           "name": "BKU",
           "change1d": 0.039537572254335185,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZG",
-          "name": "ZG",
-          "change1d": 0.09888357256778324,
           "tags": [
             "跳空高开"
           ],
@@ -8739,17 +6221,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ZD",
-          "name": "ZD",
-          "change1d": 0.051120577884793406,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CAPR",
           "name": "CAPR",
           "change1d": 0.08252427184466016,
@@ -8827,17 +6298,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "BX",
-          "name": "BX",
-          "change1d": 0.06244183095016487,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "AZO",
           "name": "AZO",
           "change1d": 0.039237500000000036,
@@ -8904,28 +6364,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "PAYX",
-          "name": "PAYX",
-          "change1d": 0.0264591439688715,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RSG",
-          "name": "RSG",
-          "change1d": 0.010458269856301605,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ARES",
           "name": "ARES",
           "change1d": 0.061428682230667775,
@@ -8940,28 +6378,6 @@
           "symbol": "DPZ",
           "name": "DPZ",
           "change1d": 0.05447398557677441,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ACGL",
-          "name": "ACGL",
-          "change1d": 0.026811392522497535,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "QXO",
-          "name": "QXO",
-          "change1d": 0.08112724167378293,
           "tags": [
             "跳空高开"
           ],
@@ -9003,28 +6419,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "INCY",
-          "name": "INCY",
-          "change1d": 0.044731694872012895,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VLTO",
-          "name": "VLTO",
-          "change1d": 0.0060178817056395495,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "BN",
           "name": "BN",
           "change1d": 0.06053149606299213,
@@ -9039,17 +6433,6 @@
           "symbol": "DRI",
           "name": "DRI",
           "change1d": 0.05114180226993037,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSGP",
-          "name": "CSGP",
-          "change1d": 0.04022988505747116,
           "tags": [
             "跳空高开"
           ],
@@ -9102,17 +6485,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "FDXF",
-          "name": "FDXF",
-          "change1d": -0.0063718716413325716,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "AER",
           "name": "AER",
           "change1d": 0.020380518440982653,
@@ -9146,42 +6518,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "EVR",
-          "name": "EVR",
-          "change1d": 0.046534320323014855,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EXEL",
-          "name": "EXEL",
-          "change1d": 0.006084912183653701,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "UDR",
           "name": "UDR",
           "change1d": 0.035903145004174686,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AS",
-          "name": "AS",
-          "change1d": 0.05116431616923567,
           "tags": [
             "跳空高开"
           ],
@@ -9201,17 +6540,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CHWY",
-          "name": "CHWY",
-          "change1d": 0.06122448979591821,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "OLLI",
           "name": "OLLI",
           "change1d": 0.057653405259608936,
@@ -9219,17 +6547,6 @@
             "跳空高开"
           ],
           "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PFG",
-          "name": "PFG",
-          "change1d": 0.04127463163500811,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -9289,31 +6606,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "HR",
-          "name": "HR",
-          "change1d": 0.01355578727841511,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "HRL",
           "name": "HRL",
           "change1d": 0.0705550329256821,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AN",
-          "name": "AN",
-          "change1d": 0.02778555823203188,
           "tags": [
             "跳空高开"
           ],
@@ -9351,39 +6646,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UBS",
-          "name": "UBS",
-          "change1d": 0.055625000000000036,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "URBN",
-          "name": "URBN",
-          "change1d": 0.058348708487084844,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HRB",
-          "name": "HRB",
-          "change1d": 0.043846443357169695,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -9520,28 +6782,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "UFPI",
-          "name": "UFPI",
-          "change1d": 0.06345490389354369,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HTZ",
-          "name": "HTZ",
-          "change1d": 0.09178743961352653,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "FLO",
           "name": "FLO",
           "change1d": 0.05654761904761907,
@@ -9549,28 +6789,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AX",
-          "name": "AX",
-          "change1d": 0.0162260906941758,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GHC",
-          "name": "GHC",
-          "change1d": 0.03746219526459127,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -9597,17 +6815,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "PBH",
-          "name": "PBH",
-          "change1d": 0.07549454985870008,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CALY",
           "name": "CALY",
           "change1d": 0.04534005037783384,
@@ -9619,17 +6826,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "UNFI",
-          "name": "UNFI",
-          "change1d": 0.07073170731707301,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "OR",
           "name": "OR",
           "change1d": 0.07242772769661165,
@@ -9637,17 +6833,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TRN",
-          "name": "TRN",
-          "change1d": 0.06829594911282211,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -9751,53 +6936,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "LLYVA",
-          "name": "LLYVA",
-          "change1d": 0.03968331541393799,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "TRNS",
           "name": "TRNS",
           "change1d": 0.20788650580875778,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CBU",
-          "name": "CBU",
-          "change1d": 0.030250783699059758,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TTI",
-          "name": "TTI",
-          "change1d": 0.03865546218487381,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TILE",
-          "name": "TILE",
-          "change1d": 0.05851344227727995,
           "tags": [
             "跳空高开"
           ],
@@ -9916,17 +7057,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "BUR",
-          "name": "BUR",
-          "change1d": 0.09762532981530336,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PLGO",
           "name": "PLGO",
           "change1d": 0.04977029096477792,
@@ -9982,39 +7112,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CMCO",
-          "name": "CMCO",
-          "change1d": 0.0242424242424244,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SLDP",
-          "name": "SLDP",
-          "change1d": 0.10837438423645329,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CODI",
-          "name": "CODI",
-          "change1d": 0.024126455906821942,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ARDT",
           "name": "ARDT",
           "change1d": 0.1093082835183603,
@@ -10022,17 +7119,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SMP",
-          "name": "SMP",
-          "change1d": 0.024966562639322287,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10070,28 +7156,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "INNV",
-          "name": "INNV",
-          "change1d": 0.10621468926553668,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "YEXT",
-          "name": "YEXT",
-          "change1d": 0.04400000000000004,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "TATT",
           "name": "TATT",
           "change1d": -0.018561484918793503,
@@ -10110,28 +7174,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VZ",
-          "name": "VZ",
-          "change1d": 0.020557029177718844,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ICE",
-          "name": "ICE",
-          "change1d": 0.023342888901889625,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10158,39 +7200,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CUBE",
-          "name": "CUBE",
-          "change1d": 0.03682783551739721,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VOYA",
-          "name": "VOYA",
-          "change1d": 0.014741538163126622,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GVA",
-          "name": "GVA",
-          "change1d": -0.006901207711349611,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ESAB",
           "name": "ESAB",
           "change1d": 0.030374753451676506,
@@ -10209,17 +7218,6 @@
             "跳空高开"
           ],
           "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MRP",
-          "name": "MRP",
-          "change1d": 0.03976833976833971,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10253,50 +7251,6 @@
             "跳空高开"
           ],
           "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "KLAR",
-          "name": "KLAR",
-          "change1d": 0.050680786686838175,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HEI.A",
-          "name": "HEI.A",
-          "change1d": -0.0027158718747504196,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ITRI",
-          "name": "ITRI",
-          "change1d": 0.034412543270209595,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "THG",
-          "name": "THG",
-          "change1d": 0.01059399134689265,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10345,28 +7299,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "PIPR",
-          "name": "PIPR",
-          "change1d": 0.06474601971190297,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PEB",
-          "name": "PEB",
-          "change1d": 0.011389521640091216,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "AEG",
           "name": "AEG",
           "change1d": 0.045066991473812434,
@@ -10396,17 +7328,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EBC",
-          "name": "EBC",
-          "change1d": 0.026872246696035162,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10455,28 +7376,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "OBDC",
-          "name": "OBDC",
-          "change1d": 0.024761904761904763,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "INDB",
-          "name": "INDB",
-          "change1d": 0.030649970184853936,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "RUSHA",
           "name": "RUSHA",
           "change1d": 0.046532640614411536,
@@ -10499,42 +7398,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "PGY",
-          "name": "PGY",
-          "change1d": 0.07415730337078652,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "BRBR",
           "name": "BRBR",
           "change1d": 0.0849256900212314,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GFF",
-          "name": "GFF",
-          "change1d": 0.05205479452054784,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FUL",
-          "name": "FUL",
-          "change1d": 0.04741980474198049,
           "tags": [
             "跳空高开"
           ],
@@ -10565,17 +7431,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "FELE",
-          "name": "FELE",
-          "change1d": -0.009112519809825526,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "FA",
           "name": "FA",
           "change1d": 0.029789184234646937,
@@ -10598,17 +7453,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CNS",
-          "name": "CNS",
-          "change1d": 0.035704514363885,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "IPAR",
           "name": "IPAR",
           "change1d": 0.05534204458109149,
@@ -10623,17 +7467,6 @@
           "symbol": "AKR",
           "name": "AKR",
           "change1d": 0.03759791122715428,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TPB",
-          "name": "TPB",
-          "change1d": 0.04621786298112651,
           "tags": [
             "跳空高开"
           ],
@@ -10675,50 +7508,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "OCFC",
-          "name": "OCFC",
-          "change1d": 0.036532170119956575,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OSPN",
-          "name": "OSPN",
-          "change1d": -0.03231083844580773,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EPAC",
-          "name": "EPAC",
-          "change1d": 0,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BKE",
-          "name": "BKE",
-          "change1d": 0.035915188230203565,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "AGL",
           "name": "AGL",
           "change1d": 0.09613851235903859,
@@ -10752,17 +7541,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "PEBO",
-          "name": "PEBO",
-          "change1d": 0.022587268993840004,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "NNI",
           "name": "NNI",
           "change1d": 0.04112942712583645,
@@ -10774,75 +7552,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "HLMN",
-          "name": "HLMN",
-          "change1d": 0.05149700598802398,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EPC",
-          "name": "EPC",
-          "change1d": 0.06194056569996431,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PNTG",
-          "name": "PNTG",
-          "change1d": 0.06919155134741439,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "DLX",
           "name": "DLX",
           "change1d": 0.06502955889040485,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HIFS",
-          "name": "HIFS",
-          "change1d": 0.03581365253963109,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSV",
-          "name": "CSV",
-          "change1d": 0.050204319906596684,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LQDT",
-          "name": "LQDT",
-          "change1d": 0.05362776025236582,
           "tags": [
             "跳空高开"
           ],
@@ -10862,17 +7574,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ETD",
-          "name": "ETD",
-          "change1d": 0.05528134254689032,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ADIG",
           "name": "ADIG",
           "change1d": 0.025488069414316694,
@@ -10880,28 +7581,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EVH",
-          "name": "EVH",
-          "change1d": 0.11627906976744184,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MSEX",
-          "name": "MSEX",
-          "change1d": 0.02706453851492019,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -10950,17 +7629,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "RUSHB",
-          "name": "RUSHB",
-          "change1d": 0.05119511781657904,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "MANU",
           "name": "MANU",
           "change1d": 0.06276150627615062,
@@ -10983,17 +7651,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "MATV",
-          "name": "MATV",
-          "change1d": 0.08325872873769025,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "CVNA",
           "name": "CVNA",
           "change1d": 0.08810325476992142,
@@ -11001,17 +7658,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "APO",
-          "name": "APO",
-          "change1d": 0.08110964332893,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -11093,17 +7739,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "LAZ",
-          "name": "LAZ",
-          "change1d": 0.06078789459953038,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PFSI",
           "name": "PFSI",
           "change1d": 0.05712050078247266,
@@ -11159,28 +7794,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "HOV",
-          "name": "HOV",
-          "change1d": 0.09055933708197683,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RHLD",
-          "name": "RHLD",
-          "change1d": 0.08851913477537443,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "FIZZ",
           "name": "FIZZ",
           "change1d": 0.04293628808864258,
@@ -11195,17 +7808,6 @@
           "symbol": "TRTX",
           "name": "TRTX",
           "change1d": 0.06607929515418509,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MNKD",
-          "name": "MNKD",
-          "change1d": 0.0536193029490617,
           "tags": [
             "跳空高开"
           ],
@@ -11236,64 +7838,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "MLKN",
-          "name": "MLKN",
-          "change1d": 0.06252916472235182,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "JBGS",
           "name": "JBGS",
           "change1d": 0.04863481228668931,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CTRN",
-          "name": "CTRN",
-          "change1d": 0.16351188078936785,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MBIN",
-          "name": "MBIN",
-          "change1d": 0.030870152421377695,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JBI",
-          "name": "JBI",
-          "change1d": 0.06837606837606836,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NX",
-          "name": "NX",
-          "change1d": 0.07319391634980987,
           "tags": [
             "跳空高开"
           ],
@@ -11313,61 +7860,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "FMBH",
-          "name": "FMBH",
-          "change1d": 0.021636506687647383,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IBCP",
-          "name": "IBCP",
-          "change1d": 0.01553980370774255,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CVEO",
-          "name": "CVEO",
-          "change1d": -0.059093362115488546,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SFIX",
-          "name": "SFIX",
-          "change1d": 0.07299270072992692,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PFLT",
-          "name": "PFLT",
-          "change1d": 0.02798232695139924,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "BURL",
           "name": "BURL",
           "change1d": 0.0770320967069611,
@@ -11375,17 +7867,6 @@
             "跳空高开"
           ],
           "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LII",
-          "name": "LII",
-          "change1d": 0.03598949464630996,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -11412,64 +7893,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "BAX",
-          "name": "BAX",
-          "change1d": 0.039623381718320916,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MGM",
-          "name": "MGM",
-          "change1d": 0.05802707930367501,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CAKE",
-          "name": "CAKE",
-          "change1d": 0.04690618762475052,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "INVH",
           "name": "INVH",
           "change1d": 0.03646616541353387,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BMO",
-          "name": "BMO",
-          "change1d": 0.0336051252184042,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "JEF",
-          "name": "JEF",
-          "change1d": 0.053747940691927454,
           "tags": [
             "跳空高开"
           ],
@@ -11496,50 +7922,6 @@
             "跳空高开"
           ],
           "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LMND",
-          "name": "LMND",
-          "change1d": 0.11030478955007239,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MEOH",
-          "name": "MEOH",
-          "change1d": -0.06681928745170984,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "REZI",
-          "name": "REZI",
-          "change1d": 0.06600831600831625,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NMRK",
-          "name": "NMRK",
-          "change1d": 0.03778337531486131,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -11577,31 +7959,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "SLRC",
-          "name": "SLRC",
-          "change1d": 0.033050847457626986,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PFIS",
           "name": "PFIS",
           "change1d": 0.024554183813442876,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FISI",
-          "name": "FISI",
-          "change1d": 0.02770012706480296,
           "tags": [
             "跳空高开"
           ],
@@ -11632,28 +7992,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "TTAM",
-          "name": "TTAM",
-          "change1d": 0.04532163742690076,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LOVE",
-          "name": "LOVE",
-          "change1d": 0.08238993710691833,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "COFS",
           "name": "COFS",
           "change1d": 0.03751724137931034,
@@ -11661,17 +7999,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BHB",
-          "name": "BHB",
-          "change1d": 0.03279883381924198,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -11690,17 +8017,6 @@
           "symbol": "CRON",
           "name": "CRON",
           "change1d": 0.038461538461538325,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ADCT",
-          "name": "ADCT",
-          "change1d": 0.10967741935483866,
           "tags": [
             "跳空高开"
           ],
@@ -11731,17 +8047,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "HLLY",
-          "name": "HLLY",
-          "change1d": 0.07407407407407396,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PSFE",
           "name": "PSFE",
           "change1d": 0.09682804674457435,
@@ -11764,31 +8069,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "RMNI",
-          "name": "RMNI",
-          "change1d": 0.07346938775510181,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "VFF",
           "name": "VFF",
           "change1d": 0.02807017543859658,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BLND",
-          "name": "BLND",
-          "change1d": 0.10344827586206917,
           "tags": [
             "跳空高开"
           ],
@@ -11852,28 +8135,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "DXCM",
-          "name": "DXCM",
-          "change1d": 0.06640954561889845,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CBRE",
-          "name": "CBRE",
-          "change1d": 0.04124852420306957,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "DECK",
           "name": "DECK",
           "change1d": 0.05969794268046136,
@@ -11918,17 +8179,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "LRN",
-          "name": "LRN",
-          "change1d": 0.05582944703530979,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "LIVN",
           "name": "LIVN",
           "change1d": 0.17884856070087607,
@@ -11954,39 +8204,6 @@
           "symbol": "HIW",
           "name": "HIW",
           "change1d": 0.04511522233041232,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CSW",
-          "name": "CSW",
-          "change1d": 0.056708407871198574,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HYMC",
-          "name": "HYMC",
-          "change1d": 0.08576755748912368,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BLBD",
-          "name": "BLBD",
-          "change1d": 0.054278305963699314,
           "tags": [
             "跳空高开"
           ],
@@ -12046,39 +8263,6 @@
             "跳空高开"
           ],
           "stage": "拉升启动",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EFC",
-          "name": "EFC",
-          "change1d": 0.04497354497354489,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PTRN",
-          "name": "PTRN",
-          "change1d": 0.044917257683215084,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GDYN",
-          "name": "GDYN",
-          "change1d": 0.02842183994016456,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -12160,64 +8344,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "HTLD",
-          "name": "HTLD",
-          "change1d": 0.019011406844106515,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "RMIX",
-          "name": "RMIX",
-          "change1d": 0.05116696588868952,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "IRWD",
           "name": "IRWD",
           "change1d": 0.07714285714285718,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CAC",
-          "name": "CAC",
-          "change1d": 0.025482093663911964,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NXDR",
-          "name": "NXDR",
-          "change1d": 0.051724137931034475,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GDOT",
-          "name": "GDOT",
-          "change1d": 0.02489959839357425,
           "tags": [
             "跳空高开"
           ],
@@ -12237,72 +8366,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CASS",
-          "name": "CASS",
-          "change1d": 0.02305261200966724,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PBYI",
-          "name": "PBYI",
-          "change1d": 0.045988258317025243,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "OEC",
-          "name": "OEC",
-          "change1d": 0.06727272727272737,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NUS",
-          "name": "NUS",
-          "change1d": 0.06170212765957439,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VMET",
-          "name": "VMET",
-          "change1d": 0.060535506402793926,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HBB",
-          "name": "HBB",
-          "change1d": 0.06127450980392157,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "MSIF",
           "name": "MSIF",
           "change1d": 0.03263598326359829,
@@ -12310,17 +8373,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NECB",
-          "name": "NECB",
-          "change1d": 0.023295649194929657,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "洗盘/锁仓",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -12336,86 +8388,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "TMUS",
-          "name": "TMUS",
-          "change1d": 0.030827018975454923,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AWI",
-          "name": "AWI",
-          "change1d": 0.02816572196575695,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CALM",
-          "name": "CALM",
-          "change1d": 0.0287139186942722,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HAPN",
-          "name": "HAPN",
-          "change1d": 0.07055805003207194,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "BXMT",
           "name": "BXMT",
           "change1d": 0.04963898916967513,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CYPH",
-          "name": "CYPH",
-          "change1d": 0.10384615384615392,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NVCR",
-          "name": "NVCR",
-          "change1d": 0.08786299329858527,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IVR",
-          "name": "IVR",
-          "change1d": 0.039548022598870025,
           "tags": [
             "跳空高开"
           ],
@@ -12457,28 +8432,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "CIM",
-          "name": "CIM",
-          "change1d": 0.04704463208685161,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "CPS",
-          "name": "CPS",
-          "change1d": 0.0730282375851996,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "KREF",
           "name": "KREF",
           "change1d": 0.10940499040307117,
@@ -12493,28 +8446,6 @@
           "symbol": "UHT",
           "name": "UHT",
           "change1d": 0.032545931758530156,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ABX",
-          "name": "ABX",
-          "change1d": 0.04988399071925764,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MAGN",
-          "name": "MAGN",
-          "change1d": 0.06565656565656552,
           "tags": [
             "跳空高开"
           ],
@@ -12545,53 +8476,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "ACNB",
-          "name": "ACNB",
-          "change1d": 0.020250868973855196,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "建仓观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GOGO",
-          "name": "GOGO",
-          "change1d": 0.054166666666666696,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "VEL",
           "name": "VEL",
           "change1d": 0.06281725888324874,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ANET",
-          "name": "ANET",
-          "change1d": 0.05043846742393021,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HWM",
-          "name": "HWM",
-          "change1d": -0.04284689852993906,
           "tags": [
             "跳空高开"
           ],
@@ -12622,75 +8509,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "FN",
-          "name": "FN",
-          "change1d": -0.059697795392618325,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "XYL",
           "name": "XYL",
           "change1d": 0.049652020359405746,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ATI",
-          "name": "ATI",
-          "change1d": -0.006876282371208409,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LSCC",
-          "name": "LSCC",
-          "change1d": 0.012556646525679671,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AEHR",
-          "name": "AEHR",
-          "change1d": -0.06558132391337734,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PAAS",
-          "name": "PAAS",
-          "change1d": 0.08357273439540358,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AG",
-          "name": "AG",
-          "change1d": 0.09148936170212774,
           "tags": [
             "跳空高开"
           ],
@@ -12721,17 +8542,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "FCFS",
-          "name": "FCFS",
-          "change1d": -0.006015114904117991,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "JBLU",
           "name": "JBLU",
           "change1d": 0.11949685534591192,
@@ -12739,17 +8549,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SLM",
-          "name": "SLM",
-          "change1d": 0.041829336307863896,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -12765,64 +8564,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "OPEN",
-          "name": "OPEN",
-          "change1d": 0.13793103448275867,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LSTR",
-          "name": "LSTR",
-          "change1d": 0.0012577783662119923,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TMDX",
-          "name": "TMDX",
-          "change1d": 0.0804128304128302,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "ALHC",
           "name": "ALHC",
           "change1d": 0.10148849797023018,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "EOSE",
-          "name": "EOSE",
-          "change1d": 0.12631578947368438,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FMC",
-          "name": "FMC",
-          "change1d": 0.054187192118226646,
           "tags": [
             "跳空高开"
           ],
@@ -12861,29 +8605,7 @@
           ],
           "stage": "出货风险",
           "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FLNC",
-          "name": "FLNC",
-          "change1d": 0.10181818181818181,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LCID",
-          "name": "LCID",
-          "change1d": 0.11589403973509937,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
+          "verification": "unverified"
         },
         {
           "symbol": "STC",
@@ -12893,72 +8615,6 @@
             "跳空高开"
           ],
           "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ESTA",
-          "name": "ESTA",
-          "change1d": 0.09022801302931605,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UNIT",
-          "name": "UNIT",
-          "change1d": 0.07707509881422947,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SVM",
-          "name": "SVM",
-          "change1d": 0.08679245283018866,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "AYA",
-          "name": "AYA",
-          "change1d": 0.11333043855840197,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "GPGI",
-          "name": "GPGI",
-          "change1d": 0.09417808219178081,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "SAH",
-          "name": "SAH",
-          "change1d": 0.05553724456163467,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "拉升启动",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -12974,119 +8630,9 @@
           "verification": "saved"
         },
         {
-          "symbol": "GRPN",
-          "name": "GRPN",
-          "change1d": 0.11677419354838703,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "TLRY",
-          "name": "TLRY",
-          "change1d": 0.11698113207547167,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "VZLA",
-          "name": "VZLA",
-          "change1d": 0.08580858085808596,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HPP",
-          "name": "HPP",
-          "change1d": 0.0699088145896658,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "BRSP",
-          "name": "BRSP",
-          "change1d": 0.05459770114942519,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "TR",
           "name": "TR",
           "change1d": 0.027310924369747802,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "XRN",
-          "name": "XRN",
-          "change1d": 0.041145490454246314,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MCS",
-          "name": "MCS",
-          "change1d": 0.029357798165137616,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FLXS",
-          "name": "FLXS",
-          "change1d": 0.025574398249452734,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "PALI",
-          "name": "PALI",
-          "change1d": 0.016260162601626105,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "FOR",
-          "name": "FOR",
-          "change1d": 0.06255319148936156,
           "tags": [
             "跳空高开"
           ],
@@ -13102,17 +8648,6 @@
             "跳空高开"
           ],
           "stage": "出货风险",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "DCTH",
-          "name": "DCTH",
-          "change1d": 0.029166666666666563,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -13150,28 +8685,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "TDUP",
-          "name": "TDUP",
-          "change1d": 0.09499999999999997,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "LRMR",
-          "name": "LRMR",
-          "change1d": 0.0866141732283463,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "SCZM",
           "name": "SCZM",
           "change1d": 0.13589364844904006,
@@ -13194,17 +8707,6 @@
           "verification": "saved"
         },
         {
-          "symbol": "ARKO",
-          "name": "ARKO",
-          "change1d": 0.05208333333333348,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "PLTK",
           "name": "PLTK",
           "change1d": 0.054726368159204064,
@@ -13212,17 +8714,6 @@
             "跳空高开"
           ],
           "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NKTX",
-          "name": "NKTX",
-          "change1d": 0.130718954248366,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "出货风险",
           "candidateTier": "普通观察",
           "verification": "saved"
         },
@@ -13249,63 +8740,8 @@
           "verification": "saved"
         },
         {
-          "symbol": "BNTC",
-          "name": "BNTC",
-          "change1d": 0.10476190476190461,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "NPCE",
-          "name": "NPCE",
-          "change1d": 0.08367181153533698,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ISBA",
-          "name": "ISBA",
-          "change1d": 0.050401203610832335,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": "观察",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "IVVD",
-          "name": "IVVD",
-          "change1d": null,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": null,
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
           "symbol": "LDI",
           "name": "LDI",
-          "change1d": null,
-          "tags": [
-            "跳空高开"
-          ],
-          "stage": null,
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "MVST",
-          "name": "MVST",
           "change1d": null,
           "tags": [
             "跳空高开"
@@ -13342,69 +8778,13 @@
       "id": "ma30_support_v1",
       "name": "30日均线",
       "savedPicksCount": 5,
-      "latestMarketDate": "2026-11-04",
+      "latestMarketDate": "2026-11-05",
       "reportMarketDate": "2026-11-04",
-      "status": "PASS",
-      "picksCount": 5,
-      "count": 5,
-      "reason": "",
-      "picks": [
-        {
-          "symbol": "A",
-          "name": "Agilent Technologies Inc.",
-          "change1d": 0.009745811011056427,
-          "tags": [
-            "30日均线"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "HUM",
-          "name": "Humana Inc.",
-          "change1d": -0.0010768899418479583,
-          "tags": [
-            "30日均线"
-          ],
-          "stage": "拉升启动",
-          "candidateTier": "形态确认／暂无当日主线",
-          "verification": "saved"
-        },
-        {
-          "symbol": "UGI",
-          "name": "UGI Corporation",
-          "change1d": -0.0013102725366875845,
-          "tags": [
-            "30日均线"
-          ],
-          "stage": "洗盘/锁仓",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "XERS",
-          "name": "Xeris Biopharma Holdings, Inc. Common Stock",
-          "change1d": 0.010628019323671634,
-          "tags": [
-            "30日均线"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        },
-        {
-          "symbol": "ZS",
-          "name": "Zscaler, Inc. Common Stock",
-          "change1d": -0.0028877337953707727,
-          "tags": [
-            "30日均线"
-          ],
-          "stage": "稳健上升",
-          "candidateTier": "普通观察",
-          "verification": "saved"
-        }
-      ]
+      "status": "STALE_REPORT",
+      "picksCount": 0,
+      "count": 0,
+      "reason": "K线数据截至2026-11-05，报告截至2026-11-04；信号已过期或报告待更新",
+      "picks": []
     }
   ],
   "watchlist": [
