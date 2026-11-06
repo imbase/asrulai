@@ -8835,7 +8835,7 @@
     }
   ],
   "schemaVersion": "public-full-1.0.0",
-  "exportedAt": "2026-11-06T06:18:17.641877+00:00",
+  "exportedAt": "2026-11-06T06:46:03.307501+00:00",
   "overview": {
     "generatedAt": "2026-11-06T04:16:25.878Z",
     "quotes": [
@@ -9081,8 +9081,8 @@
         "symbol": "SOXX",
         "name": "半导体",
         "price": 130.935,
-        "prevClose": 451.2,
-        "change": -0.7098071808510638,
+        "prevClose": 131.9,
+        "change": -0.007316148597422356,
         "open": 143.02,
         "high": 143.72,
         "low": 130.745,
