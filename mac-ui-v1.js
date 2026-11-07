@@ -3,11 +3,9 @@
 const paths={menu:'M4 6h16M4 12h16M4 18h16',market:'M3 17l5-5 4 3 8-10M15 5h5v5',leaders:'M12 3l2.8 5.7L21 9.6l-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z',strategies:'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z',filter:'M4 5h16M7 12h10M10 19h4',chevron:'M9 5l7 7-7 7',close:'M6 6l12 12M18 6L6 18',search:'M21 21l-5.2-5.2M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0',download:'M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5',cloud:'M6 18h12a4 4 0 0 0 0-8 6 6 0 0 0-11.5-2A5 5 0 0 0 6 18Z',eye:'M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Zm10-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6'};
 const icon=n=>`<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="${paths[n]}"/></svg>`;
 document.body.classList.add('ui-preview');
-const header=document.createElement('header');header.className='preview-global';header.innerHTML=`<div class="preview-brand"><a class="preview-wordmark" href="#"><span><span>asrulai</span><small>点 灯 人</small></span></a></div><div class="preview-account-slot"></div>`;document.body.prepend(header);
+// Static topbar keeps original route buttons available before scripts initialize.
+const header=$('.preview-global');
 header.querySelector('a').onclick=e=>{e.preventDefault();$('.nav-item[data-view="intel"]').click();};
-const rail=$('.sidebar'),nav=rail.querySelector('nav');nav.id='previewNavigation';nav.setAttribute('aria-label','全局导航');
-for(const b of nav.querySelectorAll('.nav-item')){const name=b.textContent.trim().replace(/^[◉♢◎⌁◇⚙]\s*/,'');b.setAttribute('aria-label',name);b.title=name;b.textContent=name;}
-header.insertBefore(nav,header.querySelector('.preview-account-slot'));header.querySelector('.preview-account-slot').append($('.sidebar-status'));rail.hidden=true;
 function setup(){
  const menu=$('.quad-menu');if(!menu||$('#previewStrategyDrawer'))return;
  const table=$('#view-results .table-panel'),command=document.createElement('div');command.className='preview-command';

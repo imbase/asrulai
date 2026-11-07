@@ -7,45 +7,29 @@
   const chunkCache = new Map();
   const clone = value => value == null ? value : JSON.parse(JSON.stringify(value));
 
-  // 固定观察池若缺少即时报价，只使用已发布日K的末两根作只读回退。
-  // 不用猜测价格；拆股等造成的异常相邻涨跌继续掩码。
-  function hydrateQuotes(value) {
-    value.quotes = value.quotes || {};
-    const symbols = new Set([...Object.keys(value.quotes), ...Object.keys(value.bars || {})]);
-    symbols.forEach(symbol => {
-      const q = value.quotes[symbol] = value.quotes[symbol] || { symbol };
-      const bars = value.bars?.[symbol]?.bars || [];
-      const last = bars.at(-1), previous = bars.at(-2);
-      const close = Number(last?.c ?? last?.close), prior = Number(previous?.c ?? previous?.close);
-      const usedBarPrice = !(Number(q.price) > 0) && Number.isFinite(close) && close > 0 && !q.dataIssue;
-      if (usedBarPrice) {
-        q.price = close;
-        if (!q.time && !q.quoteDate && last?.d) q.quoteDate = String(last.d).slice(0, 10);
-      }
-      if (!(Number(q.prevClose) > 0) && Number.isFinite(prior) && prior > 0 && close > 0 && !q.dataIssue) {
-        if (Math.abs(close / prior - 1) <= .5) q.prevClose = prior;
-        else q.dataIssue = '相邻日K价格异常，涨跌幅已隐藏';
-      }
-      const price = Number(q.price), prev = Number(q.prevClose);
-      q.change = price > 0 && prev > 0 && !q.dataIssue ? price / prev - 1 : null;
-    });
+  async function verified(path, expected) {
+    const response=await nativeFetch(path,{cache:'no-cache'});
+    if(!response.ok)throw new Error('公开快照读取失败（HTTP '+response.status+'）');
+    const bytes=await response.arrayBuffer();
+    const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(hash!==expected)throw new Error('快照完整性校验失败；请稍后重试');
+    return JSON.parse(new TextDecoder().decode(bytes));
   }
-
-  async function load(force = false) {
-    if (snapshot && !force) return snapshot;
-    if (loading && !force) return loading;
-    loading = nativeFetch('data/snapshot.json', { cache: 'no-store' })
-      .then(async response => {
-        if (!response.ok) throw new Error('公开快照读取失败（HTTP ' + response.status + '）');
-        const value = await response.json();
-        if (!value || value.schemaVersion !== 'asrulai-public-1') throw new Error('公开快照格式不正确');
-        hydrateQuotes(value);
-        if (force) chunkCache.clear();
-        snapshot = value;
-        return snapshot;
-      })
-      .finally(() => { loading = null; });
-    return loading;
+  async function load(force=false) {
+    if(snapshot&&!force)return snapshot;
+    if(loading)return loading;
+    loading=(async()=>{
+      const response=await nativeFetch('data/current.json',{cache:'no-cache'});
+      if(!response.ok)throw new Error('快照版本读取失败');
+      const manifest=await response.json();
+      if(manifest.schemaVersion!=='asrulai-release-1')throw new Error('公开版本格式不正确');
+      const ref=manifest.files?.['snapshot.json'];
+      if(!ref||ref.path!==`data/releases/${manifest.snapshotVersion}/snapshot.json`)throw new Error('快照路径不正确');
+      const value=await verified(ref.path,ref.sha256);
+      if(value.schemaVersion!=='asrulai-public-2'||value.snapshotVersion!==manifest.snapshotVersion)throw new Error('快照版本不一致');
+      value.publication={snapshotVersion:manifest.snapshotVersion,publishedAt:manifest.publishedAt};
+      chunkCache.clear();snapshot=value;return snapshot;
+    })().finally(()=>{loading=null;});return loading;
   }
 
   function json(value, status = 200) {
@@ -89,9 +73,9 @@
     if (path === 'yahoo/chart') return json(quote(body.symbol));
     if (path === 'display/heatmap') {
       const kind = String(body.kind || 'INDUSTRY').toUpperCase();
-      return json(clone(snapshot.heatmaps?.[kind]) || { status: 'ready', items: [], message: '本次快照没有该类板块数据' });
+      return json(clone(snapshot.heatmaps?.[kind]) || { status: 'restricted', items: [], message: '未确认公开展示许可；未发布板块报价' });
     }
-    if (path === 'metals/spot' || path === 'metals/diagnose') {
+    if (path === 'metals/spot') {
       return json(clone(snapshot.metals) || { status: 'unavailable' });
     }
     if (path === 'display/plates') {

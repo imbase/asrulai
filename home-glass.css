@@ -1,5 +1,5 @@
-@font-face{font-family:Inter;src:local('Inter'),local('Helvetica Neue');font-weight:400;font-display:swap}
-@font-face{font-family:'Noto Sans SC';src:local('Noto Sans SC'),local('PingFang SC');font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('assets/fonts/Inter.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Noto Sans SC';src:url('assets/fonts/NotoSansSC.ttf') format('truetype');font-weight:400;font-display:swap}
 /* All visual overrides are confined to the latest-market view. */
 body.c1-market-view{--home-ink:#1c2b3f;--home-muted:#57687b;background:linear-gradient(135.97102264214854deg,#eee8e3 0%,#f9f4f4 35.714%,#d9e0e5 71.429%);background-attachment:fixed;color:var(--home-ink)}
 body.c1-market-view .app-shell{display:block}

@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>asrulai 点灯人 · 美股强庄雷达</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="strategy-grid.css">
-  <link rel="stylesheet" href="home-glass.css">
-  <link rel="stylesheet" href="mac-ui-v1.css?v=flow1">
-  <link rel="stylesheet" href="public-readonly.css">
+  <link rel="stylesheet" href="public-readonly.css?v=4c5e1f662833">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Noto+Serif+SC:wght@900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Noto+Serif+SC:wght@900&display=swap">
+  <link rel="stylesheet" href="style.css?v=d8dc9cdddaea">
+  <link rel="stylesheet" href="strategy-grid.css?v=edbc44631b74">
+  <link rel="stylesheet" href="home-glass.css?v=fbff0ef90c2d">
+  <link rel="stylesheet" href="mac-ui-v1.css?v=05c9273a77c1">
+  <link rel="stylesheet" href="cine-v4.css?v=2f1f0448f739">
+  <link rel="stylesheet" href="strategy-v41.css?v=d9907ea0c270">
+  <link rel="stylesheet" href="strategy-final.css?v=4d6ab292b437">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Noto+Serif+SC:wght@900&display=swap">
 </head>
-<body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-mark">SR</div>
-        <div><strong>美股强庄雷达</strong><small>Strong Stock Radar · v1.18.29 · 近1年放大日线</small></div>
-      </div>
-      <nav>
-        <button class="nav-item active" data-view="intel"><span>◉</span> 最新行情</button>
-        <button class="nav-item" data-view="leaders"><span>♢</span> 龙头扫描</button>
-        <button class="nav-item" data-view="data"><span>⌁</span> 数据中心</button>
-        <button class="nav-item" data-view="results"><span>◎</span> 策略选股</button>
-        <button class="nav-item" data-view="rules"><span>◇</span> 形态规则</button>
-        <button class="nav-item" data-view="settings"><span>⚙</span> 设置</button>
-      </nav>
+<body class="ui-preview c1-market-view">
+  <header class="preview-global">
+    <div class="preview-brand"><a class="preview-wordmark" href="#"><span>asrulai</span><small>点灯人</small></a></div>
+    <nav id="previewNavigation" aria-label="全局导航">
+      <button class="nav-item active" data-view="intel" aria-label="最新行情" title="最新行情">最新行情</button>
+      <button class="nav-item" data-view="leaders" aria-label="龙头扫描" title="龙头扫描">龙头扫描</button>
+      <button class="nav-item" data-view="data" aria-label="数据中心" title="数据中心">数据中心</button>
+      <button class="nav-item" data-view="results" aria-label="策略选股" title="策略选股">策略选股</button>
+      <button class="nav-item" data-view="rules" aria-label="形态规则" title="形态规则">形态规则</button>
+      <button class="nav-item" data-view="settings" aria-label="设置" title="设置">设置</button>
+    </nav>
+    <div class="preview-account-slot">
       <div class="sidebar-status">
         <span class="status-dot" id="serverDot"></span>
         <div><small>公开快照</small><strong id="serverStatus">读取中</strong></div>
       </div>
-      <p class="sidebar-note">只做筛选和文字观察计划<br>不会连接券商下单</p>
-    </aside>
+    </div>
+  </header>
+<div class="app-shell">
+
 
     <main class="main">
       <header class="topbar">
@@ -49,19 +54,19 @@
       </section>
 
       <section class="view active c1-market-page" id="view-intel">
-        <header class="home-nav" aria-label="首页导航">
-          <div class="home-brand"><strong>◉ 美股概览</strong><small>MARKET INTELLIGENCE / PUBLIC SNAPSHOT</small></div>
+        <div class="cine-scene" aria-hidden="true"><img class="scene" src="hero_cine.jpg?v=195e0e89e6cb" alt=""><div class="scene-grade"></div><div class="scene-haze"></div><div class="hero-fade"></div></div><header class="home-nav" aria-label="首页导航">
+          <div class="home-brand"><strong>asrulai</strong><small>点灯人</small></div>
           <nav><button type="button" data-home-go="intel" aria-current="page">市场总览</button><button type="button" data-home-go="results">强庄雷达</button><button type="button" data-home-go="leaders">龙头扫描</button><button type="button" data-home-go="data">数据中心</button></nav>
           <div class="home-account"><time id="homeClock"></time><button type="button" data-home-go="settings">系统设置</button></div>
         </header>
-        <section class="home-hero"><div><h1>是否有补充资金进场？形态是否合你意？风险多大？</h1><p>机会多的是，没必要为一时之快，离开赌桌出去吃饭也挺好。</p></div><div class="home-preview-note"><span>● 市场观察 / 独立判断</span><small>股票与贵金属均来自本机发布的每日快照</small></div></section>
+        <section class="home-hero"><div><h1>是否有补充资金进场？<br>形态是否合你意？风险多大？</h1><p>机会多的是，没必要为一时之快，离开赌桌出去吃饭也挺好。</p></div></section>
         <div class="c1-page-head"><div><p class="c1-kicker">MARKET BRIEFING</p><h2>最新行情</h2><p class="home-original-subtitle">以现有扫描结果为核心的市场观察</p></div><div class="c1-actions"><span id="intelAsOf">尚未获取情报</span><button class="btn" id="refreshIntelBtn">刷新情报</button></div></div>
         <section class="c1-section c1-overview" aria-labelledby="c1OverviewTitle">
           <div class="c1-section-title"><h3 id="c1OverviewTitle">市场概况</h3><span id="intelMarketDate">各标的行情时间见下方</span></div>
           <div id="c1MarketBoard"></div>
         </section>
 
-        <footer class="home-footer"><span>RADAR / 清晰观察，独立判断</span><span>市场观察 · 不连接交易</span><details><summary>其他原有入口与行情说明</summary><button type="button" data-home-go="rules">形态规则</button><button type="button" id="homeQuickScan">公开只读快照</button><div id="homeSourceNotes"></div></details></footer>
+        <footer class="home-footer"><span>RADAR / 清晰观察，独立判断</span><span>市场观察 · 不连接交易</span><details><summary>其他原有入口与行情说明</summary><button type="button" data-home-go="rules">形态规则</button><button type="button" id="homeQuickScan">读取公开快照</button><div id="homeSourceNotes"></div></details></footer>
         <section class="c1-section" aria-labelledby="c1PolicyTitle"><div class="c1-section-title"><div><p class="c1-kicker">POLICY & MACRO</p><h3 id="c1PolicyTitle">政策与宏观</h3></div><button type="button" id="intelPolicyMore" class="c1-link">查看更多</button></div><div class="c1-policy-grid" id="intelPolicy"><p class="c1-empty">暂无最新资讯</p></div></section>
         <section class="c1-section c1-bottom-watch" aria-labelledby="c1StrategiesTitle"><div class="c1-section-title"><div><h3 id="c1StrategiesTitle">大跌抄底</h3><span id="c1ScanAsOf">固定观察池 · 日 K 线 · 7只标的</span></div></div><div class="c1-stock-grid" id="intelStrategyStocks"><p class="c1-empty">正在读取固定观察池…</p></div></section>
       </section>
@@ -203,15 +208,18 @@
       <div id="detailContent"></div>
     </div>
   </div>
-  <script src="public-db.js"></script>
-  <script src="inline-chart-viewport.js"></script>
-  <script src="plate-members.js"></script>
-  <script src="c1-display.js"></script>
-  <script src="public-strategy-grid.js"></script>
-  <script src="public-chart-change-rate.js"></script>
-  <script src="public-app.js"></script>
-  <script src="public-metals-ratio.js"></script>
-  <script src="home-glass.js"></script>
-  <script src="mac-ui-v1.js?v=flow1"></script>
+  <script src="public-db.js?v=346287a24764"></script>
+  <script src="inline-chart-viewport.js?v=1ce33b12a002"></script>
+  <script src="plate-members.js?v=44be9cada687"></script>
+  <script src="c1-display.js?v=3f9371ce4bd9"></script>
+  <script src="public-strategy-grid.js?v=619bd5b79b53"></script>
+  <script src="public-chart-change-rate.js?v=726ba0afd06a"></script>
+  <script src="public-app.js?v=e1412cb95948"></script>
+  <script src="public-metals-ratio.js?v=fabd8baeedbb"></script>
+  <script src="home-glass.js?v=058d87735598"></script>
+  <script src="mac-ui-v1.js?v=e82d5ac2a124"></script>
+  <script src="cine-v4.js?v=af844124ae87"></script>
+  <script src="strategy-final-ui.js?v=3d24afa59faa"></script>
+  <script src="public-publication.js?v=81edaf9be515"></script>
 </body>
 </html>

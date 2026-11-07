@@ -1,0 +1,18 @@
+{
+  "uiVersion": "cf20ea905098834b",
+  "sourceBuild": "v1.18.29",
+  "sourceAssets": {
+    "style.css": "d8dc9cdddaea6be6d9d5d5af419e697e475dd4ec91ef49993a5ef4f4497db147",
+    "strategy-grid.css": "edbc44631b742c30db7c774bee400b73a7f43331b59434ed534e3ceb77b9a0fb",
+    "home-glass.css": "fbff0ef90c2df814567b303a41bc199adf1d73d8dcc389cf816cbe2cc7bafdf4",
+    "mac-ui-v1.css": "05c9273a77c12f701eb8a49fb98cef6b191f76ad5c1d9330ea7b46121b86859d",
+    "cine-v4.css": "2f1f0448f7395336b6f1419b43b8b4e318cbe08fba59cb77a78ad001481af909",
+    "strategy-v41.css": "d9907ea0c2704dcfcbe3b264d1a22cb27ef0b194da0fc02943b7ecc1d1a531c3",
+    "strategy-final.css": "4d6ab292b4375d48a2c1087ed59f18f669fb91a923ce9a9f31ecd74c1da14f5d",
+    "mac-ui-v1.js": "e82d5ac2a1245d2507a65eb6cacec195000fe68da76b7886e51fcad21768b589",
+    "cine-v4.js": "af844124ae877ab4c67f3d2758bc2c7e8890dbf9a9493f7c9b15371a6b91831a",
+    "strategy-final-ui.js": "3d24afa59faa7baefe0dbc68f057b43621f51e2eabe804b22112318105719e3f",
+    "hero_cine.jpg": "195e0e89e6cb6db4b2d2bc5c2656b56358062c046dfd8b699ab1690672d75863"
+  },
+  "dataChanged": false
+}
