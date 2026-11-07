@@ -84,20 +84,20 @@
           <article class="panel massive-sync-panel">
             <div class="panel-head"><div><h2>公开数据快照</h2><p>这里展示本机雷达最近一次发布的只读结果；公开网页不连接行情供应商，也不触发同步或扫描。</p></div><span class="badge recommended">只读镜像</span></div>
             <div class="massive-status-grid">
-              <div><span>数据状态</span><strong id="msProvider">公开快照</strong></div>
+              <div><span>当前数据源</span><strong id="msProvider">—</strong></div>
               <div><span>本地最新交易日</span><strong id="msLocalDate">—</strong></div>
-              <div><span>当前应更新到</span><strong id="msTargetDate">与本机快照一致</strong></div>
-              <div><span>缺失交易日</span><strong id="msMissing">仅在本机处理</strong></div>
-              <div><span>正在同步日期</span><strong id="msCurrentDate">公开站不同步</strong></div>
+              <div><span>当前应更新到</span><strong id="msTargetDate">—</strong></div>
+              <div><span>缺失交易日</span><strong id="msMissing">—</strong></div>
+              <div><span>正在同步日期</span><strong id="msCurrentDate">—</strong></div>
               <div><span>本日返回股票</span><strong id="msReturned">—</strong></div>
-              <div><span>插入 / 更新 / 跳过</span><strong id="msWriteCounts">公开站不写入</strong></div>
-              <div><span>请求等待</span><strong id="msWait">无</strong></div>
-              <div><span>总进度</span><strong id="msProgress">100%</strong></div>
+              <div><span>插入 / 更新 / 跳过</span><strong id="msWriteCounts">—</strong></div>
+              <div><span>请求等待</span><strong id="msWait">—</strong></div>
+              <div><span>总进度</span><strong id="msProgress">—</strong></div>
               <div><span>最近成功日期</span><strong id="msLastSuccess">—</strong></div>
-              <div><span>更新结果</span><strong id="msResult">等待读取</strong></div>
+              <div><span>更新结果</span><strong id="msResult">—</strong></div>
               <div><span>错误信息</span><strong id="msError">—</strong></div>
-              <div><span>日K来源审计</span><strong id="msSourceAudit">内部参数</strong></div>
-              <div><span>数据口径</span><strong id="msConflictDates">只读结果</strong></div>
+              <div><span>日K来源审计</span><strong id="msSourceAudit">—</strong></div>
+              <div><span>Massive冲突交易日</span><strong id="msConflictDates">—</strong></div>
             </div>
             <p class="privacy-note">选股策略、筛选阈值、行情钥匙和本机设置只留在你的电脑。这里仅发布上榜结果、既有标签与分数、K线数字和行情快照。</p>
           </article>
@@ -183,18 +183,44 @@
       </section>
 
       <section class="view" id="view-rules">
-        <article class="rule-hero"><span>核心原则</span><h2>“强庄”只是量价结构的俗称，公开页面只展示扫描结果与高层规则名称。</h2><p>具体筛选、打分和确认参数均为「内部参数」，仅在本机雷达保存与执行。</p></article>
+        <article class="rule-hero">
+          <span>核心原则</span>
+          <h2>“强庄”只是量价结构的俗称，系统输出的是疑似强资金/强趋势形态，不把它当成操纵事实。</h2>
+          <p>日K只能观察价格、成交量和相对强弱，不能证明某个庄家真实存在。为了降低误判，系统先做中期结构验证，再看短期信号。</p>
+        </article>
         <div class="rule-grid" id="publicCoreRules"></div>
-        <article class="panel personal-library-panel"><div class="panel-head"><div><h2>你的个人形态库</h2><p>公开说明不包含检测算法与数值阈值</p></div><span class="badge recommended">内部参数</span></div><div class="rule-grid personal-rule-grid" id="publicPersonalRules"></div></article>
-        <article class="panel source-panel"><h2>规则依据与美股适配</h2><p>形态标签用于整理观察线索，不证明真实庄家存在，也不构成投资建议。</p></article>
+        <article class="panel personal-library-panel">
+          <div class="panel-head"><div><h2>你的个人形态库</h2><p>公开说明不包含内部参数</p></div><span class="badge recommended">内部参数</span></div>
+          <div class="rule-grid personal-rule-grid" id="publicPersonalRules"></div>
+        </article>
+        <article class="panel source-panel">
+          <h2>规则依据与美股适配</h2>
+          <p>形态标签用于整理观察线索，不构成投资建议。</p>
+        </article>
       </section>
 
       <section class="view" id="view-settings">
         <div class="grid-2">
-          <article class="panel"><h2>阅读偏好</h2><label>结果每页数量<select id="pageSize"><option>25</option><option selected>50</option><option>100</option></select></label><label class="check"><input type="checkbox" id="showManualPlan" checked> 显示已发布的观察价位</label><button class="btn" id="saveSettingsBtn">保存阅读偏好</button><p class="privacy-note">阅读偏好只保存在当前浏览器，不会同步回本机雷达。</p></article>
-          <article class="panel"><h2>公开数据管理</h2><p>公开站没有清空本机数据库的权限。需要更新内容时，在本机雷达运行发布脚本即可。</p><button class="btn" id="clearDataBtn">清除本页阅读偏好</button></article>
+          <article class="panel">
+            <h2>阅读偏好</h2>
+            <label>结果每页数量<select id="pageSize"><option>25</option><option selected>50</option><option>100</option></select></label>
+            <label class="check"><input type="checkbox" id="showManualPlan" checked> 显示触发观察价、追高上限和结构失效位</label>
+            
+            <button class="btn" id="saveSettingsBtn">保存阅读偏好</button>
+          </article>
+          <article class="panel danger-zone">
+            <h2>公开数据管理</h2>
+            <p>只清除当前浏览器的阅读偏好，不修改正式雷达。</p>
+            <button class="btn danger" id="clearDataBtn">清除本页阅读偏好</button>
+          </article>
         </div>
-        <article class="panel about-panel"><h2>版本信息</h2><div><span>界面版本</span><strong>1.18.29 · 原雷达 UI 只读镜像</strong></div><div><span>策略与门槛</span><strong>内部参数</strong></div><div><span>自动交易</span><strong>永久关闭；仅生成人工观察计划</strong></div><div><span>公开数据位置</span><strong>静态只读快照</strong></div></article>
+        <article class="panel about-panel">
+          <h2>版本信息</h2>
+          <div><span>应用版本</span><strong>1.18.29 · 近1年放大日线＋自由缩放定位</strong></div>
+          <div><span>策略与门槛</span><strong>内部参数</strong></div>
+          <div><span>自动交易</span><strong>永久关闭；仅生成人工观察计划</strong></div>
+          <div><span>本地数据位置</span><strong>浏览器 IndexedDB（USStrongStockRadar）</strong></div>
+        </article>
       </section>
     </main>
   </div>
