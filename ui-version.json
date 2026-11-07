@@ -1,7 +1,8 @@
 {
-  "uiVersion": "2864ee92b99e16a7",
+  "uiVersion": "3a7abb4149c2ef3d",
   "sourceIndexHash": "c617c385d97cb500e06fe13ac7181c05264dcabe90058b6b868d602400ed5790",
   "rendererHash": "cb1fb7cc15b64aa77d362261424789dd3ffeebf3c6e398f817c2d51a533f8358",
+  "chartRendererHash": "7f0fdaeb18e57cbcada0e031b096f9f5d7cdd679cc3a94190f87983f4cb5a893",
   "sourceBuild": "v1.18.29",
   "sourceAssets": {
     "style.css": "d8dc9cdddaea6be6d9d5d5af419e697e475dd4ec91ef49993a5ef4f4497db147",
