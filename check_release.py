@@ -10,6 +10,8 @@ for name in ['engine.js','providers.js','strategy_engine.js','db.js','app.js']:
 assert html.count('src="cine-v4.js')==1
 assert html.count('src="public-publication.js')==1
 assert 'cine-scene' in html
+ui=json.loads((root/'ui-version.json').read_text())
+for name,digest in ui['sourceAssets'].items():assert hashlib.sha256((root/name).read_bytes()).hexdigest()==digest,name
 manifest=json.loads((root/'data/current.json').read_text());version=manifest['snapshotVersion']
 for name,ref in manifest['files'].items():
     raw=(root/ref['path']).read_bytes();assert hashlib.sha256(raw).hexdigest()==ref['sha256']

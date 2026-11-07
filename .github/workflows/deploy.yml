@@ -22,8 +22,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install browser checks
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
       - name: Validate release
         run: python3 check_release.py
+      - name: Browser check before deployment
+        run: |
+          python3 -m http.server 8989 --bind 127.0.0.1 --directory _site > /tmp/radar-preview.log 2>&1 &
+          node browser_smoke.cjs http://127.0.0.1:8989/
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -32,3 +43,11 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Verify production custom domain
         run: python3 verify_online.py
+      - name: Browser check production
+        run: node browser_smoke.cjs https://asrulai.com/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-page-screenshots
+          path: screenshots
+          retention-days: 7
