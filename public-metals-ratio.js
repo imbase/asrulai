@@ -15,7 +15,7 @@ function createController(card,{request=fetch,setTimer=setTimeout,clearTimer=cle
   const needle=$('.gsr-pointer');needle.hidden=!valid;
   if(valid)needle.style.transform=`rotate(${angle(q.ratio)}deg)`;
   for(const leg of ['gold','silver'])$('[data-metal="'+leg+'"]').textContent=valid?'$'+q[leg].price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
-  $('.gsr-state').textContent=q.simulated?'● 模拟数据 · '+zone(q.ratio):valid?(q.stale?'● 报价已过期 · ':'● 每日快照 · ')+zone(q.ratio):q.status==='loading'?'● 正在获取今日报价':q.status==='unconfigured'?'● 现货数据未配置':'● 现货报价不可用';
+  $('.gsr-state').textContent=q.simulated?'● 模拟数据 · '+zone(q.ratio):valid?(q.stale?'● 报价已过期 · ':'● 每日快照 · ')+zone(q.ratio):q.status==='restricted'?'● 未公开（许可未确认）':q.status==='loading'?'● 正在获取今日报价':q.status==='unconfigured'?'● 现货数据未配置':'● 现货报价不可用';
   $('.gsr-hint').textContent=q.out_of_range?'超出20–120量程，数字保留真实值':valid?'仅作相对估值观察，不产生交易指令':'黄金与白银须同源、同币种、同单位';
   const timestamp=q.gold?.as_of;
   $('.gsr-source').textContent=(q.provider||'Metals.Dev')+' · '+(q.simulated?'模拟样本，非真实行情':!valid?'尚无有效报价':q.stale?'过期快照':'每日快照，非实时')+' · USD/金衡盎司';
@@ -29,7 +29,7 @@ function createController(card,{request=fetch,setTimer=setTimeout,clearTimer=cle
   if(!active||busy)return;busy=true;const id=generation;controller=new AbortController();const current=controller;
   const timeout=setTimer(()=>current.abort(),8000);
   try{
-   const r=await request('/api/metals/spot'+(demo?'?demo=1':''),{signal:current.signal});if(!r.ok)throw Error('HTTP '+r.status);
+   const r=await request('/api/metals/spot',{signal:current.signal});if(!r.ok)throw Error('HTTP '+r.status);
    const q=await r.json();if(!active||id!==generation)return;paint(q);
    // Only bounded completion checks of our own backend; never a market-price poll.
    if(q.refreshing&&poll<10)timer=setTimer(()=>{timer=null;refresh(poll+1);},700);
@@ -38,8 +38,7 @@ function createController(card,{request=fetch,setTimer=setTimeout,clearTimer=cle
  }
  function start(){if(active)return;active=true;generation++;refresh();}
  $('[data-gsr-refresh]').onclick=()=>{if(timer!==null)clearTimer(timer);timer=null;refresh();};
- $('[data-gsr-diagnose]').onclick=()=>{last=null;paint({status:'loading'});refresh();};
- $('[data-gsr-demo]').onclick=()=>{const was=active;stop();last=null;demo=!demo;paint({status:'loading'});$('[data-gsr-demo]').textContent=demo?'退出模拟':'模拟演示';$('[data-gsr-demo]').setAttribute('aria-pressed',String(demo));if(was)start();};
+ for(const selector of ['[data-gsr-diagnose]','[data-gsr-demo]']){const control=$(selector);control.hidden=true;control.disabled=true;control.onclick=null;}
  let resize=null;
  if(observeResize&&typeof ResizeObserver!=='undefined'){
   resize=new ResizeObserver(()=>{const width=$('.gsr-scale-slot').getBoundingClientRect().width,scale=Math.min(1,width/470);$('.gsr-dial').style.transform=`scale(${scale})`;$('.gsr-scale-slot').style.height=`${222*scale}px`;});resize.observe($('.gsr-scale-slot'));

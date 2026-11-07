@@ -76,7 +76,7 @@
       return json(clone(snapshot.heatmaps?.[kind]) || { status: 'restricted', items: [], message: '未确认公开展示许可；未发布板块报价' });
     }
     if (path === 'metals/spot') {
-      return json(clone(snapshot.metals) || { status: 'unavailable' });
+      return json(clone(snapshot.metals) || { status: snapshot.permissions?.metals==='RESTRICTED'?'restricted':'unavailable' });
     }
     if (path === 'display/plates') {
       return json(clone(snapshot.plates?.[body.symbol]) || {
