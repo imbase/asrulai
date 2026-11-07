@@ -1,6 +1,10 @@
 {
-  "uiVersion": "3a7abb4149c2ef3d",
+  "uiVersion": "233c0de64a562054",
   "sourceIndexHash": "c617c385d97cb500e06fe13ac7181c05264dcabe90058b6b868d602400ed5790",
+  "adaptedSourceHashes": {
+    "c1-display.js": "017fe3175c9713368b8761a34ffe07fd1b30c54388367cd76a4e9bd700e52b12",
+    "home-glass.js": "3763ce7c8c5f4d71e7ce634e1698f43d178255a0b6b906c9e676b71c51174192"
+  },
   "rendererHash": "cb1fb7cc15b64aa77d362261424789dd3ffeebf3c6e398f817c2d51a533f8358",
   "chartRendererHash": "7f0fdaeb18e57cbcada0e031b096f9f5d7cdd679cc3a94190f87983f4cb5a893",
   "sourceBuild": "v1.18.29",
@@ -15,6 +19,8 @@
     "mac-ui-v1.js": "e82d5ac2a1245d2507a65eb6cacec195000fe68da76b7886e51fcad21768b589",
     "cine-v4.js": "af844124ae877ab4c67f3d2758bc2c7e8890dbf9a9493f7c9b15371a6b91831a",
     "strategy-final-ui.js": "3d24afa59faa7baefe0dbc68f057b43621f51e2eabe804b22112318105719e3f",
+    "inline-chart-viewport.js": "1ce33b12a002ef5f9385f5959e1e5c24ff3fde4c9f4419d5d928f7a63a980a71",
+    "plate-members.js": "44be9cada687895029fa7427cd3f841320e3207a7dd51f657479f12fd2b4049a",
     "hero_cine.jpg": "195e0e89e6cb6db4b2d2bc5c2656b56358062c046dfd8b699ab1690672d75863"
   },
   "dataChanged": false
