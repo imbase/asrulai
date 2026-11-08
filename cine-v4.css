@@ -337,7 +337,7 @@ body.c1-market-view .main{margin:0!important;min-width:0!important;width:100%!im
 #view-intel #intelStrategyStocks{display:block;min-width:0}
 #view-intel #intelStrategyStocks .c1-stock-card{display:none}
 #view-intel #intelStrategyStocks .cine-selected{display:block;padding:13px 14px;background:var(--s3);border-radius:16px;border:0;box-shadow:none}
-#view-intel #intelStrategyStocks canvas{height:clamp(168px,18vw,220px);max-width:100%}
+#view-intel #intelStrategyStocks canvas{display:block;width:100%;height:clamp(168px,18vw,220px);max-width:100%}
 #view-intel .home-footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;color:var(--sub);font:11px/1.6 var(--sans)}
 #view-intel #fx{z-index:152}
 #view-intel .veil{z-index:150}
@@ -357,13 +357,13 @@ body.c1-market-view .main{margin:0!important;min-width:0!important;width:100%!im
  #view-intel{max-width:1280px;padding:22px 44px 0;transition:margin-left .45s cubic-bezier(.25,.9,.3,1)}
  #view-intel.briefing-nav-open{margin-left:244px}
  #view-intel .briefing-content{max-width:1080px;margin:40px auto 0}
- #view-intel .c1-market-layout{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px 32px}
+ #view-intel .c1-market-layout{grid-template-columns:minmax(0,3fr) minmax(0,7fr);gap:18px 32px}
  #view-intel .home-market-card{display:flex;flex-direction:column}
  #view-intel .home-quote-rows{flex:1;align-content:space-evenly}
  #view-intel .home-metals-card{grid-column:1/-1}
  #view-intel #intelPolicy{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
  #view-intel #intelPolicy .c1-news-card:nth-child(5):last-child,#view-intel #intelPolicy .c1-news-card:nth-child(5):nth-last-child(2),#view-intel #intelPolicy .c1-empty{grid-column:1/-1}
- #view-intel .briefing-watch{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:30px}
+ #view-intel .briefing-watch{grid-template-columns:minmax(0,17fr) minmax(0,83fr);gap:30px}
 }
 
 
@@ -383,3 +383,10 @@ body.c1-market-view .main{margin:0!important;min-width:0!important;width:100%!im
 #view-intel #intelStrategyStocks .cine-selected .c1-observation-chart{content-visibility:visible;background:transparent;box-shadow:none}
 body.compact #view-intel .c1-quote-item{padding-block:2px}
 body.compact #view-intel :is(.c1-news-card,.cine-watch-tabs .wl-row){padding-block:4px}
+
+#view-intel .home-market-card,#view-intel .cine-watch-tabs{min-width:0}
+#view-intel .c1-quote-item>span{overflow-wrap:anywhere}
+#view-intel .cine-watch-tabs .wl-row{flex-wrap:wrap;gap:2px 6px}
+#view-intel .cine-watch-tabs .wl-name{min-width:4em;overflow-wrap:anywhere}
+#view-intel #intelStrategyStocks .inline-ma-legend{display:flex;flex:1 1 14em;flex-wrap:wrap;gap:2px 8px;min-width:0}
+#view-intel #intelStrategyStocks .inline-ma-legend i{white-space:nowrap}

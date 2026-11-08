@@ -33,7 +33,7 @@
   metals=MetalsRatio.createController(card,{observeResize:false});
   const value=card.querySelector('.gsr-number'), readout=card.querySelector('.rs-val'), petal=card.querySelector('.rs-petal');
   const update=()=>{
-   const number=Number(value.textContent);
+   const number=Number(card.dataset.ratio ?? value.textContent);
    const valid=Number.isFinite(number);
    const position=Math.max(0,Math.min(100,number-20));
    petal.hidden=!valid;

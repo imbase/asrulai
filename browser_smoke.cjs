@@ -33,7 +33,12 @@ async function main() {
         await page.locator('#view-intel .side-tab').focus();
         await page.locator(`#view-intel .side-nav [data-home-go="${view}"]`).click();
       } else {
+        if (await page.locator('#view-intel').isVisible()) {
+        await page.locator('#view-intel .side-tab').focus();
+        await page.locator(`#view-intel .side-nav [data-home-go="${view}"]`).click();
+      } else {
         await page.locator(`.nav-item[data-view="${view}"]`).click();
+      }
       }
       assert(await page.locator(`#view-${view}`).isVisible());
       if (view === 'intel') {

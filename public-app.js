@@ -109,6 +109,7 @@
     const all = yearBars.slice(start, end);
     const series = {};
     periods.forEach(period => { series[period] = fullSeries[period].slice(start, end); });
+    const briefing = Boolean(canvas.closest("#intelStrategyStocks"));
     const rect = canvas.getBoundingClientRect();
     if (rect.width < 40 || rect.height < 40) return false;
     // One visible chart supports native Retina resolution up to DPR 3.
@@ -140,11 +141,13 @@
     for (let i = 0; i <= 4; i++) {
       const yy = top + i / 4 * (priceBottom - top);
       ctx.beginPath(); ctx.moveTo(left, yy); ctx.lineTo(w - right, yy); ctx.stroke();
-      ctx.fillText((max - i / 4 * (max - min)).toFixed(max < 10 ? 3 : 2), w - right + 6, yy + 3);
+      if (!briefing || Math.abs(yy - y(all.at(-1).c)) >= 15)
+        ctx.fillText((max - i / 4 * (max - min)).toFixed(max < 10 ? 3 : 2), w - right + 6, yy + 3);
     }
     const gaps = fullGaps
       .filter(gap => gap.i < end && (gap.fill < 0 || gap.fill >= start))
       .map(gap => ({ ...gap, i:gap.i - start, fill:gap.fill < 0 ? -1 : gap.fill - start }));
+    const gapLabels = [];
     gaps.forEach(gap => {
       const start = Math.max(0, gap.i), end = Math.min(all.length - 1, gap.fill < 0 ? all.length - 1 : gap.fill);
       if (start > end) return;
@@ -153,7 +156,16 @@
       ctx.fillRect(x(start) - pitch / 2, y(gap.hi), x(end) - x(start) + pitch, Math.max(1, y(gap.lo) - y(gap.hi)));
       ctx.globalAlpha = 1;
       ctx.fillStyle = gap.up ? "#d96c00" : "#517087";
-      if (!canvas.closest("#quadCharts")) ctx.fillText(`${gap.up ? "向上" : "向下"}跳空`, Math.max(left, x(start) - 16), Math.max(top + 10, y(gap.hi) - 3));
+      if (canvas.closest("#quadCharts")) return;
+      const label = `${gap.up ? "向上" : "向下"}跳空`;
+      const labelX = Math.max(left, x(start) - 16), labelY = Math.max(top + 10, y(gap.hi) - 3);
+      if (briefing) {
+        const endX = labelX + ctx.measureText(label).width;
+        if (endX > w - right || gapLabels.some(box =>
+          labelX < box.end + 4 && endX > box.x - 4 && Math.abs(labelY - box.y) < 13)) return;
+        gapLabels.push({ x:labelX, y:labelY, end:endX });
+      }
+      ctx.fillText(label, labelX, labelY);
     });
     periods.forEach(period => {
       ctx.strokeStyle = colors[period]; ctx.lineWidth = 1.25; ctx.beginPath(); let begun = false;
@@ -180,7 +192,8 @@
     });
     ctx.strokeStyle = "#dce3e9"; ctx.beginPath(); ctx.moveTo(left, priceBottom + 5); ctx.lineTo(w - right, priceBottom + 5); ctx.stroke();
     ctx.fillStyle = "#65717e";
-    const dateStep = Math.max(1, Math.ceil(all.length / 10));
+    const dateLabels = briefing ? Math.max(1, Math.floor(plotW / 56)) : 10;
+    const dateStep = Math.max(1, Math.ceil(all.length / dateLabels));
     for (let index = 0; index < all.length; index += dateStep) ctx.fillText(all[index].d.slice(5), x(index) - 13, h - 5);
     const last = all[all.length - 1];
     const lastColor = last.c >= last.o ? "#09a600" : "#f21d1d";
