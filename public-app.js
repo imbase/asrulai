@@ -484,7 +484,18 @@
   function exportCSV(){if(!state.report)return toast('快照尚未读取',true);const rows=[['排名','代码','名称','综合分','等级','候选层级','技术阶段','形态标签','收盘价','日涨跌','数据日期']];publicRows().forEach((r,i)=>rows.push([i+1,r.symbol,r.name,r.score,r.grade,r.candidateTier,r.stage,(r.personalPatterns||[]).map(x=>x.label).join('/')||(r.tags||[]).join('/'),r.close,r.change1d,r.date||state.report.marketDate]));downloadBlob(`asrulai_公开结果_${state.report.marketDate||state.report.generatedAt.slice(0,10)}.csv`,'\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\n'),'text/csv;charset=utf-8');}
   function exportHTML(){if(!state.report)return toast('快照尚未读取',true);const rows=publicRows().map((x,i)=>`<tr><td>${i+1}</td><td><b>${escapeHTML(x.symbol)}</b><br><small>${escapeHTML(x.name||'')}</small></td><td>${escapeHTML(x.score??'—')}</td><td>${escapeHTML(x.candidateTier||x.stage||'')}</td><td>${escapeHTML((x.tags||[]).join('、'))}</td><td>${escapeHTML(x.date||state.report.marketDate||'')}</td></tr>`).join('');const html=`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>asrulai 公开观察结果</title><style>body{font-family:-apple-system,PingFang SC,Arial;margin:36px;color:#172333}table{width:100%;border-collapse:collapse}th,td{padding:9px;border:1px solid #dbe3eb;text-align:left}th{background:#13283d;color:white}.note{color:#65758a;line-height:1.7}</style><body><h1>asrulai 点灯人 · 公开观察结果</h1><p class="note">数据日期：${escapeHTML(state.report.marketDate||'—')}。仅含已发布结果、既有分数和标签；筛选条件为内部参数。</p><table><thead><tr><th>#</th><th>股票</th><th>既有分数</th><th>层级/阶段</th><th>标签</th><th>日期</th></tr></thead><tbody>${rows||'<tr><td colspan="6">本次无正式候选</td></tr>'}</tbody></table></body></html>`;downloadBlob(`asrulai_公开报告_${state.report.marketDate||state.report.generatedAt.slice(0,10)}.html`,html,'text/html;charset=utf-8');}
   function exportDiagnostics(){const s=state.snapshot||{};downloadBlob('asrulai_公开状态.json',JSON.stringify({generatedAt:s.generatedAt,marketDate:s.marketDate,coverage:s.coverage,status:'public-readonly',barsSymbols:Object.keys(s.bars||{}).length},null,2),'application/json;charset=utf-8');}
-  async function reloadPublic(){await RadarDB.reload();window.location.reload();}
+  async function reloadPublic(event){
+    const briefing = event?.currentTarget?.id === 'refreshIntelBtn';
+    try {
+      await RadarDB.reload();
+      if (briefing) {
+        try { sessionStorage.setItem('asrulai_briefing_refreshed', '1'); } catch {}
+      }
+      window.location.reload();
+    } catch (error) {
+      toast('公开快照更新失败：' + error.message, true);
+    }
+  }
   function bindEvents(){
     $$('.nav-item').forEach(btn=>btn.addEventListener('click',()=>switchView(btn.dataset.view)));$$('[data-go]').forEach(btn=>btn.addEventListener('click',()=>switchView(btn.dataset.go)));
     ['#quickScanBtn','#runScanBtn','#homeQuickScan'].forEach(id=>$(id)?.addEventListener('click',()=>toast('这是公开只读镜像。请在本机雷达扫描后运行发布脚本更新。')));

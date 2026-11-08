@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parent
 def build():
     dest=ROOT/'_site';shutil.rmtree(dest,ignore_errors=True);dest.mkdir()
     html=(ROOT/'index.html').read_text()
-    names={'index.html','ui-version.json','CNAME'}
+    names={'index.html','ui-version.json','CNAME','hero_cine.jpg'}
     for name in re.findall(r'(?:src|href)="([^"#]+)"',html):
         if '://' not in name:names.add(name.split('?')[0])
     names.update(str(p.relative_to(ROOT)) for p in (ROOT/'assets').rglob('*') if p.is_file())

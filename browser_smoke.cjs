@@ -29,7 +29,12 @@ async function main() {
     }, industryCount);
     fs.mkdirSync('screenshots', { recursive: true });
     for (const view of ['intel', 'leaders', 'data', 'results', 'rules', 'settings']) {
-      await page.locator(`.nav-item[data-view="${view}"]`).click();
+      if (await page.locator('#view-intel').isVisible()) {
+        await page.locator('#view-intel .side-tab').focus();
+        await page.locator(`#view-intel .side-nav [data-home-go="${view}"]`).click();
+      } else {
+        await page.locator(`.nav-item[data-view="${view}"]`).click();
+      }
       assert(await page.locator(`#view-${view}`).isVisible());
       if (view === 'intel') {
         await page.waitForFunction(() => document.querySelector('.scene').naturalWidth > 0);
