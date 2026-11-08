@@ -21,14 +21,14 @@
       const d=await watchQuote(symbol),m=d.chart?.result?.[0]?.meta;
       if(!card.isConnected)return;
       const price=Number(m?.regularMarketPrice),previous=Number(m?.chartPreviousClose??m?.previousClose);
-      const change=Number.isFinite(price) && Number.isFinite(previous) && price>0 && previous>0?price/previous-1:NaN;
+      const change=Number.isFinite(m?.savedChange) ? m.savedChange : Number.isFinite(price) && Number.isFinite(previous) && price>0 && previous>0?price/previous-1:NaN;
       card.querySelector('.c1-watch-price').textContent=Number.isFinite(price)&&price>0?price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:4}):'—';
       const node=card.querySelector('.c1-watch-change');node.textContent=pct(change);node.className='c1-watch-change'+(Number.isFinite(change)&&change!==0?(change>0?' pos':' neg'):'');
       const timeText=m?.regularMarketTime>0
         ?'Yahoo 常规时段 · '+new Date(m.regularMarketTime*1000).toLocaleString('zh-CN',{timeZone:'America/New_York'})+' 美东 · 可能延迟'
         :m?.quoteDate?m.quoteDate+' 日 K 收盘 · 公开快照':'公开快照 · 报价时间未提供';
       card.querySelector('.c1-watch-time').textContent=timeText+(m?.dataIssue?' · '+m.dataIssue:'');
-    }catch{if(card.isConnected)card.querySelector('.c1-watch-time').textContent='最新行情暂不可用；本地日 K 线仍可查看';}
+    }catch{if(card.isConnected)card.querySelector('.c1-watch-time').textContent='暂无数据';}
   }
   const chartObservers = new WeakMap();
   function plateText(value){
@@ -64,7 +64,7 @@
       else plate(symbol,card.querySelector('.c1-sector'));
       try{
         const r=await RadarDB.get('bars',symbol);if(!card.isConnected)return;
-        if(!r?.bars?.length){card.querySelector('.c1-local-date').textContent='本地暂无日线；不会自动换源';return;}
+        if(!r?.bars?.length){card.querySelector('.c1-local-date').textContent='暂无数据';return;}
         canvas._c1Bars=r.bars;draw(canvas,r.bars);resize.observe(canvas);
         ChartChangeRates.bind(canvas,r.bars,symbol,document.querySelector("#futuPort")?.value);
         const dates=r.bars.map(x=>String(x.d||x.t||'')).sort();
@@ -136,9 +136,22 @@
       try{
         const promise=post('yahoo/chart',{symbol,range:'1d'});
         recentQuotes.set(symbol,{time:Date.now(),promise});
-        const d=await promise,m=d.chart?.result?.[0]?.meta;
+        const d=await promise;
+        let m=d.chart?.result?.[0]?.meta;
+        if(symbol==='^DJI'){
+          const label=node.querySelector('span');
+          label.textContent='道琼斯指数';
+          if(!(Number(m?.regularMarketPrice)>0)){
+            const fallback=await post('yahoo/chart',{symbol:'DIA',range:'1d'});
+            const saved=fallback.chart?.result?.[0]?.meta;
+            if(Number(saved?.regularMarketPrice)>0){
+              m=saved;
+              label.textContent='DIA（道指 ETF）';
+            }
+          }
+        }
         const prev=Number(m?.chartPreviousClose??m?.previousClose),price=Number(m?.regularMarketPrice);
-        const change=price>0&&prev>0?price/prev-1:NaN;
+        const change=Number.isFinite(m?.savedChange) ? m.savedChange : price>0&&prev>0?price/prev-1:NaN;
         if(!(price>0))throw new Error(m?.dataIssue||'报价字段不完整');
         node.querySelector('.c1-quote-price').textContent=price.toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});
         node.querySelector('b').textContent=pct(change);
@@ -149,7 +162,7 @@
         node.title=m.dataIssue||(m.regularMarketTime>0
           ?'Yahoo 最新常规时段报价，可能延迟；此时间为报价时间'
           :'公开快照中的已保存报价；缺少的时间或前收价不作猜测');
-      }catch(e){node.querySelector('small').textContent='暂不可用 / 保留旧报价';node.title=e.message;}
+      }catch(e){node.querySelector('small').textContent='暂无数据';node.title=e.message;}
     }));}finally{quoteBusy=false;}
   }
   function market(){

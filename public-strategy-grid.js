@@ -63,7 +63,6 @@
   function paint(){
     if(!context)return;
     const {list,report,draw}=context;
-    report.permissionsRestricted=window.RadarPublication?.permissions?.strategyResults==='RESTRICTED';
     const rows=(pool?favorites.map(f=>(report.results||[]).find(r=>r.symbol===f.symbol)||f):list).map(retirementView);
     const pages=Math.max(1,Math.ceil(rows.length/2));page=Math.max(0,Math.min(page,pages-1));
     const selected=document.querySelector('#personalPatternFilter');
@@ -76,7 +75,7 @@
     target.innerHTML=visible.length?visible.map(item=>{
       const saved=favorites.some(x=>x.symbol===item.symbol);
       return `<article class="c1-stock-card"><header class="quad-stock-head"><strong><button type="button" class="quad-symbol-link" data-detail="${esc(item.symbol)}" title="打开 ${esc(item.symbol)} 专业K线">${esc(item.symbol)}</button></strong><span>${esc(item.name||'')}</span><b class="${item.change1d>=0?'pos':'neg'}">${pct(item.change1d)}</b><button data-favorite="${esc(item.symbol)}" aria-pressed="${saved}" ${!loaded||busy?'disabled':''}>${saved?'★ 已自选':'☆ 加自选'}</button></header><div class="c1-strategy"><small>${esc((item.personalPatterns||[]).map(x=>x.label).join(' · ')||(item.tags||[]).join(' · '))}</small></div><p class="c1-sector"></p></article>`;
-    }).join(''):`<p class="quad-empty">${pool?(!loaded?'正在读取当前浏览器的自选；如读取失败，请刷新重试。':'自选池暂无股票，请在图表右上角点击“加自选”。'):(context.report?.permissionsRestricted?'名单未公开：尚未确认公开展示许可。':'当前策略没有命中结果。')}</p>`;
+    }).join(''):`<p class="quad-empty">${pool?(!loaded?'正在读取当前浏览器的自选；如读取失败，请刷新重试。':'自选池暂无股票，请在图表右上角点击“加自选”。'):(context.report?.strategyDataMissing?'暂无数据':'当前策略没有命中结果。')}</p>`;
     window.C1Display.cards(target,visible,draw);
     target.querySelectorAll('[data-detail]').forEach(b=>b.onclick=()=>window.dispatchEvent(new CustomEvent('radar:open-detail',{detail:b.dataset.detail})));
     target.querySelectorAll('[data-favorite]').forEach(b=>b.onclick=async()=>{

@@ -13,6 +13,10 @@ def verify(expected=None,attempts=30):
             for ref in m['files'].values():
                 raw=fetch(ref['path']);assert hashlib.sha256(raw).hexdigest()==ref['sha256']
                 assert json.loads(raw)['snapshotVersion']==m['snapshotVersion']
+            radar=fetch('radar/').decode()
+            assert 'id="dashboard"' in radar and 'viewer.js' in radar
+            for name in ('board.json','klines.json'):
+                assert hashlib.sha256(fetch('data/'+name)).hexdigest()==m['files'][name]['sha256'],name
             html=fetch('').decode();assert 'cine-scene' in html and 'preview-global' in html
             for route in ['intel','leaders','data','results','rules','settings']:assert 'id="view-'+route+'"' in html
             for path in re.findall(r'(?:src|href)="([^"#]+)"',html):

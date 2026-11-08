@@ -40,7 +40,7 @@
     const q = snapshot?.quotes?.[String(symbol || '').toUpperCase()] || {};
     const price = Number(q.price);
     const previous = Number(q.prevClose);
-    const validPrevious = Number.isFinite(previous) && previous > 0 && !q.dataIssue;
+    const validPrevious = Number.isFinite(previous) && previous > 0;
     return {
       chart: {
         result: [{
@@ -50,7 +50,8 @@
             chartPreviousClose: validPrevious ? previous : null,
             previousClose: validPrevious ? previous : null,
             regularMarketTime: Number(q.time) || null,
-            quoteDate: q.quoteDate || null,
+            savedChange: Number.isFinite(q.change) ? q.change : null,
+            quoteDate: q.quoteDate || (typeof q.time==='string' ? q.time : null),
             dataIssue: q.dataIssue || null
           }
         }],
@@ -73,10 +74,10 @@
     if (path === 'yahoo/chart') return json(quote(body.symbol));
     if (path === 'display/heatmap') {
       const kind = String(body.kind || 'INDUSTRY').toUpperCase();
-      return json(clone(snapshot.heatmaps?.[kind]) || { status: 'restricted', items: [], message: '未确认公开展示许可；未发布板块报价' });
+      return json(clone(snapshot.heatmaps?.[kind]) || { status: 'unavailable', items: [], message: '暂无数据' });
     }
     if (path === 'metals/spot') {
-      return json(clone(snapshot.metals) || { status: snapshot.permissions?.metals==='RESTRICTED'?'restricted':'unavailable' });
+      return json(clone(snapshot.metals) || { status: 'unavailable' });
     }
     if (path === 'display/plates') {
       return json(clone(snapshot.plates?.[body.symbol]) || {

@@ -18,10 +18,24 @@ for name,ref in manifest['files'].items():
     assert json.loads(raw)['snapshotVersion']==version
 s=json.loads((root/manifest['files']['snapshot.json']['path']).read_text())
 assert s['schemaVersion']=='asrulai-public-2'
-assert not any(k in s for k in ['watchlist','settings','credentials'])
-for module,field in [('dailyBars','bars'),('quotes','quotes'),('heatmaps','heatmaps'),('metals','metals')]:
-    if s['permissions'][module]=='RESTRICTED':assert not s[field],module
-if s['permissions']['strategyResults']=='RESTRICTED':assert all(not x['picks'] and x['count'] is None for x in s['strategies'])
+assert not {'watchlist','settings','credentials','personalPatterns'}.intersection(s)
+modules={'coverage','dailyBars','heatmaps','leaders','metals','news','quotes','strategyResults'}
+assert s['permissions']==dict.fromkeys(modules,'PUBLISHED')
+assert s['completeness']['restrictedModules']==[]
+assert s['completeness']['sourceStatus']=='PUBLISHED'
+pick_fields=set('symbol name change1d stage candidateTier close date qualified score grade industry sector exchange preMarketChange tags metrics rankingBreakdown patterns'.split())
+for strategy in s['strategies']:
+    assert strategy['sourceStatus']=='PUBLISHED'
+    for pick in strategy['picks']:
+        assert set(pick)<=pick_fields
+        assert set(pick.get('rankingBreakdown',{}))<={'boardTotal','patternTotal'}
+        assert all(set(pattern)<={'id','label','signalDate'} for pattern in pick.get('patterns',[]))
+for name in ('board.json','klines.json'):
+    assert (root/'data'/name).read_bytes()==(root/manifest['files'][name]['path']).read_bytes(),name
+board=json.loads((root/'data/board.json').read_text())
+assert board['strategies']==s['strategies'] and board['watchlist']==[]
+assert len(board['dashboard']['news'])<=8
+assert all((root/'radar'/path).is_file() for path in ('index.html','style.css','viewer.js','assets/hero_cine.jpg'))
 for p in root.rglob('*'):
     if p.suffix in ('.json','.js','.html','.css'):
         text=p.read_text();assert not re.search(r'gh[pousr]_[A-Za-z0-9]{20}|github_pat_|/Users/|127\.0\.0\.1|localhost|postgres(?:ql)?://',text),p
