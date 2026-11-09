@@ -23,7 +23,7 @@
   for(const row of quoteNodes) for(const el of row.querySelectorAll('.c1-quote-price,b')) el.dataset.lit='';
   const sub=document.createElement('p');sub.className='home-market-sub';sub.textContent='主要指数与防御资产';market.append(sub);
   const rows=document.createElement('div');rows.className='home-quote-rows';quoteNodes.forEach(n=>rows.append(n));market.append(rows);
-  const note=document.createElement('small');note.className='home-market-time';note.textContent='Yahoo · 常规时段 · 各标的时间见报价';market.append(note);
+  const note=document.createElement('small');note.className='home-market-time';note.textContent='报价口径及时间见各标的';market.append(note);
   layout.querySelectorAll('.c1-quote-column').forEach(n=>n.remove());layout.prepend(market);
   const heat=layout.querySelector('.c1-heat-panel');heat.classList.add('plate');
   const count=document.createElement('p');count.className='home-heat-count';count.textContent='完整板块集合 / 等面积展示';heat.append(count);

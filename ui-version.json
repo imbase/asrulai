@@ -1,9 +1,9 @@
 {
-  "uiVersion": "797929774d77d10f",
+  "uiVersion": "00e7a021ea7218cf",
   "sourceIndexHash": "cf9e3eb5cfaf15bf1c3e2871176002812a9dc2a4201309ec72a487286f76062f",
   "adaptedSourceHashes": {
-    "c1-display.js": "8fdcdaaf8528af8d971a36c5f0992207e40f589a33fcf2ac82c1342568b519ea",
-    "home-glass.js": "04dbc3fd5a2239f310d61b03c6ab0d52dafed475ac00b6255afdf9350873c759"
+    "c1-display.js": "ed0964d3f2151a66dda64dbadf6d90ddbed0fce0e6705bf6f684deaedb44aed8",
+    "home-glass.js": "ff77226053aec5874ca10fb32340c8bba2e732e6c948881368dcfa38a07ccf39"
   },
   "rendererHash": "cb1fb7cc15b64aa77d362261424789dd3ffeebf3c6e398f817c2d51a533f8358",
   "chartRendererHash": "72eb764d530a48d2b32768c21beb25fb0544bc896001d5ce3f98fdafa10572d9",
@@ -30,9 +30,9 @@
     "strategy-grid.css": "edbc44631b742c30db7c774bee400b73a7f43331b59434ed534e3ceb77b9a0fb",
     "home-glass.css": "a9ccb140e5c3a809785e8c592e54eed256573074121eddef90e24478a2403d08",
     "mac-ui-v1.css": "05c9273a77c12f701eb8a49fb98cef6b191f76ad5c1d9330ea7b46121b86859d",
-    "cine-v4.css": "ee121b447fc40d71013f9b3c349684e6522a789e68c1dd053d355c8d33787e4b",
+    "cine-v4.css": "86f87c2dac02e68ab8925fe30345090809e8fcda9bff8516d446da385e6abb6b",
     "strategy-v41.css": "d9907ea0c2704dcfcbe3b264d1a22cb27ef0b194da0fc02943b7ecc1d1a531c3",
-    "strategy-final.css": "4d6ab292b4375d48a2c1087ed59f18f669fb91a923ce9a9f31ecd74c1da14f5d",
+    "strategy-final.css": "db9416adac91b5b570fb6c1f6a22b42b20de84cebbab4f633882c975e74a57da",
     "mac-ui-v1.js": "e82d5ac2a1245d2507a65eb6cacec195000fe68da76b7886e51fcad21768b589",
     "cine-v4.js": "2b0ef286e3cba0c776d8fb4e0f4df653f848bbd384b5f89258e7b38cfa16e4c4",
     "strategy-final-ui.js": "3d24afa59faa7baefe0dbc68f057b43621f51e2eabe804b22112318105719e3f",

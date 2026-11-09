@@ -1,6 +1,7 @@
 /* Scoped styles from the v2.0 briefing reference. */
+:root{--paper:#FFFDFE}
 #view-intel{
-  --paper:#FFFDFE; --ink:#2E2A28; --sub:#8C867D; --faint:#B7B0A6;
+  --ink:#2E2A28; --sub:#8C867D; --faint:#B7B0A6;
   --petal:#A85866; --wine:#8A3A48; --blush:#F5E8EA;
   --sage:#8FA382; --sageDeep:#55684C;
   --s1:#D7E1CB; --s2:#E6EDDD; --s3:#F1F4EB;
@@ -277,7 +278,7 @@
 }
 
 /* Existing app layout, navigation, and market components. */
-body.c1-market-view{background:#FFFDFE;color:#2E2A28}
+body.c1-market-view{background:var(--paper);color:#2E2A28}
 body.briefing-ceremony{overflow:hidden}
 body.ui-preview.c1-market-view > .preview-global,body.c1-market-view .topbar{display:none!important}
 body.c1-market-view .app-shell{display:block;min-width:0}

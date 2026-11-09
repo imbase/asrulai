@@ -5,10 +5,9 @@
   const pct = n => Number.isFinite(n) ? `${n>=0?'+':''}${(n*100).toFixed(2)}%` : '—';
   const delay = ms => new Promise(r=>setTimeout(r,ms));
   async function post(path,body) {
-    const r=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(path==='display/heatmap'||path==='yahoo/chart'?60000:20000)});
+    const r=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(path==='display/heatmap'?60000:20000)});
     const d=await r.json(); if(!r.ok || d.ok===false) throw new Error(d.detail || d.message || '接口未返回资料'); return d;
   }
-  // Share the market panel's in-flight/recent quote without downloading daily history.
   const recentQuotes = new Map();
   function watchQuote(symbol){
     const saved=recentQuotes.get(symbol);
@@ -128,7 +127,7 @@
     }catch(e){if(generation===heatGeneration)paintHeat({...heatValue,status:'stale',message:'富途热力图暂不可用：'+e.message});}
     finally{heatBusy=false;if(generation!==heatGeneration)refreshHeat();}
   }
-  const quoteSymbols=[['^DJI','道琼斯指数'],['QQQ','QQQ'],['VGT','VGT'],['XLP','XLP'],['SCHD','SCHD']];
+  const quoteSymbols=[['DIA','DIA'],['QQQ','QQQ'],['VGT','VGT'],['XLP','XLP'],['SCHD','SCHD']];
   async function refreshQuotes(){
     if(quoteBusy)return;quoteBusy=true;
     try{await Promise.allSettled(quoteSymbols.map(async([symbol])=>{
@@ -169,7 +168,7 @@
     if(marketStarted)return;marketStarted=true;
     const board=document.querySelector('#c1MarketBoard');if(!board)return;
     const quoteMarkup=xs=>xs.map(([s,n])=>`<div class="c1-quote-item" data-market-quote="${s}"><span>${n}</span><div class="c1-quote-price">—</div><b>—</b><small>读取报价…</small></div>`).join('');
-    board.innerHTML=`<div class="c1-market-layout"><div class="c1-quote-column">${quoteMarkup(quoteSymbols.slice(0,2))}</div><div class="c1-quote-column">${quoteMarkup(quoteSymbols.slice(2))}</div><section class="c1-heat-panel" aria-label="富途板块热力图"><header><strong>板块热力图</strong><div><button type="button" data-heat-kind="INDUSTRY" aria-pressed="true">行业</button><button type="button" data-heat-kind="CONCEPT" aria-pressed="false">概念</button><button type="button" id="c1HeatRefresh">刷新</button></div></header><div id="c1HeatGrid" class="c1-heat-grid"></div><small id="c1HeatStatus" role="status">正在同步…</small><small class="c1-heat-note">等面积 · 按涨跌幅排列 · 绿涨红跌 · 滚动查看全部 · 点击查看成分</small></section></div><div class="c1-market-foot">左侧：Yahoo 常规时段报价，可能延迟。右侧：Futu OpenD 最新返回；接口未提供交易日期，同步时间不代表交易日期。</div><aside id="c1HeatDetail" hidden></aside>`;
+    board.innerHTML=`<div class="c1-market-layout"><div class="c1-quote-column">${quoteMarkup(quoteSymbols.slice(0,2))}</div><div class="c1-quote-column">${quoteMarkup(quoteSymbols.slice(2))}</div><section class="c1-heat-panel" aria-label="富途板块热力图"><header><strong>板块热力图</strong><div><button type="button" data-heat-kind="INDUSTRY" aria-pressed="true">行业</button><button type="button" data-heat-kind="CONCEPT" aria-pressed="false">概念</button><button type="button" id="c1HeatRefresh">刷新</button></div></header><div id="c1HeatGrid" class="c1-heat-grid"></div><small id="c1HeatStatus" role="status">正在同步…</small><small class="c1-heat-note">等面积 · 按涨跌幅排列 · 绿涨红跌 · 滚动查看全部 · 点击查看成分</small></section></div><div class="c1-market-foot">左侧：报价口径及日期见各标的。右侧：Futu OpenD 最新返回；接口未提供交易日期，同步时间不代表交易日期。</div><aside id="c1HeatDetail" hidden></aside>`;
     board.querySelectorAll('[data-heat-kind]').forEach(b=>b.onclick=()=>{if(heatKind===b.dataset.heatKind)return;heatKind=b.dataset.heatKind;heatGeneration++;heatValue=null;heatItems=[];memberDetails?.reset();document.querySelector('#c1HeatDetail').hidden=true;board.querySelectorAll('[data-heat-kind]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));paintHeat({items:[]});refreshHeat();});
     document.querySelector('#c1HeatRefresh').onclick=()=>{refreshHeat();refreshQuotes();};
     refreshHeat();refreshQuotes();
